@@ -1,0 +1,38 @@
+\chapter{INTRODUCCIÓ A LA QUÍMICA}
+\begin{center}
+ \schemestart
+  \chemfig{-[:30](-[2])-[:-30]OH}
+  \arrow
+  \chemfig{-[:30](-[2])=^[:-30]O}
+ \schemestop
+\end{center}
+
+\begin{center}%\schemedebug{true}
+\makeatletter
+ \definearrow{0}{..}{\draw[dotted] (\CF@arrow@start@node)--(\CF@arrow@end@node);}
+\makeatother
+\definesubmol{\conf}{-[:135,.25,,,draw=none]}
+\schemestart
+ \chemfig{[6]Me-(!\conf{\text{\tiny S}})(-[0]Br)(-[4]H)-(!\conf{\text{\tiny S}})(-[0]H)(-[4]Cl)-Me}
+ \arrow(a--b){<->[\tiny enantiomers]}[,2,line width=.4pt]
+ \chemfig{[6]Me-(!\conf{\text{\tiny R}})(-[0]H)(-[4]Br)-(!\conf{\text{\tiny R}})(-[0]Cl)(-[4]H)-Me}
+ \arrow{<->[*0\tiny diastereomers]}[-90,2,line width=.4pt]
+ \chemfig{[6]Me-(!\conf{\text{\tiny R}})(-[0]H)(-[4]Br)-(!\conf{\text{\tiny S}})(-[0]H)(-[4]Cl)-Me}
+ \arrow(c--d){<->[\tiny enantiomers]}[180,2,line width=.4pt]
+ \chemfig{[6]Me-(!\conf{\text{\tiny S}})(-[0]Br)(-[4]H)-(!\conf{\text{\tiny R}})(-[0]Cl)(-[4]H)-Me}
+ \arrow{<->[*0\tiny diastereomers]}[90,2,line width=.4pt]
+ \arrow(@a--@c){<->}[,,line width=.4pt]
+ \arrow(@b--@d){<->}[,,line width=.4pt]
+ \arrow(@a--xx){0}[,1]{}\arrow{0}[-90,.5] \tiny diastereomers
+ \arrow(@xx--){0}[90,1]{}\arrow{..}[-90,5.5] mirror plane
+\schemestop
+\end{center}
+
+\section{Conceptes bàsics de Química}
+\section{Estructura Atòmica de la Matèria}
+\section{Taula Periòdica dels Elements}
+\section{Enllaç Químic}
+\section{Equilibri Químic}
+\section{Electroquímica}
+\section{Termoquímica}
+\section{Cinètica Química}
