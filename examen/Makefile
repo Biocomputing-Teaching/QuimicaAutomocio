@@ -1,7 +1,7 @@
-#doc   = 200318ExamenParcial
+doc   = 200318ExamenParcial
 #doc   = 140518ExamenParcialFinal
 #doc   = 310518ExamenRecuperacio1
-doc   = 050618ExamenRecuperacio2
+#doc   = 050618ExamenRecuperacio2
 docpath = ../build/$(doc)
 
 all: $(docpath)Preguntes.pdf $(docpath)Respostes.pdf $(docpath)FullRespostes.pdf clean #$(doc)Preguntas.pdf
