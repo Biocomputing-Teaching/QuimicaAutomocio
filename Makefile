@@ -1,10 +1,11 @@
+SHELL := /bin/bash
 PROJECT=QuimAutomTheor
 
-all:  ExamenParcial Exercise ${PROJECT}
-ExamenParcial: build/ExamenParcial.pdf 
-Exercise: build/Exercise.pdf 
-test: build/test.pdf 
-Theory: build/${PROJECT}.pdf 
+all:  ExamenParcial Exercise ${PROJECT} clean
+ExamenParcial: build/ExamenParcial.pdf clean
+Exercise: build/Exercise.pdf clean
+test: build/test.pdf clean
+Theory: build/${PROJECT}.pdf clean 
 
 build/ExamenParcial.pdf: ExamenParcial.tex
 	lualatex --output-directory=build ExamenParcial
@@ -29,5 +30,7 @@ build/${PROJECT}.bcf: ${PROJECT}.tex
 	lualatex --output-directory=build ${PROJECT}
 
 clean:
-	rm -f build/*
+	rm -f *.{bcf,run.xml,pro,aux,nav,out,log,idx,ind,ilg,toc,bbl,blg,tdo,lot,lof,glo,snm}
+	rm -f build/*.{bcf,run.xml,pro,aux,nav,out,log,idx,ind,ilg,toc,bbl,blg,tdo,lot,lof,glo,snm}
+
 
