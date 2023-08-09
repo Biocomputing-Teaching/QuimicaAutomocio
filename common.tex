@@ -54,14 +54,14 @@
 backend=biber,
 citestyle=numeric-comp 
 ]{biblatex}
-\addbibresource{/Users/556079/Documents/teaching.bib}
+\addbibresource{QuimAutom.bib}
 
 
 %\chemsetup[chemformula]{format=\sffamily}
 \renewcommand*\printatom[1]{\ensuremath{\mathsf{#1}}}
-\setatomsep{2em}
-\setdoublesep{.6ex}
-\setbondstyle{semithick}
+%\setatomsep{2em}
+%\setdoublesep{.6ex}
+%\setbondstyle{semithick}
 \colorlet{shadecolor}{orange!15}
 \parindent 0in
 \parskip 12pt
@@ -314,16 +314,16 @@ citestyle=numeric-comp
 % ANGLÈS
 %%%%%%%%%%%%%%%%%%%
 
-\newcommand{\problemName}{}%
-\newcounter{problemCounter}%
-\newenvironment{problem}[1][Problem \arabic{problemCounter}]%
-	{\stepcounter{problemCounter}%
-		\renewcommand{\problemName}{#1}%
-		\section*{\problemName}%
-		\nobreak\extramarks{\problemName}{\problemName continued on next page\ldots}\nobreak%
-		\nobreak\extramarks{\problemName (continued)}{\problemName continued on next page\ldots}\nobreak}%
-	{\nobreak\extramarks{\problemName (continued)}{\problemName continued on next page\ldots}\nobreak%
-		\nobreak\extramarks{\problemName}{}\nobreak}%
+% \newcommand{\problemName}{}%
+% \newcounter{problemCounter}%
+% \newenvironment{problem}[1][Problem \arabic{problemCounter}]%
+% 	{\stepcounter{problemCounter}%
+% 		\renewcommand{\problemName}{#1}%
+% 		\section*{\problemName}%
+% 		\nobreak\extramarks{\problemName}{\problemName continued on next page\ldots}\nobreak%
+% 		\nobreak\extramarks{\problemName (continued)}{\problemName continued on next page\ldots}\nobreak}%
+% 	{\nobreak\extramarks{\problemName (continued)}{\problemName continued on next page\ldots}\nobreak%
+% 		\nobreak\extramarks{\problemName}{}\nobreak}%
 
 \newenvironment{example}{ % 
 	\definecolor{shadecolor}{rgb}{0.8,1.0,0.8} %

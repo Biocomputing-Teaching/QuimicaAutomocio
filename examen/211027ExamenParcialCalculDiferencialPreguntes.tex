@@ -1,0 +1,226 @@
+\documentclass[11pt]{article}
+\include{common}
+% Essential Formatting
+   
+%\usepackage{epsfig,amsmath,amsthm,amssymb}
+\usepackage[questions]{urmathtest_cat}[2001/05/12]
+%\usepackage[answersheet]{urmathtest}[2001/05/12]
+%\usepackage[answers]{urmathtest}[2001/05/12]
+\usepackage{graphicx}
+
+%% For use with pdflatex
+%\pdfpagewidth\paperwidth
+%\pdfpageheight\paperheight
+
+% Basic User Defs
+
+%\def\ds{\displaystyle}
+
+%\newcommand{\ansbox}[1]
+%{\work{
+%  \pos\hfill \framebox[#1][l]{SCORE:\rule[-.3in]{0in}{.7in}}
+%}{}}
+%
+%\newcommand{\ansrectangle}
+%{\work{
+%  \pos\hfill \framebox[6in][l]{SCORE:\rule[-.3in]{0in}{.7in}}
+%}{}}
+
+% Beginning of the Document
+\cfoot{\bf Examen Parcial Química GEA-17UV}
+
+\begin{document}
+\examtitle{Enginyeria de l'Automoció}{Examen Parcial+Final Química GEA-17UV}{14 de Maig de 2018}
+\studentinfo
+\instructions{
+  \textbf{Professor: Jordi Villà i Freixa}
+  
+
+  \begin{itemize}
+  \item
+    \textbf{No es permet l'ús d'ordinador. Només calculadora, apunts de classe i full d'exercicis resolts del campus virtual. Els dos primers exercicis es tindran en compte per a la nota del segon parcial. Els tres darrers exercicis es tindran en compte per a la nota de l'examen final.}
+  \item
+%   \textbf{Please show all your work if you need to.
+%           You may use back pages if necessary.
+%           You may not receive full credit for
+%           a correct answer if there is no work shown.}
+   \textbf{Desenvolupa tot el teu argumentari de forma clara.
+           No usis més espai del proveït.}
+%  \item
+%    \textbf{Please put your \underline{simplified}
+%            final answers in the spaces provided.}
+  \end{itemize}
+}
+\finishfirstpage
+
+% Problems Start Here % ----------------------------------------------------- %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\problem{50}
+{A partir de la configuració electrònica dels elements N, O i F, representa l'energia dels orbitals atòmics i dels orbitals moleculars que formaran les corresponents molècules diatòmiques \ch{N2}, \ch{O2} i \ch{F2}. Quina té major energia d'enllaç?
+}
+{
+\vfill
+\newpage
+}
+{
+Comencem per representar la configuració electrònica dels tres elements
+\begin{center}
+\includegraphics[scale=0.5]{ConfElectNOF.png}
+\end{center}
+En fer les respectives molècules diatòmiques, només cal que ens fixem en els electrons de la capa de valència ($n=2$), ja que els $1s$ estaran molt mes interns i no participaran significativament a l'enllaç.
+En el cas del F2 podem usar directament la configuració representada perquè només hi ha un electró disponible per a l'enllaç, que acaba essent ti pus $\sigma$ ($\sigma_{2p_z}$):
+\begin{center}
+\includegraphics[scale=0.4]{F2.png}
+\end{center}
+En el cas de,l'O i el N, en canvi, hem de repartir els electrons $2p$ de manera que ens permetin fer accessibles tots els electrons $2p$:
+\begin{center}
+\includegraphics[scale=0.5]{ConfElectNOF2.png}
+\end{center}
+A partir d'aquestes configuracions electròniques podem construir ela diagrames d'orbitals moleculars de les molècules \ch{N2} i \ch{O2} fent:
+\begin{center}
+\includegraphics[scale=0.55]{N2.png}
+\includegraphics[scale=0.4]{O2.png}
+\end{center}
+Veiem que en el cas del \ch{N2} tots els electrons de valència es troben en orbitals enllaçants, formant un enllaç triple ($\sigma_{2p_z}$, $\pi_{2p_x}$, i $\pi_{2p_y}$). En canvi, en el cas de l'\ch{O2} hi ha dos electrons en orbitals antienllaçants que afebleixen l'enllaç respecte el que passava a \ch{N2}. 
+
+Així, per ordre de força d'enllaç, $\ch{N2} > \ch{O2} > \ch{F2}$.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\problem{50}
+{Ordena aquests metalls de forma raonada segons la seva capacitat reductora: Ca, Na, Ba, K, Ag.}
+{
+%\vspace{22cm}
+\vfill
+\newpage
+}
+{
+En general, el potencial reductor (la capacitat de donar electrons) creix cap a l'esquerra i cap avall de la taula periòdica.
+Seguint aquest raonament, podem dir que de ben segur Ag serà el menys reductor (el que tindrà menys capacitat de cedir electrons a un agent oxidant). En els altres casos les diferències són més subtils, però podem dir que el poder reductor del \ch{Ba} serà major que el del \ch{Ca} i que el del \ch{K} serà major que el del \ch{Na}. Així mateix, el poder reductor del \ch{Ca} és menor que el del \ch{K}. 
+
+Si mirem una taula de potencials de reducció, podem comprovar que aquest raonament és correcte i que és complicat dir massa més sense dades:
+
+\begin{tabular}{cc}
+Reacció de reducció & $\varepsilon^{\circ}$ / V \\
+\hline
+\ch{Na+ _{(aq)} + e- -> Na_{(s)}} & -2.714 \\
+\ch{K+ _{(aq)} + e- -> K_{(s)}} & -2.925 \\
+\ch{Ca^{2+} _{(aq)} + 2 e- -> Ca_{(s)}} & -2.87 \\
+\ch{Ag+ _{(aq)} + e- -> Ag_{(s)}} & +0.7994 \\
+\ch{Ba^{2+} _{(aq)} + 2 e- -> Ba_{(s)}} & -2.9 \\
+\end{tabular}
+
+Per tant, pel que fa als seus potencials de reducció (la seva afinitat per acceptar electrons):
+$
+\varepsilon^{\circ} (\ch{Ag+}) >
+\varepsilon^{\circ} (\ch{Na+}) >
+\varepsilon^{\circ} (\ch{Ca^{2+}}) >
+\varepsilon^{\circ} (\ch{Ba^{2+}}) >
+\varepsilon^{\circ} (\ch{K+})$
+Però és més pràctic analitzar els primers potencials d'ionització (PI) de cada element (l'energia necessària per arrencar-los un \ch{e-}):
+
+\begin{tabular}{cc}
+Reacció de reducció & PI / kJ mol$^{-1}$ \\
+\hline
+\ch{Na -> Na+ + e-} & 495.8 \\
+\ch{K -> K+ + e-} & 418.8 \\
+\ch{Ca -> Ca+ + e-} & 598.8 \\
+\ch{Ag -> Ag+ + e-} & 731.0 \\
+\ch{Ba -> Ba+ + e-} & 502.9 \\
+\end{tabular}
+
+i, per tant, $PI (\ch{Ag}) > PI (\ch{Ca}) > PI (\ch{Ba}) > PI (\ch{Na}) > PI (\ch{K})$. Això vol dir, per exemple, que Ag és el que té menys tendència a cedir electrons (el menys reductor) i en canvi el K té una molt més gran facilitat per a fer-ho (el més reductor), tot comprovant les afirmacions fetes més amunt. 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\problem{30}
+{Calcula l'energia de malla, $U$, del clorur de calci (l'energia necessària per formar \ch{CaCl2} a partir dels ions en fase gas) sabent:
+\begin{itemize}
+\item l'entalpia d'atomització del calci
+\[\ch{Ca_{(s)} -> Ca_{(g)}} \quad \Delta H_a^{\circ}=178\; \mathrm{kJ \, mol}^{-1}\]
+\item les entalpies d'ionització del calci: 
+\[\ch{Ca_{(g)} -> Ca+ _{(g)} + e-} \quad \Delta H_{ei1}^{\circ}=590 \; \mathrm{kJ \, mol}^{-1}\]
+\[\ch{Ca+ _{(g)} -> Ca^{2+} _{(g)} + e-} \quad \Delta H_{ei2}^{\circ}=1145 \; \mathrm{kJ \, mol}^{-1}\]
+\item l'entalpia d'atomització del clor
+\[\ch{1/2 Cl2_{(s)} -> Cl_{(g)}} \quad \Delta H_a^{\circ}=\frac{1}{2} \Delta H_{\ch{Cl-Cl}}^{\circ}=121 \; \mathrm{kJ \, mol}^{-1}\]
+\item L'afinitat electrònica del clor
+\[\ch{Cl_{(g)} + e-  -> Cl-_{(g)}} \quad \Delta H_{ae}^{\circ}=-364 \; \mathrm{kJ \, mol}^{-1}\]
+\item l'entalpia de formació del \ch{CaCl2_{(s)}}, $\Delta H_f^{\circ}=-796$ kJ mol$^{-1}$.
+\end{itemize}
+}
+{
+\vfill
+\newpage
+}
+{
+Seguint el cicle de Born Haber, es pot veure com
+\[U=\Delta H_f^{\circ} (\ch{CaCl2}) - \Delta H_a^{\circ} (Ca) - \Delta H_{\ch{Cl-Cl}}^{\circ} - (\Delta H_{ei1}^{\circ}+\Delta H_{ei2}^{\circ})-2 \times \Delta H_{ae}^{\circ}\]
+\[U=-796-178-242-(590+1145)-2\times (-364))=-2223\mathrm{kJ \, mol}^{-1}\]
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\problem{40}
+{Considera un mol d'un gas ideal dins d'un cilindre tancat amb un pistó, ocupant un volum de 10l i a una temperatura de 80$^{\circ}$C. Després d'un procés isoterm, el gas ocupa un volum de 15l.
+
+Calcula $w$ i $q$ per a cadascun d'aquests dos processos (tingues presenta que l'energia interna només depèn de la temperatura):
+\begin{itemize}
+\item si es produeix l'expansió tot alliberant de cop el pistó fins al nou volum, contra la pressió atmosfèrica
+\item si el procés té lloc de forma reversible.
+\end{itemize}
+
+Si, en el primer cas, l'expansió s'hagués produït contra el buit, quins valors de $w$ i $q$ hauríem aconseguit?
+
+(La constant dels gasos en unitats del SI és 8.31 J mol$^{-1}$ K$^{-1}$)
+}
+{
+\vfill
+\newpage
+}
+{
+Si l'energia interna només depèn de $T$, $\Delta U=0$ per a un procés isoterm. Per tant, només caldrà tenir en compte que $w=-q$ per a tots dos processos. Així, si som capaços de calcular el treball ja tindrem el problema resolt.
+
+{\bf Cas 1: expansió lliure contra la pressió atmosfèrica (constant)}
+
+En aquest cas, el treball es pot calcular segons
+\[w = -P_{ext} \Delta V\]
+\[w = -101325 \, \mathrm{Pa} \times 5 \cdot 10^{-3} \, \mathrm{m}^3 = 506.6 J = -q\]
+
+{\bf Cas 2: expansió reversible}
+
+En aquest cas, l'expansió es produeix reversiblement, i per tant la pressió no és sobtadament l'atmosfèrica, sinó que va variant progressivament i, per tant, no és contsnat. Hem d'aplicar l'expressió del treball i integrar-la:
+\[w= -\int_{V_1}^{V_2} p dV \]
+si el gas és ideal:
+\[w= -\int_{V_1}^{V_2} \frac{nRT}{V} dV = -nRT \int_{V_1}^{V_2} \frac{1}{V} dV = -nRT \log_e \frac{V_f}{V_i} \]
+Substituint
+\[w=-8.31 \log_e \frac{15}{10} = 1189.4 J = -q\]
+
+Finalment, si l'expansió s'hagués produït segons el primer cas, però contra el buit, $w=q=0$. 
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\problem{30}
+{
+Tenint en compte que 
+\[\ch{Fe^{3+} + e- ->  Fe^{2+}} \quad \varepsilon^{\circ} = 0.77 \, \mathrm{V} \] 
+i
+\[\ch{I2 + e- ->  2 I-} \quad \varepsilon^{\circ} = 0.54 \, \mathrm{V} \]
+si tinc una pila formada per un electrode d'ions \ch{Fe^{2+}}, \ch{Fe^{3+}} i un electrode amb \ch{I2} i \ch{I-}, quina és la direcció espontània de la reacció?
+}
+{
+\vfill
+
+}
+{
+Si volem que una pila sigui espontània, és el mateix que dir que el seu potencial sigui positiu. Per tant, la reacció es donarà enla direcció de reduir els ions fèrrics i oxidar l'ió iodur.
+\[\ch{2 Fe^{3+} + 2 I- ->  2 Fe^{2+} + I2} \quad \varepsilon^{\circ} = 0.23 \, \mathrm{V} \]
+}
+
+
+% Problems End Here % ------------------------------------------------------- %
+
+\problemsdone
+\end{document}
+
+% End of the Document

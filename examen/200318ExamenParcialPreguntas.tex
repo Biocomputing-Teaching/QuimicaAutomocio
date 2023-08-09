@@ -1,0 +1,153 @@
+\documentclass[11pt]{article}
+\include{common}
+% Essential Formatting
+   
+%\usepackage{epsfig,amsmath,amsthm,amssymb}
+\usepackage[questions]{urmathtest_cat}[2001/05/12]
+%\usepackage[answersheet]{urmathtest}[2001/05/12]
+%\usepackage[answers]{urmathtest}[2001/05/12]
+\usepackage{graphicx}
+
+%% For use with pdflatex
+%\pdfpagewidth\paperwidth
+%\pdfpageheight\paperheight
+
+% Basic User Defs
+
+%\def\ds{\displaystyle}
+
+%\newcommand{\ansbox}[1]
+%{\work{
+%  \pos\hfill \framebox[#1][l]{SCORE:\rule[-.3in]{0in}{.7in}}
+%}{}}
+%
+%\newcommand{\ansrectangle}
+%{\work{
+%  \pos\hfill \framebox[6in][l]{SCORE:\rule[-.3in]{0in}{.7in}}
+%}{}}
+
+% Beginning of the Document
+\cfoot{\bf Examen Parcial Química GEA-17UV}
+
+\begin{document}
+\examtitle{Enginyeria de l'Automoció}{Examen Parcial Química GEA-17UV}{20 de Març de 2018}
+\studentinfo
+\instructions{
+  \textbf{Professor: Jordi Villà i Freixa}
+  
+
+  \begin{itemize}
+  \item
+    \textbf{No es permet l'ús d'ordinador. Només calculadora, apunts de classe i full d'exercicis resolts del campus virtual}
+  \item
+%   \textbf{Please show all your work if you need to.
+%           You may use back pages if necessary.
+%           You may not receive full credit for
+%           a correct answer if there is no work shown.}
+   \textbf{Desenvolupa tot el teu argumentari de forma clara.
+           No usis més espai del proveït.}
+%  \item
+%    \textbf{Please put your \underline{simplified}
+%            final answers in the spaces provided.}
+  \end{itemize}
+}
+\finishfirstpage
+
+% Problems Start Here % ----------------------------------------------------- %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\problem{20}
+{Un par de preguntas para calentar: 
+\begin{enumerate}[label=\emph{\alph*})]
+\item En un submarino nuclear a 2000m de profundidad, el cocinero está cociendo arroz porque algunos tienen dolor de barriga. El caso es que el capitán del barco les ha impuesto un examen de química para conseguir ascender (de categoría, claro está); podrías decirle al cocinero si necesita calentar el agua a mayor o menor temperatura para cocer el arroz que cuando lo hace en su Vigo natal? 
+\item Una vez en tierra, los marineros salen a pre-celebrar el previsto aprobado con un aperitivo en el Casco Vello de Vigo, invitados por el cocinero que allí tiene buenos contactos. El torpedero, todavía agobiado por la tensión del examen, se queda mirando como, al abrir la botella de agua con gas añadido que ha pedido, se forman unas preciosas burbujas. El capitán, que es un sabelotodo y no calla ni bajo el agua (ni fuera de ella, por lo visto), pregunta quien quiere subir nota explicando este fenómeno. Ayudas al torpedero a dar una buena respuesta?
+\end{enumerate}
+}
+{
+\vfill
+\newpage
+}
+{
+\begin{enumerate}[label=\emph{\alph*})]
+\item Dins d'un submarí, la pressió és la mateixa que a nivell del mar, o gairebé, ja que les parets del vaixell estan construïdes de tal manera que puguin suportar la pressió exterior sense que es noti dins. Per tant, haurà d'escalfar l'aigua a la mateixa temperatura que si fos al nivell del mar: 100$\degree$C.
+\item Segons la llei de Henry, la concentració de gas en un líquid és proporcional a la pressió parcial externa d'aquest gas: $C=kP$. Quan s'embotella  aigua carbonatada es fa a una pressió superior a 1 atm per tal que no escapi el \ch{CO2} que s'hi afegeix a partir de les substàncies carbonatades que conté. Quan obrim l'ampolla, la pressió es redueix fins a 1 atm, i per tant el \ch{CO2} no és tan soluble i escapa de la dissolució formant bombolles. 
+\end{enumerate}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\problem{30}
+{Imaginemos un gas que está dentro de un contenedor A de volumen desconocido a la presión de 2 atm. Abrimos una válvula y el gas se expande hacia otro contenedor conectado B que tiene un volumen de 1 l. Una vez equilibrado, medimos la presión y es de 380 mm Hg. Si el proceso es isotermo ($T=$cnt), calcula el volumen del contenedor A.
+\begin{center}
+\includegraphics[scale=0.7]{gas.png}
+\end{center}}
+{
+%\vspace{22cm}
+\vfill
+\newpage
+}
+{
+Les dades que ens donen són:
+
+\[P_A=2atm=1520 \,mmHg\]
+\[V_A=?\]
+\[P_A=380 \,mmHg\]
+\[V_B=1l\]
+
+En tractar-se d'un procés isoterm, podem aplicar la llei de Boyle, segons la qual $\Delta (PV)=0$ a temperatura constant.
+Per tant:
+\[\Delta (PV)=0\]
+\[P_i V_i = P_f V_f\]
+\[1520  \,mmHg \cdot V_A = 380  \,mmHg \cdot (V_A + 1 l)\]
+\[V_A = 380/1140 l = 0.\overline{3} l\]
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\problem{30}
+{Si el aire contiene, aproximadamente, un 21\% de volumen de oxígeno por un 79\% de nitrógeno, qué volumen ha de tener un recipiente cerrado para asegurar la combustión total de  2 gr de propano (\ch{C3H8}) a 1 atm y 25$\degree$C? Asume comportamiento ideal de todos los gases.
+}
+{
+\vfill
+\newpage
+}
+{
+La reacció de combustió del propà serà:
+
+\ch{C3H8 + 5 O2 -> 3 CO2 + 4 H2O} 
+
+Primer avaluem quant oxigen necessitem:
+
+\[2 g \ch{C3H8} \cdot \frac{1 mol \ch{C3H8}}{44 g \ch{C3H8}} \cdot \frac{5 mol \ch{O2}}{1 mol \ch{C3H8}}=0.23 mol \ch{O2}\]
+
+a 1 atm i 25$\degree$C aquests mols ocupen:
+
+\[PV=nRT\]
+\[ V = 0.23mol \ch{O2} \cdot 0.082 \frac{atm \, l}{mol \, K} \cdot 298 K = 5.6l \ch{O2}\]
+
+Si aquest volum representa el 21\% del volum de l'aire en aquestes condicions, $5.6l=\frac{21}{100}V$, necessitarem un recipient de $V=26.7l$
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\problem{20}
+{Cuál es la presión total de una mezcla de 6 moles de benceno (\ch{C6H6}) y 9 de tolueno (\ch{C7H8}) si la presión de vapor del benceno es de 95.1 mm Hg y la del tolueno es 28.4 mm Hg a 25$\degree$C. 
+}
+{
+\vfill
+
+}
+{
+La llei de Raolut estableix que la pressió parcial d'un determinat component volàtil en una dissolució serà proporcional a la seva fracció molar i la seva pressió de vapor quan és pur. Per tant, la pressió total d'una dissolució de dos components volàtils es pot calcular segons 
+\[
+P_T=P_1+P_2=x_1P_1^0+x_2P_2^0
+\]
+Per tant:
+\[
+P_T=P_{\ch{C6H6}}+P_{\ch{C7H8}}=x_{\ch{C6H6}}P_{\ch{C6H6}}^0+x_{\ch{C7H8}}P_{\ch{C7H8}}^0=\frac{6}{15}95.1 mm Hg+\frac{9}{15}28.4 mm Hg=55.1mmHg
+\]
+}
+
+% Problems End Here % ------------------------------------------------------- %
+
+\problemsdone
+\end{document}
+
+% End of the Document

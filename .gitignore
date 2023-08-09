@@ -1,7 +1,17 @@
 *.swp
 .DS_Store
 *.bak
+*.lot
 *.lof
 *.out
 *.xml
 *.aux
+*.toc
+*.log
+*.idx
+*.bcf
+*.xml
+*.blg
+*.bbl
+*.pro
+

@@ -1,0 +1,186 @@
+\documentclass[11pt]{article}
+\include{common}
+% Essential Formatting
+   
+%\usepackage{epsfig,amsmath,amsthm,amssymb}
+\usepackage[answersheet]{urmathtest_cat}[2001/05/12]
+%\usepackage[answersheet]{urmathtest}[2001/05/12]
+%\usepackage[answers]{urmathtest}[2001/05/12]
+\usepackage{graphicx}
+
+%% For use with pdflatex
+%\pdfpagewidth\paperwidth
+%\pdfpageheight\paperheight
+
+% Basic User Defs
+
+%\def\ds{\displaystyle}
+
+%\newcommand{\ansbox}[1]
+%{\work{
+%  \pos\hfill \framebox[#1][l]{SCORE:\rule[-.3in]{0in}{.7in}}
+%}{}}
+%
+%\newcommand{\ansrectangle}
+%{\work{
+%  \pos\hfill \framebox[6in][l]{SCORE:\rule[-.3in]{0in}{.7in}}
+%}{}}
+
+% Beginning of the Document
+\cfoot{\bf Examen de Recuperació Química GEA-17UV}
+
+\begin{document}
+\examtitle{Enginyeria de l'Automoció}{Examen de Recuperació Química GEA-17UV}{5 de Juny de 2018}
+\studentinfo
+\instructions{
+  \textbf{Professor: Jordi Villà i Freixa}
+  
+
+  \begin{itemize}
+  \item
+    \textbf{No es permet l'ús d'ordinador. Només calculadora, apunts de classe i full d'exercicis resolts del campus virtual}
+  \item
+%   \textbf{Please show all your work if you need to.
+%           You may use back pages if necessary.
+%           You may not receive full credit for
+%           a correct answer if there is no work shown.}
+   \textbf{Desenvolupa tot el teu argumentari de forma clara.
+           No usis més espai del proveït.}
+  \item
+    \textbf{Només es tindran en compte les puntuacions dels dos exercicis (d'entre els tres) que més et millorin la nota \textit{global} de l'assignatura (tenint en compte els pesos dels dos parcials i el final establertes al pla de treball).}
+      \item
+    \textbf{Tens 2 hores per completar l'examen.}
+  \end{itemize}
+}
+\finishfirstpage
+
+% Problems Start Here % ----------------------------------------------------- %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\problem{100}
+{
+Exercici de recuperació del primer parcial. El pes de cada pregunta es mostra entre parèntesi.
+\begin{description}
+\item[(30\%)] Fins quin volum cal diluir 5.00 ml de \ch{HCl} a una concentració 6 M per tal d'obtenir una dissolució 0.001 M?
+\item[(30\%)] Un pneumàtic de cotxe es va inflar a una pressió de 23 lb in$^{-2}$ un dia d'hivern a -10$^{\degree}$C. Quina pressió, calculada en atm, es va mesurar l'estiu següent (assumint que el pneumàtic no  va perdre aire entre hivern i estiu) quan la temperatura era de 35$^{\degree}$C? (1 atm = 14.696 lb in$^{-2}$)
+\item[(40\%)] La pressió de vapor del benzè pur a 20$^{\degree}$C és de 75 Torr, i la del metilbenzè pur és 25 Torr a la mateixa temperatura. Quina és la concentració del vapor en equlibri amb una barreja de benzè i metilbenzè en la qual la fracció molar del primer és 0.75? (assumeix un comportament ideal dels líquids)
+\end{description}
+}
+{
+\vfill
+\newpage (segueix) \newpage
+}
+{
+\begin{description}
+\item[30\%]  5.00 ml de \ch{HCl} a una concentració 6 M contenen 
+\[n=5.00 \cancel{ml}  \cdot \frac{6 \mathrm{\, mols \, \ch{HCl}} }{1000 \cancel{ml}}=0.03 \mathrm{\, mols \, \ch{HCl}} \]
+Si volem fer una dissolució de concentració 0.001 M, haurem de tenir un volum de
+\[V=0.03 \cancel{\mathrm{mols \, \ch{HCl}}} \cdot \frac{1 l}{0.001 \cancel{\mathrm{mols \, \ch{HCl}}}}=30l\]
+\item[30\%] Assumin que el volum és constant. En aquest cas, 
+\[\frac{P_1}{T_1}=\frac{P_2}{T_2}\]
+i, per tant, si
+\[23 \cancel{\mathrm{\, lb \, in^{-2}}} \cdot \frac{1 \mathrm{\, atm}}{14.696 \cancel{\mathrm{\, lb \, in^{-2}}}}= 1.56\mathrm{\, atm}\]
+ens queda
+\[\frac{1.56\mathrm{\, atm}}{(273-10)\mathrm{K}}=\frac{P_2}{(273+35)\mathrm{K}}\]
+\[P_2 = 1.83 \mathrm{\, atm}\]
+\item[40\%] pàgina 166 atkins
+\end{description}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\problem{100}
+{Exercici de recuperació del segon parcial. El pes de cada pregunta es mostra entre parèntesi.
+\begin{description}
+\item[(30\%)] Calcula el treball realitzat i la calor absorbida/emesa en dur 1 mol d'Ar, de forma isotèrmica i reversible a 20$^{\degree}$C, des d'un volum de 5 dm$^3$ fins a un volum de 10 dm$^3$.
+\item[(30\%)] L'òxid nitrós, \ch{N2O}, també anomenat gas hilarant i que s'empra en anestèsia, es forma a partir de la descomposició del nitrat d'amoni segons la reacció
+\[\ch{NH4NO3 -> H2O + N2O}\]
+Quin volum de \ch{N2O} produirem a 25$^{\circ}$C i 1 atm a partir de 7.5 g de nitrat d'amoni?
+\item[(40\%)] La reacció \ch{H2_{(g)} + I2_{(g)} <=> 2 HI_{(g)}} té, a 448$^{\degree}$C, una constant d'equilibri de 50.53. Si posem 0.001 mols de gas \ch{H2}, 0.001 mols de gas \ch{I2} i 0.002 mols de \ch{HI} en un recipient de 5 l, es formarà més \ch{HI}?
+\end{description}
+}
+{
+%\vspace{22cm}
+\vfill
+\newpage (segueix) \newpage
+}
+{
+\begin{description}
+\item[30\%] Si fem un procés isotèrmic, $\Delta U=0$. Per tant, $q=-w$. Només cal calcular el treball i ja tenim la calor.
+En un procés reversible, la $P$ canvia de forma infinitessimal i, per tant, $w$ es calcula fent (per a un gas ideal):
+\[w=-\int_{V_1}^{V_2} P dV=-nRT \int_{V_1}^{V_2} \frac{dV}{V} = nRT \ln \frac{V_1}{V_2} = 1 \mathrm{mol} \cdot 8.314 \frac{\mathrm{J}}{\mathrm{mol \, K}} \cdot (273+20)\mathrm{K} \cdot \ln 2 = 1688.5\mathrm{J}=-q\]
+
+\item[30\%] A partir de la reacció igualada
+\[\ch{NH4NO3 -> 2 H2O + N2O}\]
+fem un factor de conversió per trobar els mols obtinguts de \ch{N2O}
+\[7.5 \cancel{\mathrm{g \, \ch{NH4NO3}}} \cdot 
+\frac{1 \mathrm{\, mols \, \ch{NH3NO3}}}{(2\cdot 14+3\cdot 16 + 4\cdot 1)\cancel{\mathrm{g \, \ch{NH4NO3}}}}
+=0.094 \mathrm{\, mols \, \ch{NH4NO3}}=0.095 \mathrm{\, mols \, \ch{N2O}}
+\]
+Que, segons la llei dels gasos ideals, ocupen 
+\[V=\frac{nRT}{P}=\frac{0.095 \mathrm{\, mols \, \ch{NH3NO3}} \cdot 0.082 \mathrm{atm \, l \, mol^{-1} \, K^{-1}}(273+25)\mathrm{K}}{1 \mathrm{\, atm}}= 2.29 \mathrm{l}\]
+\end{description}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\problem{100}
+{Exercici de recuperació de l'examen final. El pes de cada pregunta es mostra entre parèntesi.
+\begin{description}
+
+\item[(30\%)] Donades les dues primeres reaccions, determina a) l'entalpia de la tercera i b) les entalpies de formació de \ch{HI_{(g)}} i \ch{H2O_{(g)}}:
+\[\ch{H2_{(g)} + I2_{(s)} -> 2 HI_{(g)}} \quad \Delta H^{\circ} = 52.96 \, kJ \, mol^{-1}\]
+\[\ch{2 H2_{(g)} + O2_{(g)} -> 2 H2O_{(g)}} \quad \Delta H^{\circ} = -483.64 \, kJ \, mol^{-1}\]
+\[\ch{4 HI_{(g)} + O2_{(s)} -> 2 I2_{(s)} + 2 H2O_{(g)}}\]
+
+\item[(30\%)] Troba la constant d'equilibri de la pila de Daniell (que explota el potencial elèctric de la reacció \ch{Cu^{2+}_{(aq)} + Zn_{(s)} -> Cu_{(s)} + Zn^{2+}_{(aq)}}), sabent que 
+\[\ch{Cu^{2+}_{(aq)} + 2 e- -> Cu_{(s)}} \quad \varepsilon^0 = +0.337 \, \mathrm{V}\]
+\[\ch{Zn^{2+}_{(aq)} + 2 e- -> Zn_{(s)}} \quad \varepsilon^0 = -0.763 \, \mathrm{V}\]
+\item[(40\%)] Quin és el pH d'una dissolució 0.01 M d'àcid acètic si la seva $K_a$ és de $1.76 \times 10^{-5}$?.
+
+\end{description}
+}
+{
+\vfill 
+\newpage (segueix)
+
+}
+{
+\begin{description}
+\item[30\%] Per obtenir la tercera reacció, veiem que ens cal restar dues vegades la primera de la segona. Fem la mateixa operació amb les entalpies de reacció i obtenim:
+\[\Delta H^{\circ}= (-483.64 - 2\cdot 52.96) \mathrm{\, kJ \, mol^{-1}}=-589.56 \mathrm{\, kJ \, mol^{-1}}\]
+Pel que fa a les entalpies de formació de \ch{HI_{(g)}} i \ch{H2O_{(g)}}, només cal recordar que és la calor necessària per generar 1 mol de substància a partir dels seus components en l'estat normal. En aquest cas, només ens caldrà dividir per 2 les dades que ens proporcionen:
+\[\Delta H_f^{\circ} \, \ch{HI_{(g)}} = 52.96/2 \mathrm{\, kJ \, mol^{-1}} = 26.48 \mathrm{\, kJ \, mol^{-1}}\]
+\[\Delta H_f^{\circ} \, \ch{H2O_{(g)}} = -483.64/2 \mathrm{\, kJ \, mol^{-1}} = -241.82 \mathrm{\, kJ \, mol^{-1}}\]
+\item[30\%] El voltatge d'una cel·la es calcularà fent
+\[\Delta \varepsilon=\Delta \varepsilon^{\circ}-\frac{0.059}{n} \log \frac{[C]^c[D]^d}{[A]^a[B]^b}\] 
+i, en l'equilibri, $\Delta \varepsilon=0$. Per tant, es pot calcular fàcilment la $K_{eq}$ fent
+\[\Delta \varepsilon^{\circ}=\frac{0.059}{n} \ln K_{eq}\]
+\[(0.337-(-0.763))=\frac{0.059}{2} \ln K_{eq}\]
+\[K_{eq}=e^{\frac{2\cdot 1.1}{0.059}}=1.56\cdot 10^{16}\]
+la qual cosa vol dir que la reacció és pràcticament total i que es consumeix pràcticament tot el \ch{Cu^{2+}_{(aq)}}.
+\item[40\%] Comencem per escriure la reacció d'equilibri i pensem en com es genera ió acetat i protons a partir de la concentració que ens diuen d'àcid acètic
+\begin{center}
+\begin{tabular}{lccccc}
+&\ch{CH3COOH} & \ch{<=>} & \ch{CH3COO-} & $+$ & \ch{H+} \\
+inicial & $0.01$ & & $0$ &  & $10^{-7}$ \\
+equilibri & $0.01-x$ & & $x$ && $x+10^{-7}$ 
+\end{tabular}
+\end{center}
+Per tant, sabent el valor de la $K_a$ podem calcular $x$:
+\[K_a = \frac{[\ch{CH3COO-}][\ch{H+}]}{[\ch{CH3COOH}]}=\frac{(x+10^{-7})\cdot x}{0.01-x}=1.76 \cdot 10^{-5}\]
+En primera aproximació podem considerar que $10^{-7}$ serà molt més petit que $x$ per facilitar l'operació. Llavors
+\[\frac{x^2}{0.01-x} \approx 1.76 \cdot 10^{-5}\]
+\[x^2+1.76 \cdot 10^{-5} x - 1.76 \cdot 10^{-7}=0\]
+\[x\approx 4.3\cdot 10^{-4}\]
+on veiem que l'aproximació era prou bona. A partir d'aquesta dada, el $pH$ serà:
+\[pH=-\log [\ch{H+}] \approx 3.4\]
+\end{description}
+}
+
+
+
+% Problems End Here % ------------------------------------------------------- %
+
+\problemsdone
+\end{document}
+
+% End of the Document

@@ -4,7 +4,7 @@ all:  ExamenParcial Exercise ${PROJECT}
 ExamenParcial: build/ExamenParcial.pdf 
 Exercise: build/Exercise.pdf 
 test: build/test.pdf 
-${PROJECT}: build/${PROJECT}.pdf 
+Theory: build/${PROJECT}.pdf 
 
 build/ExamenParcial.pdf: ExamenParcial.tex
 	lualatex --output-directory=build ExamenParcial
