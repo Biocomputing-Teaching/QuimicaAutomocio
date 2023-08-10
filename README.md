@@ -18,7 +18,7 @@ make
 
 (els exercicis són molt preliminars i precaris i encara no estan per ser compilats...)
 
-Tots els fitxers generats es troben a la carpeta `build``. Aquesta carpeta és la que conté documents finals i per tant no s'ha d'editar. Per fer canvis als documents s'ha d'anara a la carpeta Examen o Teoria.
+Tots els fitxers generats es troben a la carpeta `build``. Aquesta carpeta és la que conté documents finals i per tant no s'ha d'editar. Per fer canvis als documents s'ha d'anar a la carpeta Examen o Teoria.
 
 S'ha intentat preservar els drets de les imatges i citar la informació extreta d'altres fonts. No obstant, és work in progress i poden haver algunes informacions no prou ben citades encara. S'agrairan comentaris de millora i correccions a errades, de les quals no descarto que n'hi hagi força!
 
