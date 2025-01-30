@@ -1,4 +1,6 @@
-\documentclass{book}
+\documentclass{tufte-book}
+\usepackage{CBBLBook}
+
 \include{../common}
 \graphicspath{{../figures/}}
 \VerbatimFootnotes
@@ -17,7 +19,7 @@
 \begin{center}
 {\LARGE \bf Enginyeria de l'Automoció}\\
 {\large Introducció a la Química}\\
-Segon semestre curs 2017-2018\\
+Segon semestre curs 2024-2025\\
 Can Muntanyola, Granollers\\
 \textit{Jordi Vill\`a i Freixa (jordi.villa@uvic.cat)}\footnote{This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.
   \begin{center}
@@ -103,7 +105,16 @@ Bases de dades:
 
   \listoffigures
   \listoftables
-  \printbibliography
+  %\printbibliography
 \end{appendix}
+
+% The bibliography style.
+\bibliographystyle{apalike}
+
+% If you DO want the full list of references to be printed at the end.
+% \bibliography{references}
+
+% If you do NOT want the full list of references to be printed at the end.
+\nobibliography{references}
 
 \end{document}
