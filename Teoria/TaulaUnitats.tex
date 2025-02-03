@@ -69,24 +69,38 @@ Potència & watt & \si\watt &&&\\
     \caption{Conversió d'unitats del sistema americà al SI}
     \label{tab:conversio}
 \end{longtable}
+\newpage
+    \begin{longtable}{cc}
+    \hline
+    \textbf{Unitat de Pressió} & \textbf{Pressió (en relació a 1 atm)} \\ \midrule\endhead
+    Atmosfera (atm) & 1 atm \\ 
+    Pascal (Pa) & \( 101325 \, \text{Pa} \) \\ 
+    Bar & \( 1.01325 \, \text{bar} \) \\ 
+    Mil·límetre de mercuri (mmHg) & \( 760 \, \text{mmHg} \) \\ 
+    Torra (Torr) & \( 760 \, \text{Torr} \) \\ 
+    Pounds per square inch (psi) & \( 14.696 \, \text{psi} \) \\ 
+    Kilopascal (kPa) & \( 101.325 \, \text{kPa} \) \\    \bottomrule
+    \caption{Comparació de les unitats de pressió amb 1 atmosfera}
+    \end{longtable}
 
-\begin{table}[h]
-    \centering
-    \sisetup{table-number-alignment = center, separate-uncertainty}
-    \begin{tabular}{|c|c|}
+    
+
+
+    \begin{longtable}{cc}
         \hline
-        \textbf{Valor de la constant dels gasos} & \textbf{Unitats} \\
-        \hline
+        \textbf{Valor de la constant dels gasos R} & \textbf{Unitats} \\
+        \midrule\endhead
         \num{0.082} & \si{\atm\litre\per\mole\per\kelvin} \\
         \num{8.3145} & \si{m^3.Pa.K^{-1}.mol^{-1}} \\
         \num{8.3145} & \si{\joule\per\kelvin\per\mole} \\
         \num{62.363} & \si{L.Torr.K^{-1}.mol^{-1}} \\
         \num{1.9872e-3} & \si{kcal.K^{-1}.mol^{-1}} \\
         \num{8.205e-5} & \si{m^3.atm.K^{-1}.mol^{-1}} \\
-        \hline
-    \end{tabular}
-    \caption{Conversió de la constant dels gasos en diferents unitats}
-    \label{tab:gas_constant}
-\end{table}
+        \bottomrule
+        \caption{Conversió de la constant dels gasos en diferents unitats}
+        \label{tab:gas_constant}
+    \end{longtable}
+
+
 
 \end{document}

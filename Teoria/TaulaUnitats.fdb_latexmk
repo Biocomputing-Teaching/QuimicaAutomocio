@@ -1,7 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1738559981.14262 "TaulaUnitats.tex" "TaulaUnitats.pdf" "TaulaUnitats" 1738559981.56081 0
+["pdflatex"] 1738561802.32031 "TaulaUnitats.tex" "TaulaUnitats.pdf" "TaulaUnitats" 1738561802.72793 0
   "/etc/texmf/web2c/texmf.cnf" 1693479407.22171 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -41,11 +42,13 @@
   "/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-catalan.trsl" 1644096163 5810 da761b1c435e5c505311e48d0559b176 ""
   "/usr/share/texlive/texmf-dist/tex/latex/translations/translations.sty" 1644096163 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
+  "/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1636152094 2900 1537cc8184ad1792082cd229ecc269f4 ""
+  "/usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb" 1636152094 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1725009813.69924 5349216 bf3a80e68d946c7acd95ff030fd9bb63 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1726152742 6852505 e04ce9148cb683c6cca801ac78b863b2 ""
-  "TaulaUnitats.aux" 1738559981.52453 985 bc288220029b0875bfc7c94ecdb44925 "pdflatex"
-  "TaulaUnitats.tex" 1738559978.40951 3126 b7cd8c259d70183b1a64aef6402f3f54 ""
+  "TaulaUnitats.aux" 1738561802.68904 1269 7d59c15f98ca15f2acdfc4db7fd46b2d "pdflatex"
+  "TaulaUnitats.tex" 1738561800.32002 3650 bac90dbb58b72bfbda55339f1269ea9c ""
   (generated)
   "TaulaUnitats.aux"
   "TaulaUnitats.log"
