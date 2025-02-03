@@ -1,0 +1,73 @@
+\documentclass{report} 
+\usepackage[utf8]{inputenc}
+\usepackage[catalan]{babel}
+\usepackage{siunitx}
+
+% Definició d'unitats personalitzades per al sistema imperial
+\DeclareSIUnit\inch{in}
+\DeclareSIUnit\foot{ft}
+\DeclareSIUnit\atm{atm}
+\DeclareSIUnit\oz{oz}
+\DeclareSIUnit\ounce{oz}
+\DeclareSIUnit\pound{lb}
+\DeclareSIUnit\ton{t}
+\DeclareSIUnit\fah{F}
+\DeclareSIUnit\cubicinch{\inch\cubed}
+\DeclareSIUnit\cubicfoot{\foot\cubed}
+\DeclareSIUnit\gallon{gal}
+\DeclareSIUnit\psi{psi}
+\DeclareSIUnit\inchHg{inHg}
+\DeclareSIUnit\dyn{dynes}
+\usepackage{booktabs}
+\usepackage{longtable}
+
+\begin{document}
+
+\section*{Unitats de mesura}
+
+
+\begin{longtable}{llllll}
+\toprule
+\bfseries Magnitud & \bfseries Unitat a SI &
+\bfseries Símbol SI & \bfseries Unitat a CGS & \bfseries Símbol CGS &\bfseries Dimensió\\\midrule\endhead
+Longitud & metre & \si{\meter} & centímetre& \si{\centi\meter}& \\
+Volum & litre & \si\litre &&&\\
+Massa & kilogram & \si{\kilo\gram}& gram& \si\gram&\\
+Temperatura & kelvin & \si{\kelvin} &&& \\
+mol & mol &\si{\mole}&&&\\
+temps & segon & \si\second & segon & \si\second &\\
+Freqüència & hertz & \si{\hertz} &&& \si{\per\second}\\
+Inductància  & henry & \si\henry&&& \\
+Energia & joule & \si\joule &&& \\
+Força & newton &  \si\newton & dines&\si\dyn&\\
+Pressió & pascal & \si\pascal &&&\\
+Potencial elèctric & volt & \si\volt &&&\\
+Potència & watt & \si\watt &&&\\
+\bottomrule
+\caption{Algunes unitats del SI rellevants per a aquest curs}
+\label{tab:unitatsSI}
+\end{longtable}
+
+\begin{longtable}{ccc}
+    \toprule
+    \textbf{Magnitud} & \textbf{Unitat (EUA)} & \textbf{Equivalència en SI} \\
+    \midrule\endhead
+    Volum & \SI{1}{\cubic\inch} & \SI{16.387}{\cubic\centi\meter} \\
+    Volum & \SI{1}{\cubic\foot} & \SI{28.317}{\liter} \\
+    Volum & \SI{1}{\gallon} (US) & \SI{3.785}{\liter} \\
+    \hline
+    Pressió & \SI{1}{\psi} & \SI{6.895}{\kilo\pascal} \\
+    Pressió & \SI{1}{\atm} & \SI{101.325}{\kilo\pascal} \\
+    Pressió & \SI{1}{\inchHg} & \SI{3.386}{\kilo\pascal} \\
+    \hline
+    Temperatura & \SI{1}{\fah} & $T_C=(T_{F} - 32) \times \frac{5}{9} $ \\
+    \hline
+    Massa & \SI{1}{\ounce} & \SI{28.35}{\gram} \\
+    Massa & \SI{1}{\pound} & \SI{0.4536}{\kilo\gram} \\
+    Massa & \SI{1}{\ton} (US) & \SI{907.184}{\kilo\gram} \\
+    \bottomrule
+    \caption{Conversió d'unitats del sistema americà al SI}
+    \label{tab:conversio}
+\end{longtable}
+
+\end{document}

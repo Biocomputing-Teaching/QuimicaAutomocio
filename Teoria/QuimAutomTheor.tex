@@ -1,80 +1,91 @@
-\documentclass{tufte-book}
-\usepackage{CBBLBook}
+\documentclass[a4paper,notitlepage]{tufte-book}
+%\usepackage{booksprint}
+\usepackage{tuftefoot}
 
-\include{../common}
-\graphicspath{{../figures/}}
-\VerbatimFootnotes
-\lfoot{Estructura Atòmica de la Matèria}
-\lhead{\bf Química GEA-17UV}                %
-\rhead{\bf Grau d'Enginyeria de l'Automoció}                %
+\input{common}
 
-\title{Introducció a la Química}
+
+\title[Introducció a la Química]{Introducció a la Química en enginyeria de l'Automoció}
 \date{\today}
-\author{Jordi Vill\`a i Freixa (jordi.villa@uvic.cat)}
+\author{Jordi Villà i Freixa}
 
 \begin{document}
+\maketitle
 
-\thispagestyle{empty}
+%\thispagestyle{empty}
 
-\begin{center}
-{\LARGE \bf Enginyeria de l'Automoció}\\
-{\large Introducció a la Química}\\
-Segon semestre curs 2024-2025\\
-Can Muntanyola, Granollers\\
-\textit{Jordi Vill\`a i Freixa (jordi.villa@uvic.cat)}\footnote{This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.
-  \begin{center}
-    \includegraphics[scale=0.1]{CC-BY-NC-SA.png}
-  \end{center}
-  Si no s'especifica el contrari, les figures han estat extretes de la Wikipedia o altres fonts d'Internet que permeten la seva reutilització. Les figures que inclouen compostos químics, sempre que hagi estat possible, s'han creat amb el paquet \LaTeX\ 
-    \pkg{chemfig}.}
-\end{center}
+% \begin{center}
+% {\LARGE \bf Enginyeria de l'Automoció}\\
+% {\large Introducció a la Química}\\
+% Segon semestre curs 2024-2025\\
+% Can Muntanyola, Granollers\\
+% \textit{Jordi Vill\`a i Freixa (jordi.villa@uvic.cat)}\footnote{This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.
+%   \begin{center}
+%     \includegraphics[scale=0.1]{CC-BY-NC-SA.png}
+%   \end{center}
+%   Si no s'especifica el contrari, les figures han estat extretes de la Wikipedia o altres fonts d'Internet que permeten la seva reutilització. Les figures que inclouen compostos químics, sempre que hagi estat possible, s'han creat amb el paquet \LaTeX 
+%    \textsf{chemfig}.}
+% \end{center}
+\logos
 
 
 \tableofcontents
 
-\input{ChEstrAtMat}
-\input{ChEstrElectPeriod}
-\input{ChEnllQuim}
-\input{ChReacQuim}
-%\input{ChQuimInor}
+% nova organització per al curs de química en enginyeria de l'automoció
+
+\input{GEAGasos}
+% \input{GEACombustio}
+% \input{GEAREDOX}
+% \input{GEAIntermolecularforces}
+% \input{GEAThermodynamics}
+% \input{GEAMaterials}
+% \input{GEALight}
+
+
+% antiga classificació estructurada de forma clàssica per a un curs de química
+% \input{ChEstrAtMat}
+% \input{ChEstrElectPeriod}
+% \input{ChEnllQuim}
+% \input{ChReacQuim}
+% \input{ChQuimInor}
 %\input{Termoquímica}
 %\input{Cinètica Química}
 
 %QuimInorg
 
-%\input{Els elements metàl·lics i les seves propietats}
-%\input{Els elements no metàl·lics i les seves propietats}
-%\input{Estat Sòlid}
+% \input{Els elements metàl·lics i les seves propietats}
+% \input{Els elements no metàl·lics i les seves propietats}
+% \input{Estat Sòlid}
 
 %QuimOrg
 
-%\input{Els compostos orgànics i les seves propietats}
-%\input{Estructura-activitat en química orgànica}
+% \input{Els compostos orgànics i les seves propietats}
+% \input{Estructura-activitat en química orgànica}
 
 %QuimAn
 
-%\input{Química àcid-base}
-%\input{Instrumentació en química analítica}
+% \input{Química àcid-base}
+% \input{Instrumentació en química analítica}
 
 %QuimSup
 
-%\input{Col·loides}
-%\input{Ciència de superfícies}
+% \input{Col·loides}
+% \input{Ciència de superfícies}
 
 %QuimComb
 
-%\input{Catàlisi}
-%\input{Química del petroli i el gas}
-%\input{Polímers}
+% \input{Catàlisi}
+% \input{Química del petroli i el gas}
+% \input{Polímers}
 
 %QuimMat
 
-%\input{Tipus de materials}
-%\input{Introducció a l'ús de materials en tecnologies avançades}
+% \input{Tipus de materials}
+% \input{Introducció a l'ús de materials en tecnologies avançades}
 
-
+\newpage
 \begin{appendix}
-\chapter{Enllaços d'interès}
+\section{Enllaços d'interès}
 \label{sec:EnllacosInteres}
 
 Referències generals d'interès:
@@ -112,9 +123,9 @@ Bases de dades:
 \bibliographystyle{apalike}
 
 % If you DO want the full list of references to be printed at the end.
-% \bibliography{references}
+\bibliography{QuimAutom}
 
 % If you do NOT want the full list of references to be printed at the end.
-\nobibliography{references}
+%\nobibliography{references}
 
 \end{document}

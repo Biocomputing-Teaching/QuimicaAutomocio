@@ -1,0 +1,35 @@
+\usepackage{chemfig,chemmacros,chemnum}
+\usepackage{chemformula}
+\definecolor{LightOcean}{RGB}{81, 147, 229 }
+\definecolor{DeepOcean}{RGB}{51, 131, 229}
+\newtcolorbox{mybox}[1][]{%
+    %float, 
+    %floatplacement=t,
+    %enhanced, 
+    colback=LightOcean!10, 
+    colframe=DeepOcean,
+    % overlay unbroken and first={%
+    % \ifoddpage\coordinate (X) at ([xshift=-6mm,yshift=-6mm]frame.north east);
+    %      \else\coordinate (X) at ([xshift=6mm,yshift=-6mm]frame.north west);\fi
+    % \node at (X) {\includegraphics[width=8mm]{FCTE}};}
+%   show bounding box,
+    %notitle,
+    if odd page={grow to right by=\marginparsep+\marginparwidth-15mm}{grow to left by=\marginparsep+\marginparwidth-15mm},
+    toggle enlargement=evenpage,
+    #1
+}
+% Definició d'unitats personalitzades per al sistema imperial
+\DeclareSIUnit\inch{in}
+\DeclareSIUnit\foot{ft}
+\DeclareSIUnit\atm{atm}
+\DeclareSIUnit\oz{oz}
+\DeclareSIUnit\ounce{oz}
+\DeclareSIUnit\pound{lb}
+\DeclareSIUnit\ton{t}
+\DeclareSIUnit\fah{F}
+\DeclareSIUnit\cubicinch{\inch\cubed}
+\DeclareSIUnit\cubicfoot{\foot\cubed}
+\DeclareSIUnit\gallon{gal}
+\DeclareSIUnit\psi{psi}
+\DeclareSIUnit\inchHg{inHg}
+\DeclareSIUnit\dyn{dynes}

@@ -45,20 +45,26 @@ Des dels experiments de Thomson amb raigs catòdics (1897) i Milikan (1909) es s
 \caption[Model de Rutherford]{La figura de l'esquerra mostra com haurien de travessar una placa metàl·lica partícules $\alpha$ segons el model de Thomson, A la dreta de la figura apareix l'explicació del comportament experimental real segons el model de Rutherford.}
 \label{fig:Rutherford}
 \end{figure}
-Rutherford (1911) va mostrar que l'àtom no podia ser una esfera uniforme com la predita. Va mostrar que fent impactar partícules $\alpha$ (nuclis d'àtoms d'heli; per tant, amb càrrega +2 i massa 4) sobre una placa fina de metall es produïa ampla difracció d'un nombre petit de partícules i n'hi havia moltíssimes que travessaven la placa sense cap desviació o ben poca. Això implicava que els àtoms havien d'estar formats per una massa central altament carregada positivament i havien de tenir un volum molt més gran per tal que les partícules majoritàriament travessessin la placa (Figura \ref{fig:Rutherford})\footnote{\linkurl{https://commons.wikimedia.org/wiki/File:Geiger-Marsden_experiment_expectation_and_result.svg}}.
+Rutherford (1911) va mostrar que l'àtom no podia ser una esfera uniforme com la predita. Va mostrar que fent impactar partícules $\alpha$ (nuclis d'àtoms d'heli; per tant, amb càrrega +2 i massa 4) sobre una placa fina de metall es produïa ampla difracció d'un nombre petit de partícules i n'hi havia moltíssimes que travessaven la placa sense cap desviació o ben poca. Això implicava que els àtoms havien d'estar formats per una massa central altament carregada positivament i havien de tenir un volum molt més gran per tal que les partícules majoritàriament travessessin la placa (Figura \ref{fig:Rutherford})
+\marginnote{\linkurl{https://commons.wikimedia.org/wiki/File:Geiger-Marsden_experiment_expectation_and_result.svg}}
+.
 
 \subsection{Àtom de Bohr}
+
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.7]{Bohr.png}
 \caption{Model de l'àtom de Bohr}
 \label{fig:Bohr}
 \end{figure}
+
 Balmer, Rydberg (1885-1910); freqüències espectrals per a l'àtom d'hidrogen:
+
 \begin{equation}
 \frac{\nu}{c}=\frac{1}{\lambda}=R\left( \frac{1}{n_b^2}-\frac{1}{n_a^2}\right)
 \label{eq:rydberg}
 \end{equation}
+
 \[
 n_b=1,2,3,\dots; \; n_a=2,3,4,\dots; n_a>n_b
 \]
@@ -93,10 +99,12 @@ A partir de considerar aquesta hipòtesi i la natura dual de les partícules, es
 Descrita per Heisenberg, Born i Jordan (1925) i per Schrödinger (1926). 
 
 La mecànica clàssica és determinista, mentre que la quàntica és probabilística (pel principi d'incertesa de Heisenberg). L'Estat d'un sistema es determina per la seva funció d'estat $\Psi$, que és una funció de les coordenades de les partícules i del temps:
+
 \begin{eqnarray}
 -\frac{\hbar}{i} \frac{\partial \Psi}{\partial t}&=&-\frac{\hbar^2}{2m_1}\left(\frac{\partial^2\Psi}{\partial x_1^2}+\frac{\partial^2\Psi}{\partial y_1^2}+\frac{\partial^2\Psi}{\partial z_1^2} \right)-\\
  & & \cdots -\frac{\hbar^2}{2m_n}\left(\frac{\partial^2\Psi}{\partial x_n^2}+\frac{\partial^2\Psi}{\partial y_n^2}+\frac{\partial^2\Psi}{\partial z_n^2} \right) + V \Psi
 \end{eqnarray}
+
 on $\hbar=h/2\pi$, $i=\sqrt{-1}$, $m_1,\dots , m_n$ són les masses de les $n$ partícules de coordenades $x_i,y_i,z_i$ i $V$ és l'energia potencial del sistema.
 
 El que ens interessa ara mateix és saber que la funció d'estat ens informa sobre l'estat del sistema.
@@ -108,12 +116,14 @@ Per fer un cas senzill pensem en un sistema en el què l'energia potencial sigui
 \label{Eq:Schr1x}
 \]
 on $\psi$ és la funció d'ona del sistema.
-\begin{figure}[h]
+
+\begin{marginfigure}
 \centering
-\includegraphics[scale=0.6]{ParticulaCaixa.png}
+\includegraphics[scale=0.45]{ParticulaCaixa.png}
 \caption{Partícula en una caixa unidimensional de potencial $V=0$ entre $x=0$ i $x=L$ i $V=\infty$ en qualsevol altre posició}
 \label{fig:ParticulaCaixa}
-\end{figure}
+\end{marginfigure}
+
 \begin{mdframed}[backgroundcolor=gray!30,frametitle=Partícula en una caixa]
 Un dels sistemes més simples per als quals l'Eq. \ref{Eq:Schr1x} es pot solucionar és el cas d'una partícula en una caixa unidimensional de parets infranquejables i impenetrables.
 Considerem una partícula de massa $m$ que es mou amb una energia $E$ positiva al llarg de l'eix $X$ entre $x=0$ i $x=L$ (Figura \ref{fig:ParticulaCaixa}).
@@ -146,8 +156,9 @@ Finalment, podem trobar $A$ tenint en compte que la probabilitat total de trobar
 E_n=\frac{n^2h^2}{8mL^2}\\
 \psi_n= \left( \frac{2}{L} \right)^{1/2} \sin{\frac{n\pi x}{L}}
 \end{eqnarray}
-La Figura \ref{fig:ParticulaCaixa2} mostra la forma de la funció d'ona per als primers nivells de quantització de l'energia.\footnote{\linkurl{https://en.wikipedia.org/wiki/Particle_in_a_box}}
+La Figura \ref{fig:ParticulaCaixa2} mostra la forma de la funció d'ona per als primers nivells de quantització de l'energia.\citep{wiki:PB}
 \end{mdframed}
+
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.3]{ParticulaCaixa2.png}
@@ -160,6 +171,7 @@ De l'exemple de la partícula en una caixa podem extreure'n conceptes generals q
 \item A mesura que augmenta la massa de la partícula o disminueix l'espai en el què aquesta està confinada, la distància entre les energies de quantització es fa menor.
 \item El fet que la funció d'ona passi de valors positius a negatius implica que hi ha punts en els quals el seu valor és zero (i que anomenem \textit{nodes}). En aquests punts, el seu quadrat també serà zero, i per tant la probabilitat de trobar-hi la partícula serà nul·la.
 \end{itemize}
+
 \section{L'àtom d'hidrogen}
 
 \subsection{Números quàntics}
@@ -184,10 +196,11 @@ Cal fixar-se que l'energia en un àtom d'hidrogen o en qualsevol àtom en el qua
 \end{description}
 
 \section{Orbitals moleculars}
-El nivell d'energia $n$ determina les possibilitats dels altres números. Per exemple, en l'estat fonamental, l'àtom d'hidrogen pot tenir les combinacions de $\{n,l,m_l,m_s\}$ $\{1,0,0,+\frac{1}{2}\}$ i $\{1,0,0,-\frac{1}{2}\}$. De la mateixa manera, podem pensar en els estats excitats de l'àtom d'hidrogen considerant altres valors dels números quàntics, de manera que anem determinant els diversos orbitals :
-\begin{table}[h!]
+El nivell d'energia $n$ determina les possibilitats dels altres números. Per exemple, en l'estat fonamental, l'àtom d'hidrogen pot tenir les combinacions de $\{n,l,m_l,m_s\}$ $\{1,0,0,+\frac{1}{2}\}$ i $\{1,0,0,-\frac{1}{2}\}$. De la mateixa manera, podem pensar en els estats excitats de l'àtom d'hidrogen considerant altres valors dels números quàntics, de manera que anem determinant els diversos orbitals (verue Taula \ref{tab:quant}).
+
+\begin{table}
   \begin{center}
-    \caption{Números quàntics i orbitals \cite{mahan_quimico_1977}}
+    \caption{Números quàntics i orbitals \citep{mahan_quimica_1997}}
     \label{tab:quant}
     \begin{tabular}{cccccc}
       \hline
@@ -208,21 +221,24 @@ El nivell d'energia $n$ determina les possibilitats dels altres números. Per ex
   \end{center}
 \end{table}
 
-Per a un interessant i complet resum d'aquest capítol, ves a \linkurl{https://2012books.lardbucket.org/books/principles-of-general-chemistry-v1.0/s10-05-atomic-orbitals-and-their-ener.html}.
-\begin{figure}[h]
+Per a un interessant i complet resum d'aquest capítol, ves a \citep{averill_principles_2012}.
+
+\begin{marginfigure}
 \centering
 \includegraphics[scale=0.4]{SphericalCoords.png}
 \caption{Coordenades esfèriques.}
 \label{fig:SphericalCoords}
-\end{figure}
+\end{marginfigure}
+
 A partir de la probabilitat de trobar un electró en un punt de l'espai, que ve donat per $\|\psi^2\|=1$ podem trobar la forma de les regions que ocuparà per a cada orbital (per analogia a les òrbites del model de Bohr). Si les expressem en coordenades esfèriques (Figura \ref{fig:SphericalCoords}) les funcions d'ona corresponents a cada orbital es poden expressar com a producte d'una part angular $\xi$ i una radial $R$ (veure Taula \ref{tab:AngRadOrb}).
 \begin{equation}
 \psi(r,\theta,\phi)=R_{n,l}(r)\chi_{l,m}(\theta,\phi)=R(r)\chi(\theta,\phi)
 \label{Eq:psisplit}
 \end{equation}
+
 \begin{table}[h!]
   \begin{center}
-    \caption{Part radial i part angular  de les funcions d'ona de l'àtom d'hidrogen \cite{mahan_quimico_1977}. $a=0$ és el radi de Bohr, $0.529 \times 10^{-10}$m.}
+    \caption{Part radial i part angular  de les funcions d'ona de l'àtom d'hidrogen \citep{mahan_quimica_1997}. $a=0$ és el radi de Bohr, $0.529 \times 10^{-10}$m.}
     \label{tab:AngRadOrb}
     \begin{tabular}{cc}
       \hline
@@ -230,29 +246,29 @@ A partir de la probabilitat de trobar un electró en un punt de l'espai, que ve 
       \hline
       $\chi(s)=\left(\frac{1}{4\pi}\right)^{1/2}$ & $R(1s)=2 \left(\frac{Z}{a_0}\right)^{3/2} e^{-\sigma/2}$ \\
       \hline
-$\begin{array}{rcl}
-\chi (p_x)&=&\left(\frac{3}{4\pi}\right)^{1/2}\sin \theta \cos \phi \\
-\chi (p_y)&=&\left(\frac{3}{4\pi}\right)^{1/2}\sin \theta \sin \phi \\
-\chi (p_z)&=&\left(\frac{3}{4\pi}\right)^{1/2}\cos \theta 
+$\begin{array}{l}
+\chi (p_x)=\left(\frac{3}{4\pi}\right)^{1/2}\sin \theta \cos \phi \\
+\chi (p_y)=\left(\frac{3}{4\pi}\right)^{1/2}\sin \theta \sin \phi \\
+\chi (p_z)=\left(\frac{3}{4\pi}\right)^{1/2}\cos \theta 
 \end{array}$
 &
-$\begin{array}{rcl}
-R(2s) &=& \frac{1}{2\sqrt{2}}\left(\frac{Z}{a_0}\right)^{3/2} (2-\sigma) e^{-\sigma/2} \\
-R(2p) &=& \frac{1}{2\sqrt{6}}\left(\frac{Z}{a_0}\right)^{3/2} \sigma e^{-\sigma/2} 
+$\begin{array}{l}
+R(2s) = \frac{1}{2\sqrt{2}}\left(\frac{Z}{a_0}\right)^{3/2} (2-\sigma) e^{-\sigma/2} \\
+R(2p) = \frac{1}{2\sqrt{6}}\left(\frac{Z}{a_0}\right)^{3/2} \sigma e^{-\sigma/2} 
 \end{array}$\\
       \hline
-      $\begin{array}{rcl}
-\chi (d_{z^2})&=&\left(\frac{5}{16\pi}\right)^{1/2} (3 cos^2 \theta -1) \\
-\chi (d_{xz})&=&\left(\frac{15}{4\pi}\right)^{1/2}\sin \theta cos \theta \cos \phi \\
-\chi (d_{yz})&=&\left(\frac{15}{4\pi}\right)^{1/2}\sin \theta cos \theta \sin \phi \\
-\chi (d_{x^2-y^2})&=&\left(\frac{15}{4\pi}\right)^{1/2} \sin^2 \theta \cos 2\phi \\
-\chi (d_{xy})&=&\left(\frac{15}{4\pi}\right)^{1/2} \sin^2 \theta \sin 2\phi \\
+      $\begin{array}{l}
+\chi (d_{z^2})=\left(\frac{5}{16\pi}\right)^{1/2} (3 cos^2 \theta -1) \\
+\chi (d_{xz})=\left(\frac{15}{4\pi}\right)^{1/2}\sin \theta cos \theta \cos \phi \\
+\chi (d_{yz})=\left(\frac{15}{4\pi}\right)^{1/2}\sin \theta cos \theta \sin \phi \\
+\chi (d_{x^2-y^2})=\left(\frac{15}{4\pi}\right)^{1/2} \sin^2 \theta \cos 2\phi \\
+\chi (d_{xy})=\left(\frac{15}{4\pi}\right)^{1/2} \sin^2 \theta \sin 2\phi \\
 \end{array}$
 &
-$\begin{array}{rcl}
-R(3s) &=& \frac{1}{9\sqrt{3}}\left(\frac{Z}{a_0}\right)^{3/2} (6-6\sigma +\sigma^2) e^{-\sigma/2} \\
-R(3p) &=& \frac{1}{9\sqrt{6}}\left(\frac{Z}{a_0}\right)^{3/2} \sigma (4-\sigma) \sigma e^{-\sigma/2} \\
-R(3d) &=& \frac{1}{9\sqrt{30}}\left(\frac{Z}{a_0}\right)^{3/2} \sigma^2 e^{-\sigma/2} 
+$\begin{array}{l}
+R(3s) = \frac{1}{9\sqrt{3}}\left(\frac{Z}{a_0}\right)^{3/2} (6-6\sigma +\sigma^2) e^{-\sigma/2} \\
+R(3p) = \frac{1}{9\sqrt{6}}\left(\frac{Z}{a_0}\right)^{3/2} \sigma (4-\sigma) \sigma e^{-\sigma/2} \\
+R(3d) = \frac{1}{9\sqrt{30}}\left(\frac{Z}{a_0}\right)^{3/2} \sigma^2 e^{-\sigma/2} 
 \end{array}$\\
       \hline
       & $\sigma=\frac{2Zr}{na_0}; \; a_0=\frac{h^2}{4\pi^2 m e^2}$\\
@@ -285,33 +301,35 @@ Integrant per als angles trobem la distribució radial:
 D(r)dr=r^2[R(r)]^2 dr \underbrace{\int_0^{\pi} \int_0^{2\pi} [\chi(\theta,\phi)]^2 \sin \theta dr d\theta d\phi}_{=1}=r^2[R(r)]^2 dr
 \]
 \begin{exr}
-A partir de la densitat de probabilitat podem preguntar-nos coses com on és el màxim de probabilitat (solucionant  $\frac{d D(r)}{dr}=0$) o bé calculant el valor promig de la distància de l'electró al nucli segons $<r>_{n,l}=\int_0^{\infty} r D(r)dr$. Mostra que $<r>_{2s}=\frac{6a_0}{Z}$ i $<r>_{2p}=\frac{5a_0}{Z}$ (veure Figura \ref{fig:D2s2p}).\footnote{https://chemistry.stackexchange.com/questions/15208/difference-between-actual-position-of-electron-and-radial-distribution-probabili}
+A partir de la densitat de probabilitat podem preguntar-nos coses com on és el màxim de probabilitat (solucionant  $\frac{d D(r)}{dr}=0$) o bé calculant el valor promig de la distància de l'electró al nucli segons $<r>_{n,l}=\int_0^{\infty} r D(r)dr$. Mostra que $<r>_{2s}=\frac{6a_0}{Z}$ i $<r>_{2p}=\frac{5a_0}{Z}$ (veure Figura \ref{fig:D2s2p}).%Al tanto, no puc posar un marginnote dins d'un exr \marginnote{https://chemistry.stackexchange.com/questions/15208/difference-between-actual-position-of-electron-and-radial-distribution-probabili}
 \end{exr}
-\begin{figure}[h]
+
+\begin{marginfigure}
 \centering
-\includegraphics[scale=0.35]{D2s2p.png}
+\includegraphics[scale=0.25]{D2s2p.png}
 \caption{Funció de distribució radial $D(r)$ per a les funcions 2s i 2p}
 \label{fig:D2s2p}
-\end{figure}
+\end{marginfigure}
+
 Per a cada combinació de números quàntics tenim resultats diferents (veure \linkurl{http://hyperphysics.phy-astr.gsu.edu/hbase/hydwf.html} i Figura \ref{fig:Hydrogen_Density_Plots}).
 
 
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.25]{Hydrogen_Density_Plots.png}
-\caption{Densitat electrònica dels diferents orbitals de l'hidrogen}
-\label{fig:Hydrogen_Density_Plots}
-\end{figure}
+% \begin{figure}[h]
+% \centering
+% \includegraphics[scale=0.25]{Hydrogen_Density_Plots.png}
+% \caption{Densitat electrònica dels diferents orbitals de l\'hidrogen}
+% \label{fig:Hydrogen_Density_Plots}
+% \end{figure}
 
 
 
-%Això ens permetrà  entendre, entre altres efectes, la manera en què els complexes organometàl·lics es formen (Figura \ref{fig:coordination}).
-%\begin{figure}[h]
-%\centering
-%\includegraphics[scale=0.35]{coordination.png}
-%\caption{Coordinació en complexes organometàl·lics}
-%\label{fig:coordination}
-%\end{figure}
+Això ens permetrà  entendre, entre altres efectes, la manera en què els complexes organometàl·lics es formen (Figura \ref{fig:coordination}).
+% \begin{figure}[h]
+% \centering
+% \includegraphics[scale=0.35]{coordination.png}
+% \caption{Coordinació en complexes organometàl·lics}
+% \label{fig:coordination}
+% \end{figure}
 
 
 
@@ -319,6 +337,7 @@ Per a cada combinació de números quàntics tenim resultats diferents (veure \l
 
 Quan analitzem els orbitals de l'àtom d'hidrogen (o d'àtoms hidrogenoïdes, amb un sol electró), i en tant que la seva energia només depèn del número quàntic principal $n$, diem que són degenerats. En el cas d'àtoms polielectrònics, l'apantallament dels electrons interns fa que aquesta degeneració desaparegui. En realitat, el que succeeix és que l'aproximació de parlar d'orbitals atòmics com en el cas de l'hidrogen ja no és vàlida i és només una aproximació, en tant que l'equació d'Schrödinger ja no es pot resoldre en aquests àtoms.
 Sigui com sigui, la Figura \ref{fig:degeneracio} mostra l'efecte en l'energia dels orbitals atòmics de tenir més d'un electró en l'àtom.
+
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.35]{degeneracio.png}
@@ -336,9 +355,11 @@ Escriu la configuració electrònica de l'argó i del potassi. Perquè després 
 \begin{exr}
 Pots explicar les dades de la Figura \ref{fig:AfinitatElectronica} en base a la configuració electrònica dels elements representats?
 \end{exr}
-\begin{figure}[h]
+
+\begin{figure}
 \centering
 \includegraphics[scale=0.5]{AfinitatElectronica.png}
 \caption{Afinitat electrònica de diversos elements de la taula periòdica}
 \label{fig:AfinitatElectronica}
 \end{figure}
+

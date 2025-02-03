@@ -1,0 +1,81 @@
+\NeedsTeXFormat{LaTeX2e}[1994/12/01]
+\ProvidesPackage{tuftefoot}[2025/01/31 v0.2 Improved Footnotes for tufte-book class]
+
+% Define footnote insertion
+\newinsert\footins
+\skip\footins=\bigskipamount % Space added when footnote is present
+\count\footins=1000 % Footnote magnification factor
+\dimen\footins=8in % Maximum footnote area per page
+
+% Define footnote rule dynamically
+\def\TFfootnoterule{\kern-3\p@\hrule \@width 0.4\linewidth \kern 2.6\p@}
+
+% Define footnote counters
+\@definecounter{footnote}
+\def\TFthefootnote{\@arabic\c@footnote}
+\@definecounter{mpfootnote}
+\def\TFthempfootnote{{\itshape\@alph\c@mpfootnote}}
+
+% Define superscripts and subscripts
+\DeclareRobustCommand*\textsuperscript[1]{%
+  {\m@th\ensuremath{^{\mbox{\fontsize\sf@size\z@#1}}}}}
+\DeclareRobustCommand*\textsubscript[1]{%
+  {\m@th\ensuremath{_{\mbox{\fontsize\sf@size\z@#1}}}}}
+
+% Define footnote mechanics
+\newdimen\TFfootnotesep
+\def\TFfootnote{\@ifnextchar[\TF@xfootnote{\stepcounter{mpfootnote}%
+     \protected@xdef\@thefnmark{\TFthempfootnote}%
+     \TF@footnotemark\TF@footnotetext}}
+\def\TF@xfootnote[#1]{%
+   \begingroup
+     \csname c@mpfootnote\endcsname #1\relax
+     \unrestored@protected@xdef\@thefnmark{\TFthempfootnote}%
+   \endgroup
+   \TF@footnotemark\TF@footnotetext}
+
+% Define footnote text rendering
+\long\def\TF@footnotetext#1{\insert\footins{%
+    \reset@font\footnotesize
+    \interlinepenalty\interfootnotelinepenalty
+    \splittopskip\TFfootnotesep
+    \splitmaxdepth \dp\strutbox \floatingpenalty \@MM
+    \hsize\columnwidth \@parboxrestore
+    \protected@edef\@currentlabel{\csname p@footnote\endcsname\@thefnmark}
+    \color@begingroup
+      \@makefntext{\rule\z@\TFfootnotesep\ignorespaces#1\@finalstrut\strutbox}%
+    \color@endgroup}}
+
+% Define footnote markers
+\def\TFfootnotemark{%
+   \@ifnextchar[\TF@xfootnotemark
+     {\stepcounter{footnote}%
+      \protected@xdef\@thefnmark{\TFthefootnote}%
+      \TF@footnotemark}}
+\def\TF@xfootnotemark[#1]{%
+   \begingroup
+      \c@footnote #1\relax
+      \unrestored@protected@xdef\@thefnmark{\TFthefootnote}%
+   \endgroup
+   \TF@footnotemark}
+\def\TF@footnotemark{%
+  \leavevmode
+  \ifhmode\edef\@x@sf{\the\spacefactor}\nobreak\fi
+  \TF@makefnmark
+  \ifhmode\spacefactor\@x@sf\fi
+  \relax}
+
+\def\TFfootnotetext{%
+     \@ifnextchar [\TF@xfootnotenext
+       {\protected@xdef\@thefnmark{\TFthempfootnote}%
+    \TF@footnotetext}}
+\def\TF@xfootnotenext[#1]{%
+  \begingroup
+     \csname c@mpfootnote\endcsname #1\relax
+     \unrestored@protected@xdef\@thefnmark{\TFthempfootnote}%
+  \endgroup
+  \TF@footnotetext}
+
+% Ensure proper mpfn mapping
+\def\TF@mpfn{footnote}
+\def\TFthempfn{\TFthefootnote}

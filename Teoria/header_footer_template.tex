@@ -1,0 +1,28 @@
+% Aquest és el fitxer base amb l'encapçalament i el peu de pàgina
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage[catalan]{babel}
+\usepackage{graphicx}
+\graphicspath{{../figures/}}
+\usepackage[dvipsnames,table]{xcolor}
+\usepackage{tikz}
+\usepackage{lipsum}
+\usepackage{fancyhdr,amsmath,tcolorbox}
+\tcbuselibrary{listings,breakable} 
+\input{common_details.tex}
+
+
+% Definir el format de l'encapçalament i peu de pàgina
+\pagestyle{fancy}
+\fancyhead[L]{\copyright J. Villà-Freixa}
+\fancyhead[C]{Química GEA 2024-2025}
+\fancyhead[R]{Data: \today}
+\lfoot{\raisebox{-0.5cm}[0pt][0pt]{\includegraphics[width=3cm]{FCTE}}} 
+
+\fancyfoot[R]{Pàgina \thepage}
+
+\begin{document}
+
+% Aquí s'inclouen els fitxers GEA específics
+\input{GEA_FILE.tex}  % Nom del fitxer canviable per la comanda sed
+\end{document}
