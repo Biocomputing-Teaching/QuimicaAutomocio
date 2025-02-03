@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1738556770.15411 "TaulaUnitats.tex" "TaulaUnitats.pdf" "TaulaUnitats" 1738556771.07563 0
+["pdflatex"] 1738559981.14262 "TaulaUnitats.tex" "TaulaUnitats.pdf" "TaulaUnitats" 1738559981.56081 0
   "/etc/texmf/web2c/texmf.cnf" 1693479407.22171 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -44,8 +44,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1725009813.69924 5349216 bf3a80e68d946c7acd95ff030fd9bb63 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1726152742 6852505 e04ce9148cb683c6cca801ac78b863b2 ""
-  "TaulaUnitats.aux" 1738556770.94725 784 db15db7fc339c1c86cb1ed8518ef6608 "pdflatex"
-  "TaulaUnitats.tex" 1738556767.97821 2412 4e32a99f726b3761e89091df4c516905 ""
+  "TaulaUnitats.aux" 1738559981.52453 985 bc288220029b0875bfc7c94ecdb44925 "pdflatex"
+  "TaulaUnitats.tex" 1738559978.40951 3126 b7cd8c259d70183b1a64aef6402f3f54 ""
   (generated)
   "TaulaUnitats.aux"
   "TaulaUnitats.log"

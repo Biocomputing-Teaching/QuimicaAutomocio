@@ -70,4 +70,23 @@ Potència & watt & \si\watt &&&\\
     \label{tab:conversio}
 \end{longtable}
 
+\begin{table}[h]
+    \centering
+    \sisetup{table-number-alignment = center, separate-uncertainty}
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Valor de la constant dels gasos} & \textbf{Unitats} \\
+        \hline
+        \num{0.082} & \si{\atm\litre\per\mole\per\kelvin} \\
+        \num{8.3145} & \si{m^3.Pa.K^{-1}.mol^{-1}} \\
+        \num{8.3145} & \si{\joule\per\kelvin\per\mole} \\
+        \num{62.363} & \si{L.Torr.K^{-1}.mol^{-1}} \\
+        \num{1.9872e-3} & \si{kcal.K^{-1}.mol^{-1}} \\
+        \num{8.205e-5} & \si{m^3.atm.K^{-1}.mol^{-1}} \\
+        \hline
+    \end{tabular}
+    \caption{Conversió de la constant dels gasos en diferents unitats}
+    \label{tab:gas_constant}
+\end{table}
+
 \end{document}
