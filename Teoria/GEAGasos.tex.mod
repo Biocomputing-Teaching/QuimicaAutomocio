@@ -157,12 +157,12 @@ $R=\lim_{P \to 0} \frac{P V_{\rm m}}{T}= 0.08205 \frac{{\rm atm l}}{{\rm mol K}}
 \end{figure}
 
 \begin{exr}
-    Quant gas hi ha en una mostra de volum 0.5 dm$^3$, a 80 graus Celsius i 800 Torr de pressió?.
+    Quant gas hi ha en una mostra de volum 0.5 dm$^3$, a 80\si\degreeCelsius\ i 800 \si\torr\ de pressió?
     \end{exr}
 
        
     \begin{exr}
-        Si a CN la densitat d'un gas ideal és de 1.62 g dm$^{-1}$, quina és la seva massa molar? i quina densitat tindrà a 300 K i 2.4$\times$10$^5$ Pa?.
+        Si a CN la densitat d'un gas ideal és de 1.62 g dm$^{-1}$, quina és la seva massa molar? i quina densitat tindrà a 300 K i 2.4$\times$10$^5$ Pa?
         \end{exr}
 
 \subsection{Llei de Dalton}

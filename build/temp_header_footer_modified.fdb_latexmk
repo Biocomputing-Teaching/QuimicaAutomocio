@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified"] 1738875792.95264 "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified.aux" "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified.bbl" "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified" 1738875924.47664 0
+["bibtex /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified"] 1738875792.95264 "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified.aux" "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified.bbl" "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified" 1738876209.15777 0
   "./QuimAutom.bib" 1738391704.0079 9269 fc5e31a8d28a2f4893e4c73f76e83ca3 ""
-  "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified-blx.bib" 1738875924.20865 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad "pdflatex"
-  "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified.aux" 1738875924.20665 4238 5e824d5bda3b9b72f7b32e3d6f383d9f "pdflatex"
+  "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified-blx.bib" 1738876208.89031 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad "pdflatex"
+  "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified.aux" 1738876208.88831 4238 5e824d5bda3b9b72f7b32e3d6f383d9f "pdflatex"
   "/usr/share/texlive/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1678141846 65484 b7949c47a88ed6dca66ebc7a04577312 ""
   (generated)
   "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified.bbl"
   "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified.blg"
   (rewritten before read)
-["pdflatex"] 1738875922.08035 "temp_header_footer_modified.tex" "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified.pdf" "temp_header_footer_modified" 1738875924.4768 0
+["pdflatex"] 1738876206.94065 "temp_header_footer_modified.tex" "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified.pdf" "temp_header_footer_modified" 1738876209.15792 0
   "/etc/texmf/web2c/texmf.cnf" 1693479407.22171 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/BolzDist.png" 1738244688.77272 29952 c8ac720981c92512261c5946e4e5746f ""
   "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/Boyle.png" 1738244688.78472 2353268 c9e1197deb33bd0118c326a72e726a58 ""
@@ -21,9 +21,9 @@
   "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/R2.png" 1738244688.99672 28314 a889999940e583bd5d630f3cc74888eb ""
   "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/TeoriaCinetica.png" 1738244688.99772 96883 4a055c34a7a24c432e3c674713c711ca ""
   "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/zeroabsolut.png" 1738244689.20072 102081 9a830abdadfe0fd959704f33e8dccdf2 ""
-  "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified.aux" 1738875924.20665 4238 5e824d5bda3b9b72f7b32e3d6f383d9f "pdflatex"
+  "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified.aux" 1738876208.88831 4238 5e824d5bda3b9b72f7b32e3d6f383d9f "pdflatex"
   "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified.bbl" 1738875793.00886 1155 76cbf35c3f310304bf2cf21e329a3885 "bibtex /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified"
-  "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified.run.xml" 1738875924.20965 2728 9532edd0c184ab2b48252398e535574f "pdflatex"
+  "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified.run.xml" 1738876208.89131 2728 9532edd0c184ab2b48252398e535574f "pdflatex"
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -239,10 +239,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1725009813.69924 5349216 bf3a80e68d946c7acd95ff030fd9bb63 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1726152742 6852505 e04ce9148cb683c6cca801ac78b863b2 ""
-  "GEAGasos.tex.mod" 1738875921.94063 22099 c4a8e4aa5e458e008d90f6c2aa58861a ""
+  "GEAGasos.tex.mod" 1738876206.8363 22106 07cfd747235a4a7fb802fd5a688abf8f ""
   "common_details.tex" 1738874452.66915 2362 cafcc2dc26a1659df3fc42ef7d93a042 ""
   "lst.tex" 1738873117.83437 2879 8808eea426c0351aaaa2b9093afe3aac ""
-  "temp_header_footer_modified.tex" 1738875921.94263 980 534463e99c99e80df07a77dc555b1002 ""
+  "temp_header_footer_modified.tex" 1738876206.8373 980 534463e99c99e80df07a77dc555b1002 ""
   (generated)
   "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified-blx.bib"
   "/home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/temp_header_footer_modified.aux"
