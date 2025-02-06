@@ -12,7 +12,7 @@ V = V(T, P, n),
 on $V$ és el volum, $T$ és la temperatura, $P$ la pressió, i $n$ el nombre de mols del material. Es tracta d'una equació que pot ser molt complexa i específica per a líquids i sòlids, però en el cas dels gasos tots ells tenen un comportament molt similar. Això és degut a que en l'estat gas, les molècules són mes independents entre elles i, per tant, la seva naturalesa molecular no afecta substancialment al comportament del tot.
 
 \begin{mybox}[title=De partícules i mols de partícules]
-    El mol és la unitat bàsica del Sistema Internacional per mesurar la quantitat de substància, i s'utilitza per comptar partícules com àtoms, molècules o ions. Un mol conté exactament \(6,022 \times 10^{23}\) entitats elementals, un valor conegut com el nombre d'Avogadro. Aquesta constant permet connectar les dimensions microscòpiques (com la massa i el nombre de partícules) amb mesures macroscòpiques utilitzades en els experiments químics. Per exemple, un mol d'àtoms de carboni-12 (que representarem per \isotope*{12,C}, a partir d'ara) té una massa de 12 grams, facilitant així la relació entre l'estructura atòmica i la pràctica de la química.
+    El mol és la unitat bàsica del Sistema Internacional per mesurar la quantitat de substància, i s'utilitza per comptar partícules com àtoms, molècules o ions. Un mol conté exactament \(N_0=6,022 \times 10^{23}\) entitats elementals, un valor conegut com el nombre d'Avogadro. Aquesta constant permet connectar les dimensions microscòpiques (com la massa i el nombre de partícules) amb mesures macroscòpiques utilitzades en els experiments químics. Per exemple, un mol d'àtoms de carboni-12 (que representarem per \isotope*{12,C}, a partir d'ara) té una massa de 12 grams, facilitant així la relació entre l'estructura atòmica i la pràctica de la química.
 \end{mybox}
     
 \subsection{Pressió i força}
@@ -96,7 +96,7 @@ On \( P \) s'expressa en \si{Pa} (pascals) i \( V \) en \si{m^3}.
 
 \subsection{Llei de Charles}
 
-Jacques Charles (1787) i posteriorment Gay-Lussac van trobar que per a una mateixa pressió, la relació $\frac{V_{100 \si\degreeCelsius}}{V_{0 \si\degreeCelsius C}}$ era identica per a tots els gasos (1.376).
+Jacques Charles (1787) i posteriorment Gay-Lussac van trobar que per a una mateixa pressió, la relació $\frac{V_{100 \si\degreeCelsius}}{V_{0 \si\degreeCelsius}}$ era identica per a tots els gasos (1.376).
 
 Això duu a extrapolar fàcilment el comportament dels gasos i determinar el zero absolut de temperatura segons el gràfic \ref{fig:zeroabsolut}. Lord Kelvin (1848) va proposar usar el punt d'intersecció del gràfic amb la línia de les abcisses com a origen d'una nova escala de temperatura: $T/\rm{K} = t/\si\degreeCelsius \rm{C} + 273.15$.\footnote{en realitat s'usa 273.16, que és el punt triple de l'aigua, temperatura a la qual coexisteixen en equilibri aigua, gel i vapor en un recipient tancat}
 \begin{figure}[h]
@@ -180,10 +180,10 @@ La pressió parcial d'un gas és la pressió que exerciria aquest gas si ocupés
 
 \section{Teoria Cinètica dels Gasos}
 
-Per tal de relacionar aquestes descobertes amb l'estructura atòmica de la matèria, ens cal pensar una teoria que representi els gasos de forma extremadament simple: un \textit{model}. En el nostre cas (veure Figura \ref{fig:TeoriaCinetica}),
+Per tal de relacionar aquestes descobertes amb l'estructura atòmica de la matèria, ens cal introduir una teoria que representi els gasos de forma extremadament simple: un \textit{model}. En el nostre cas (veure Figura \ref{fig:TeoriaCinetica}),
 \begin{itemize}
-\item el gas es format per partícules que es comporten com a punts de massa,
-\item que llevat no col·lideixin no exerceixen força els uns sobre els altres
+\item el gas és format per partícules que es comporten com a punts de massa, i
+\item a més de no col·lidir, no exerceixen força les unes sobre les altres.
 \end{itemize}
 \begin{figure}[h]
 \centering
@@ -194,10 +194,11 @@ Per tal de relacionar aquestes descobertes amb l'estructura atòmica de la matè
 \begin{exr}
 Pots calcular el volum ocupat per molècula en un gas ideal a CN?. Es troben dues molècules molt freqüentment en un gas a baixa pressió?
 \end{exr}
-Aquesta teoria, de forma relativament simple, ens permet expressar la pressió que s'exercexi sobre les parets d'un recipient per part del gas que conté segons:
+Aquesta teoria, de forma relativament simple, ens permet expressar la pressió que s'exerceix sobre les parets d'un recipient per part del gas que conté segons:
 \[
-PV=\frac{2}{3} \left< E_c \right> = \frac{2}{3} \left< \frac{mc^2}{2} \right>
+PV=\frac{2}{3} \left< E_c \right> = \frac{2}{3} N_0 \left< \frac{mc^2}{2} \right>
 \]
+on $N_0$ és el número d'Avogadro.
 
 D'aquí s'extreuen resultats interessants, com que l'energia cinètica translacional d'un mol de gas és \[N_0 \frac{m <c^2>}{2}=\frac{3}{2} RT\] o bé, si dividim pel número d'Avogadro a esquerra i dreta obtenim la constant dels gasos per molècula a partir de l'energia cinètica per molècula (constant de Boltzmann $k$): 
 \[\frac{m <c^2>}{2}=\frac{3}{2} kT\]
@@ -211,7 +212,7 @@ Qui es mou més ràpid, una molècula d'oxigen o una de nitrogen en dues mostres
 Calcula la velocitat mitjana de les molècules d'hidrògen a 25\si\degreeCelsius.
 \end{exr}
 
-La distribució de les velocitats de les partícules d'un gas segueix la distribució de Maxwell-Boltzmann:
+La distribució de les velocitats de les partícules d'un gas segueix la distribució de Maxwell-Boltzmann\cite{mahan_quimica_1997}:
 \[
 \frac{\Delta N}{N}=4 \pi \left( \frac{m}{2 \pi kT}\right)^{3/2} \underbrace{e^{-mc^2/2kT}}_{\rm Boltzmann} c^2 \Delta c
 \]
@@ -220,15 +221,20 @@ El factor de Boltzmann ens diu, en aquesta equació, que a qualsevol temperatura
 \centering
 \includegraphics[scale=0.5]{BolzDist.png}
 \includegraphics[scale=0.5]{MXDIST.png}
-\caption{La distribució de Maxwell per a diferents molècules i temperatures}
-\label{fig:TeoriaCinetica}
+\caption{La distribució de Maxwell-Boltzmann per a diferents molècules i temperatures}
+\label{fig:Maxwell}
 \end{figure}
+
+
+
+
+
 
 \subsection{Capacitat calorífica}
 
-La capacitat calorífica d'una substància és la quantitat de calor en calories necessària per elevar 1\si\degreeCelsius la temperatura d'un gram de la substància.
+La capacitat calorífica d'una substància és la quantitat de calor en calories necessària per elevar 1\si\degreeCelsius\ la temperatura d'un gram de la substància.
 
-De fet, això necessita precissió: no és el mateix fer aquest procés dpescalfament a volum constant que a pressió constant ($C_V$ vs $C_P$).
+De fet, això necessita precissió: no és el mateix fer aquest procés d'escalfament a volum constant que a pressió constant ($C_V$ vs $C_P$).
 
 Si afegim calor a un gas, o bé s'expandeix (i per tant fa treball) o bé la velocitat de les seves particules augmenta.
 A $V$ constant, l'escalfament produeix un increment d'energia cinètica:
@@ -244,10 +250,10 @@ Per tant, la capacitat calorífica extra pel fet de fer el procés a pressió co
 i, per tant, 
 \[C_P=C_V+R 
 =\frac{3}{2} R + R= \frac{5}{2}R\]
-És fàcil veure que $C_P/C_V=5/3=1.67$ i podem comparar aquests coeficients per a diversos gasos reals, per tal d'establir diferències amb el seu comportament ideal (\ref{tab:cpcv}).
+És fàcil veure que $C_P/C_V=5/3=1.67$ i podem comparar aquests coeficients per a diversos gasos reals, per tal d'establir diferències amb el seu comportament ideal (Taula \ref{tab:cpcv}).
 \begin{table}
 	\begin{center}
-		\caption{Quocients de capacitat calorífica \cite{mahan_quimica_1997}}
+		\caption{Quocients de capacitat calorífica \cite{mahan_quimica_1997}.}
 		\label{tab:cpcv}
 		\begin{tabular}{cc|cc}
 			\hline
@@ -264,40 +270,68 @@ i, per tant,
 	\end{center}
 \end{table}
 \begin{exr}
-Perquè hi ha aquestes diferències entre la columna de l'esquerra i la de la dreta de la Taula \ref{tab:cpcv}? (Adona't que si un gas monoatpomic ideal, pel fet d'estar només augmentant la seva energia cinètica té una $C_V=\frac{3}{2}R$, es pot entendre que per a cada component necessita $\frac{3}{2}R$)
+Perquè hi ha aquestes diferències entre la columna de l'esquerra i la de la dreta de la Taula \ref{tab:cpcv}? (Adona't que si un gas monoatòmic ideal, pel fet d'estar només augmentant la seva energia cinètica translacional té una $C_V=\frac{3}{2}R$, es pot entendre que per a cada component (eix) necessita $\frac{1}{2}R$)
 \end{exr}
+\lct{
+    Els quocients de la capacitat calorífica dels gasos diatòmics són molt menors que 1,67, i hem d'esbrinar la raó d'aquestes desviacions.
+
+    Primerament, notem que $C_V$, la capacitat calorífica deguda al moviment de translació de les molècules, és igual a $\frac{3}{2}R$, i que hi ha tres components independents de velocitat associats amb el moviment de translació. Per tant, podem inferir que cadascun dels tres moviments de translació independents contribueix amb $\frac{1}{2}R$ a la capacitat calorífica molar. Sobre aquesta base, podríem esperar que, si algun altre tipus de moviment fos accessible a les molècules de gas, hi hauria més contribucions a la capacitat molar i aquestes entrarien en unitats de $\frac{1}{2}R$.
+    
+   A més de tenir els tres moviments de translació, una molècula diatòmica pot rotar al voltant del seu centre de massa segons dos modes mútuament perpendiculars i independents. Assignant $\frac{1}{2}R$ com la contribució de cadascun d'aquests moviments a la capacitat calorífica, tenim:
+    
+    \[
+    C_V = \underbrace{\frac{3}{2}R}_{\text{traslació}} + \underbrace{\frac{1}{2}R + \frac{1}{2}R}_{\text{rotació}} = \frac{5}{2}R,
+    \]
+    
+    \[
+    C_P = C_V + R = \frac{7}{2}R,
+    \]
+    
+    \[
+    \frac{C_P}{C_V} = \frac{\frac{7}{2}R}{\frac{5}{2}R} = \frac{7}{5} = 1,40.
+    \]
+}
 
 
 
 
 \subsection{Gasos no ideals}
 
-En gasos reals, el factor 
+
+
+En gasos reals, el factor de compressibilitat ve donat per
 \[z=\frac{V_m}{V_{m,i}}=\frac{V_m}{RT/P}=\frac{PV_m}{RT}\]
-no és 1, com succeiria a un gas ideal (veure Figura \ref{fig:FactorCompress}).
+no és 1, com succeiria a un gas ideal (veure Figura \ref{fig:FactorCompress}). En general, la desviació del comportament ideal esdevé més important quan el gas està més a prop d'un canvi de fase, com més baixa és la temperatura o com més alta és la pressió. 
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.5]{FactorCompress.png}
-\caption{Factor de compressibilitat per a diferents gasos a 0\si\degreeCelsius}
+\caption{Factor de compressibilitat per a diferents gasos a 0\si\degreeCelsius.}
 \label{fig:FactorCompress}
 \end{figure}
 
-Per tal de millorar l'aproximació a la realitat podem considerar diferents aproximacions. La més simple consisteix a pensar que el volum ideal explorat per les molècules és més gran que el volum que poden explorar en realitat, per un valor $b$ que prové del volum exclós per la presència d'altres molècules.
-\[V_m = V_{m,i}+b=\frac{RT}{P}+b\]
+Per tal de millorar l'aproximació a la realitat podem considerar diferents aproximacions. 
+En el desenvolupament de l'equació d'estat del gas ideal (EOS), es van fer dues hipòtesis:
+
+\begin{itemize}
+    \item El volum de les molècules de gas és insignificant en comparació amb el volum total i la distància entre les molècules.
+    \item No existeixen forces atractives ni repulsives entre les molècules.
+\end{itemize}
+
+Van der Waals (1873) va intentar eliminar aquestes dues hipòtesis en el desenvolupament d'una equació empírica d'estat per a gasos reals. Per tal d'eliminar la primera hipòtesi, van der Waals va assenyalar que les molècules de gas ocupen una fracció significativa del volum a altes pressions i va proposar que el volum de les molècules, denotat pel paràmetre $b$, fos restat del volum molar real, $V$, en l'Eq. (5.45), per obtenir
+
+\[
+p = \frac{RT}{V - b}
+\]
+
+on el paràmetre $b$ és conegut com el covolum i es considera que reflecteix el volum de les molècules. La variable $V$ representa el volum real per mol de gas.
 
 Segons això,
 \[z=\frac{PV_m}{RT}=1+\frac{b}{RT}P\]
-que té una forma lineal. Aixó explicaria el cas de la molècula d'hidrogen.
-Però què passa amb \ch{CH4} o \ch{CO}? Val la pena pensar que són molècules que es podran trobar líquides a temperatures més baixes amb major facilitat que no pas \ch{H2}. En un gas real, la pressió que exerciran les molècules sobre la paret del recipient serà més baixa que en un gas ideal:
-\[P=P_i -\Delta P\]
-Es pot veure que aquest increment de pressió és proporcional al quadrat de la concentració ($c=\frac{m}{V}=\frac{1}{V_m}$):
-\[\Delta P \alpha c^2 \alpha \frac{1}{{V_m}^2} \]
-o bé
-\[\Delta P = \frac{a}{{V_m}^2}\]
-i, per tant, 
-\[ P_i=P+\frac{a}{{V_m}^2}\]
+que té una forma lineal. Aixó explicaria el cas de la molècula d'hidrogen a la Figure \ref{fig:FactorCompress}.
+Però què passa amb \ch{CH4} o \ch{CO}? Val la pena pensar que són molècules que es podran trobar líquides a temperatures més baixes amb major facilitat que no pas \ch{H2}. 
+Per tal d'eliminar la segona hipòtesi, van der Waals va afegir un terme correctiu, denotat per $\frac{a}{V^2}$, a aquesta equació per tenir en compte les forces atractives entre les molècules.
 
-Si ara substituïm el volum i pressió ideals en l'equació dels gasos ideals:
+Tenint en compte aquestes modificacions en la inclusió de $P$ i $V$ en l'equació des gasos ideals podem arribar (no ho fem aquí) a l'equació dels gasos ideals proposada per Johannes Diderick van der Waals el 1873:
 \[
 \left( P + \frac{a}{{V_m}^2} \right) (V_m -b)=RT
 \]
@@ -308,15 +342,11 @@ o bé
 \end{equation}
 
 \begin{exr}
-Què passa segons l'Equació \ref{Eq:vdW} si la pressió es fa propera a zero o bé la temperatura es fa molt gran per a un gas real? (veure la Figura \ref{fig:FactorCompressT}).
+Què passa segons l'Equació \ref{Eq:vdW} si la pressió es fa propera a zero o bé la temperatura es fa molt gran per a un gas real?   La figura mostra el factor de compressibilitat per a un mateix gas a diferents temperatures
+\begin{center}        \includegraphics[scale=1.0]{FactorCompressT.png}
+\end{center}
 \end{exr}
 
-\begin{figure}[h]
-\centering
-\includegraphics[scale=1.0]{FactorCompressT.png}
-\caption{Factor de compressibilitat per a un mateix gas a diferents temperatures}
-\label{fig:FactorCompressT}
-\end{figure}
 
 Les forces de van der Waals que fan que es perdi la idealitat són degudes a tres contribucions:
 \begin{enumerate}
@@ -328,3 +358,40 @@ Les forces de van der Waals que fan que es perdi la idealitat són degudes a tre
 \begin{exr}
 Perquè \ch{CO2} i \ch{O2} tenen una desviació negativa respecte al comportament del gas ideal a pressions i temperatures moderades, mentres que l'He i el \ch{H2} presenten una deviació positiva en les mateixes condicions?
 \end{exr}
+\newpage
+\section{Codis}
+
+\begin{lstlisting}[language=Matlab, caption={Codi Matlab per dibuixar una distribució de Maxwell-Boltzmann}]
+    clc; clear; close all;
+    
+    % Definim constants
+    kB = 1.38e-23;  % Constant de Boltzmann (J/K)
+    T = 300;        % Temperatura en Kelvin
+    m = 4.65e-26;   % Massa de la molècula (kg) (exemple: molècula de nitrogen)
+    
+    % Definim el rang de velocitats
+    v = linspace(0, 2000, 1000);  % Rang de velocitats (m/s)
+    
+    % Funció de distribució de Maxwell-Boltzmann
+    f_v = ( (m / (2 * pi * kB * T))^(3/2) ) * 4 * pi * v.^2 .* exp(-m * v.^2 / (2 * kB * T));
+    
+    % Representació gràfica de la distribució
+    figure;
+    plot(v, f_v, 'b', 'LineWidth', 2);
+    xlabel('Velocitat (m/s)');
+    ylabel('Densitat de probabilitat f(v)');
+    title('Distribució de Maxwell-Boltzmann');
+    grid on;
+    
+    % Càlcul de la velocitat més probable, la velocitat mitjana i la velocitat quadràtica mitjana
+    v_mp = sqrt(2 * kB * T / m);  % Velocitat més probable
+    v_mitjana = sqrt(8 * kB * T / (pi * m));  % Velocitat mitjana
+    v_rms = sqrt(3 * kB * T / m);  % Velocitat quadràtica mitjana
+    
+    hold on;
+    xline(v_mp, '--r', 'Velocitat més probable', 'LabelHorizontalAlignment', 'right');
+    xline(v_mitjana, '--g', 'Velocitat mitjana', 'LabelHorizontalAlignment', 'right');
+    xline(v_rms, '--m', 'Velocitat RMS', 'LabelHorizontalAlignment', 'right');
+    legend('Distribució de Maxwell-Boltzmann', 'Velocitat més probable', 'Velocitat mitjana', 'Velocitat RMS');
+    hold off;
+    \end{lstlisting}

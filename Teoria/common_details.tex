@@ -1,5 +1,7 @@
 \usepackage{chemfig,chemmacros,chemnum}
 \usepackage{chemformula}
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
 \definecolor{LightOcean}{RGB}{81, 147, 229 }
 \definecolor{DeepOcean}{RGB}{51, 131, 229}
 \newtcolorbox{mybox}[1][]{%
@@ -19,6 +21,28 @@
     #1
 }
 \newcounter{myc}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% lecturer or student text
+% in principle the lecturer text includes some examples to be done in the c lass
+\newboolean{LECT}
+\setboolean{LECT}{false}
+\setboolean{LECT}{true}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{lect}{ % 
+	\definecolor{shadecolor}{rgb}{1.0,0.8,0.8} %
+	\begin{shaded} %
+	\textcolor{BrickRed}{\bf Resposta\\}%
+
+} % 
+{ %	
+	\end{shaded}
+} %
+
+\newcommand{\lct}[1]{\ifthenelse{\boolean{LECT}}{\begin{lect} #1 \end{lect}}{}}
+
 
 %environment for questions in exams
 \newenvironment{qst}{ % 
