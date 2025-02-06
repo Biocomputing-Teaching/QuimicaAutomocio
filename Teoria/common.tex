@@ -391,27 +391,6 @@
 } %
 
 %veure http://en.wikibooks.org/wiki/LaTeX/Advanced_Topics
-\newcounter{myc}
-%environment for exercises in the class notes
-\newenvironment{exr}{ % 
-    \addtocounter{myc}{1}
-	\definecolor{shadecolor}{rgb}{0.9,1.0,0.8} %
-	\begin{shaded} %
-	\textcolor{OliveGreen}{\bf Exercici \arabic{myc}\\}%
-} % 
-{ %	
-	\end{shaded}
-} %
-%environment for questions in exams
-\newenvironment{qst}{ % 
-    \addtocounter{myc}{1}
-	\definecolor{shadecolor}{rgb}{0.9,1.0,0.8} %
-	\begin{shaded} %
-	\textcolor{OliveGreen}{\bf Qüestió \arabic{myc}\\}%
-} % 
-{ %	
-	\end{shaded}
-} %
 
 \newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
 \newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument

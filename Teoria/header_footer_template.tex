@@ -3,10 +3,12 @@
 \usepackage[utf8]{inputenc}
 \usepackage[catalan]{babel}
 \usepackage{graphicx}
+\usepackage{framed}
 \graphicspath{{../figures/}}
 \usepackage[dvipsnames,table]{xcolor}
 \usepackage{tikz}
 \usepackage{lipsum}
+\usepackage[backend=bibtex,style=numeric]{biblatex}  %backend=biber is 'better'  
 \usepackage{fancyhdr,amsmath,tcolorbox}
 \tcbuselibrary{listings,breakable} 
 \input{common_details.tex}
@@ -20,8 +22,14 @@
 \fancyfoot[C]{\today}
 \fancyfoot[R]{Pàgina \thepage}
 
+\addbibresource{QuimAutom.bib}
+
 \begin{document}
 
 % Aquí s'inclouen els fitxers GEA específics
 \input{GEA_FILE.tex}  % Nom del fitxer canviable per la comanda sed
+
+
+\printbibliography
+
 \end{document}

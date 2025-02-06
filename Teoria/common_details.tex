@@ -18,6 +18,30 @@
     toggle enlargement=evenpage,
     #1
 }
+\newcounter{myc}
+
+%environment for questions in exams
+\newenvironment{qst}{ % 
+    \addtocounter{myc}{1}
+	\definecolor{shadecolor}{rgb}{0.9,1.0,0.8} %
+	\begin{shaded} %
+	\textcolor{OliveGreen}{\bf Qüestió \arabic{myc}\\}%
+} % 
+{ %	
+	\end{shaded}
+} %
+
+%environment for exercises in the class notes
+\newenvironment{exr}{ % 
+    \addtocounter{myc}{1}
+	\definecolor{shadecolor}{rgb}{0.9,1.0,0.8} %
+	\begin{shaded} %
+	\textcolor{OliveGreen}{\bf Exercici \arabic{myc}\\}%
+} % 
+{ %	
+	\end{shaded}
+} %
+
 % Definició d'unitats personalitzades per al sistema imperial
 \DeclareSIUnit\inch{in}
 \DeclareSIUnit\foot{ft}
