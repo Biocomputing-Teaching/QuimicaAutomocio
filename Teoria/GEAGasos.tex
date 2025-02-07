@@ -358,6 +358,7 @@ Les forces de van der Waals que fan que es perdi la idealitat són degudes a tre
 \begin{exr}
 Perquè \ch{CO2} i \ch{O2} tenen una desviació negativa respecte al comportament del gas ideal a pressions i temperatures moderades, mentres que l'He i el \ch{H2} presenten una deviació positiva en les mateixes condicions?
 \end{exr}
+
 \newpage
 \section{Codis}
 
