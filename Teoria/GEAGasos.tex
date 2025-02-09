@@ -68,12 +68,28 @@ Els gasos es comporten segons certes lleis empíriques que han estat establertes
     Les propietats es poden classificar entre extensives (m, V, ...) o intensives (T, P, capacitat calorífica ...), segons depenguin de la quantitat de substància o no. La raó entre dues propietats extensives és sempre intensiva: $\delta = \frac{m}{V}$; $\nu = \frac{V}{m}$. Només necessitem dues propietats intensives per determinar l'estat d'un gas ($P$ i $T$) i, per tant, amb tres variables intensives podem construir una equació d'estat: 
     \[F(P,V_{\rm m},T)=0\]
     
-    La mesura d'una propietat per mol sanomena valor molar d'aquesta variable. Per exemple $V_{\rm m} = \frac{V}{n}$. 
+    La mesura d'una propietat per mol sanomena valor molar d'aquesta variable. Per exemple $V_{\rm m} = \frac{V}{n}$. La Taula \ref{tab:volum_molar} mostra els valors del volum molar per a diferents gasos. 
 \end{mybox}
 
-\begin{exr}
-    Calcular el volum molar d'un gas ideal a condicions normals (1 atm i 0\si\degreeCelsius).
-    \end{exr}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{l S}
+    \hline
+    \textbf{Gas} & \textbf{Volum molar (\si{\liter})} \\
+    \hline
+    \ch{He}  & 22.434 \\
+    \ch{Ar}  & 22.397 \\
+    \ch{H2}  & 22.433 \\
+    \ch{N2}  & 22.402 \\
+    \ch{O2}  & 22.397 \\
+    \ch{CO2} & 22.260 \\
+    \ch{NH3} & 22.079 \\
+    \hline
+    \end{tabular}
+    \caption{Valors del volum molar (\si{\liter}) per a diferents gasos\cite{anonymous_principles_2012}.}
+    \label{tab:volum_molar}
+    \end{table}
+
 \subsection{Llei de Boyle}
 
 Robert Boyle (1627-1691) va notar, fent servir un manometre com el de la Figura \ref{fig:Manometre}, que existia una determinada llei de proporcionalitat entre la pressió exercida sobre un gas i el volum d'aquest
@@ -155,6 +171,19 @@ $R=\lim_{P \to 0} \frac{P V_{\rm m}}{T}= 0.08205 \frac{{\rm atm l}}{{\rm mol K}}
 }
 \label{fig:R2}
 \end{marginfigure}
+\begin{exr}
+    Calcular el volum molar d'un gas ideal a condicions normals (1 atm i 0\si\degreeCelsius).
+    \end{exr}
+
+\begin{mybox}[title=Condicions normals (o estàndard) de temperatura i pressió]
+    En química, la \href{https://iupac.org/}{IUPAC} va establir la temperatura i la pressió estàndard o normal (en anglès, \emph{standard temperature and pressure} com a STP) com una temperatura de \qty{273.15}{\kelvin} (\qty{0}{\degC}, \qty{32}{\degF}) i una pressió absoluta de \qty{100}{\kilo\pascal} (\qty{14.504}{\psi}, \qty{0.986}{\atm}, \qty{1}{\bar}). 
+    
+    Hi ha certa confusió internacional entre els termes normal i estàndard. A Europa les condicions estàndard fan referència a una temperatura de \qty{298.15}{\kelvin} (\qty{25}{\degC}, \qty{77}{\degF}) i una pressió absoluta de \qty{1}{\atm} (\qty{101.325}{\kilo\pascal}). El terme equivalent en anglès és \emph{standard ambient temperature and pressure} (SATP). 
+    
+    L'STP i el SATP no s'han de confondre amb l'estat estàndard comunament utilitzat, com veurem més endavant en aquest curs, en les avaluacions termodinàmiques de l'energia lliure de Gibbs d'una reacció.
+
+    Podeu veure una interessant referència sobre aquest tema a \cite{doiron_20_2007}.
+\end{mybox}
 
 \begin{exr}
     Quant gas hi ha en una mostra de volum 0.5 dm$^3$, a 80\si\degreeCelsius\ i 800 \si\torr\ de pressió?
@@ -178,6 +207,62 @@ La pressió parcial d'un gas és la pressió que exerciria aquest gas si ocupés
   
 
 
+\begin{exr}
+    Una mostra de \ch{PCl5}, que pesa \SI{2.69}{\gram}, es va col·locar en un flascó d'\SI{1.00}{\litre} i es va evaporar completament a una temperatura de \SI{25}{\celsius}. La pressió observada a aquesta temperatura va ser \SI{1.00}{\atm}. Existeix la possibilitat que una part del \ch{PCl5} s'hagi dissociat d'acord amb l'equació:
+
+\[
+\ch{PCl5(g) -> PCl3(g) + Cl2(g)}
+\]
+
+Quines són les pressions parcials del \ch{PCl5}, \ch{PCl3} i \ch{Cl2} en aquestes condicions experimentals? (Adaptat de \cite{mahan_quimica_1997})
+
+\end{exr}
+\lct{
+    La solució d'aquest problema implica diverses etapes. Per determinar si s'ha dissociat una part del \ch{PCl5}, calculem primerament la pressió que s'hauria observat si no s'hagués dissociat el \ch{PCl5}. Això es pot calcular a partir del nombre de mols de \ch{PCl5} utilitzats, juntament amb el volum i la temperatura del flascó. Com que el pes molecular del \ch{PCl5} és \SI{208}{\gram\per\mole}, el nombre de mols de \ch{PCl5} inicialment presents en el flascó és:
+
+\[
+n = \SI{2.69}{\gram}\cdot \frac{1\si{\mole}}{\SI{208}{\gram}} = 0.0129\si{\mole}.
+\]
+
+La pressió corresponent a aquest nombre de mols seria:
+
+\[
+P = \frac{nRT}{V} = \frac{(0.0129\si{\mole})(\SI{0.082}{\liter\atm\per\mole\per\kelvin})(\SI{523.15}{\kelvin})}{\SI{1.00}{\liter}} = \SI{0.553}{\atm}.
+\]
+
+Com que la pressió observada és superior a aquesta, s'ha de produir certa dissociació del \ch{PCl5}. Aplicant la llei de les pressions parcials, podem escriure:
+
+\begin{equation}
+P_{\ch{PCl5}} + P_{\ch{PCl3}} + P_{\ch{Cl2}} = P_t = \SI{1.00}{\atm}.
+\label{eq:daltonpcl}
+\end{equation}
+
+Ara observem que:
+
+
+Atès que es produeix un mol de \ch{PCl3} i un mol de \ch{Cl2} per cada mol de \ch{PCl5} dissociat,
+\[
+P_{\ch{Cl2}} = P_{\ch{PCl3}}, \quad P_{\ch{PCl5}} = \SI{0.553}{\atm} - P_{\ch{Cl2}}.
+\]
+i podem reescriure l'Equació \ref{eq:daltonpcl} com:
+
+\[
+\SI{0.553}{\atm} - P_{\ch{Cl2}} + P_{\ch{Cl2}} + P_{\ch{Cl2}} = \SI{1.00}{\atm}.
+\]
+
+Resolent, obtenim:
+
+\[
+P_{\ch{Cl2}} = \SI{0.447}{\atm},
+\]
+
+i
+
+\[
+P_{\ch{PCl3}} = \SI{0.447}{\atm}, \quad P_{\ch{PCl5}} = \SI{0.106}{\atm}.
+\]
+}
+
 \section{Teoria Cinètica dels Gasos}
 
 Per tal de relacionar aquestes descobertes amb l'estructura atòmica de la matèria, ens cal introduir una teoria que representi els gasos de forma extremadament simple: un \textit{model}. En el nostre cas (veure Figura \ref{fig:TeoriaCinetica}),
@@ -200,7 +285,9 @@ PV=\frac{2}{3} \left< E_c \right> = \frac{2}{3} N_0 \left< \frac{mc^2}{2} \right
 \]
 on $N_0$ és el número d'Avogadro.
 
-D'aquí s'extreuen resultats interessants, com que l'energia cinètica translacional d'un mol de gas és \[N_0 \frac{m <c^2>}{2}=\frac{3}{2} RT\] o bé, si dividim pel número d'Avogadro a esquerra i dreta obtenim la constant dels gasos per molècula a partir de l'energia cinètica per molècula (constant de Boltzmann $k$): 
+D'aquí s'extreuen resultats interessants, com que l'energia cinètica translacional d'un mol de gas és 
+\[\left<E_c\right>=N_0 \frac{m <c^2>}{2}=\frac{3}{2} RT\] 
+o bé, si dividim pel número d'Avogadro a esquerra i dreta obtenim la constant dels gasos per molècula a partir de l'energia cinètica per molècula (constant de Boltzmann $k$): 
 \[\frac{m <c^2>}{2}=\frac{3}{2} kT\]
 Aquest resultat ens diu que si dos gasos tenen la mateixa $T$, les seves molècules tenen la mateixa energia cinètica promig. 
 
@@ -219,13 +306,11 @@ La distribució de les velocitats de les partícules d'un gas segueix la distrib
 El factor de Boltzmann ens diu, en aquesta equació, que a qualsevol temperatura particular, acostuma a haver moltes menys molècules amb energies altes que amb energies baixes.
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.5]{BolzDist.png}
-\includegraphics[scale=0.5]{MXDIST.png}
+\includegraphics[scale=0.4]{BolzDist.png}
+\includegraphics[scale=0.4]{MXDIST.png}
 \caption{La distribució de Maxwell-Boltzmann per a diferents molècules i temperatures}
 \label{fig:Maxwell}
 \end{figure}
-
-
 
 
 
@@ -340,6 +425,28 @@ o bé
 \left( P + \frac{n^2 a}{V^2} \right) (V -nb)=nRT
 \label{Eq:vdW}
 \end{equation}
+
+La Taula \ref{tab:van_der_waals} mostra els valors de $a$ i $b$ per a diferents gasos.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{l S[table-format=1.4] S[table-format=1.5]}
+\hline
+\textbf{Gas} & \textbf{\textit{a} (\si{\litre\squared\atm\per\mol\squared})} & \textbf{\textit{b} (\si{\litre\per\mol})} \\
+\hline
+\ch{H2}   & 0.2444 & 0.02661 \\
+\ch{He}   & 0.03412 & 0.02370 \\
+\ch{N2}   & 1.3900 & 0.03913 \\
+\ch{O2}   & 1.3600 & 0.03183 \\
+\ch{CO}   & 1.4850 & 0.03985 \\
+\ch{NO}   & 1.3400 & 0.02789 \\
+\ch{CO2}  & 3.5920 & 0.04267 \\
+\ch{H2O}  & 5.4640 & 0.03049 \\
+\hline
+\end{tabular}
+\caption{Constants de van der Waals per a diferents gasos.}
+\label{tab:van_der_waals}
+\end{table}
 
 \begin{exr}
 Què passa segons l'Equació \ref{Eq:vdW} si la pressió es fa propera a zero o bé la temperatura es fa molt gran per a un gas real?   La figura mostra el factor de compressibilitat per a un mateix gas a diferents temperatures

@@ -15,6 +15,12 @@
 \input{common_details.tex}
 \input{lst.tex}
 
+\usepackage{url}
+  \let\oldurl\url
+\usepackage{hyperref}
+  \let\linkurl\url
+  \let\url\oldurl
+
 
 % Definir el format de l'encapçalament i peu de pàgina
 \pagestyle{fancy}
