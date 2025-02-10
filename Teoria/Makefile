@@ -19,7 +19,6 @@ LATEXMK = latexmk -pdf #-quiet
 all: ExamenParcial Exercise Theory move clean generate_GEA_pdfs
 Taula: ${TABLE}.pdf
 ExamenParcial: ../build/ExamenParcial.pdf
-Exercise: ../build/Exercise.pdf
 Theory: ${PROJECT}.pdf 
 
 # Generar PDFs per a cada fitxer GEA
@@ -51,10 +50,6 @@ GEA_pdfs:
 ../build/ExamenParcial.pdf: ExamenParcial.tex
 	$(LATEXMK) -output-directory=../build ExamenParcial.tex
 
-# Regles per generar el PDF d'Exercise
-../build/Exercise.pdf: Exercise.tex
-	$(LATEXMK) -output-directory=../build Exercise.tex
-
 # Regles per generar el PDF del projecte principal
 ${PROJECT}.pdf: ${LATEX_FILES}
 	$(LATEXMK) ${PROJECT}.tex
@@ -69,4 +64,5 @@ ${TABLE}.pdf: ${TABLE}.tex
 clean:
 	rm -f *.{bcf,run.xml,pro,aux,nav,out,log,idx,ind,ilg,toc,bbl,blg,tdo,lot,lof,glo,snm}
 	rm -f ../build/*.{bcf,run.xml,pro,aux,nav,out,log,idx,ind,ilg,toc,bbl,blg,tdo,lot,lof,glo,snm}
+	rm -f temp*
 

@@ -1,5 +1,17 @@
 # Fdb version 4
-["pdflatex"] 1739166462.75197 "Exercise.tex" "Exercise.pdf" "Exercise" 1739166463.76072 0
+["pdflatex"] 1739184048.79159 "Exercise.tex" "Exercise.pdf" "Exercise" 1739184050.01379 0
+  "../Exercicis/ex_CvCp1.tex" 1739182863.56811 1727 41f20faf586a7f0a3320053f64b77c54 ""
+  "../Exercicis/ex_TeoriaCineticaGasos1.tex" 1739182612.09488 226 6dc04157cbc1db7cc6205ef30aade0a3 ""
+  "../Exercicis/ex_TeoriaCineticaGasos2.tex" 1739182668.64773 104 4eaec5316c7b99eab9e2f9fb5e6aee11 ""
+  "../Exercicis/ex_desviacioIdeal.tex" 1739182019.64851 246 60c79fec22bd54f190204a4cc7144cb6 ""
+  "../Exercicis/ex_ideal1.tex" 1739182119.36577 274 11d0d6a1da907e4908f98f8c38202636 ""
+  "../Exercicis/ex_ideal2.tex" 1739182168.65138 229 dedca5b4e90a78e6cd9cab878d669af2 ""
+  "../Exercicis/ex_ideal3.tex" 1739182193.9282 119 567cf1efd721b4f5e830596263406a47 ""
+  "../Exercicis/ex_ideal4.tex" 1739183552.38694 152 0492c60ba58ca86a25520d91aefffdb7 ""
+  "../Exercicis/ex_ideal5.tex" 1739182484.1957 161 bffd5b39a44bed4fb580bfb8ad01ee03 ""
+  "../Exercicis/ex_ideal6.tex" 1739183863.92196 235 cf25fad4eab6fe88bb6681e222f17c3a ""
+  "../Exercicis/ex_limitIdeal.tex" 1739183952.36967 337 d6f0de4e13ba77b2ad4574f66021ca66 ""
+  "../figures/FactorCompressT.png" 1738244688.93372 88864 025a13c56236670d269373197c02d376 ""
   "/etc/texmf/web2c/texmf.cnf" 1693479407.22171 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -148,10 +160,10 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1726152742 6852505 e04ce9148cb683c6cca801ac78b863b2 ""
   "EX1_TvanderWaals.tex" 1739165348.92708 1482 1554f6c0da3614b9b1343f54c2373cbd ""
   "EX1_fraccioMeta.tex" 1739163902.89867 1846 e986ba1c4d76369fd5b8cdb9f6f91ebc ""
-  "Exercise.aux" 1739166463.67283 259 a15d6efaed67f1d53e60a74c5d96a876 "pdflatex"
-  "Exercise.tex" 1739166458.00985 2589 1aeecdb4744c00e09e669eaaa3d64b28 ""
+  "Exercise.aux" 1739184049.91992 327 acef8db9111cf178fc67e5815627f911 "pdflatex"
+  "Exercise.tex" 1739184046.38787 3066 0d7d4e1a3f9e0674775fa518b9be55a5 ""
   "ex5.tex" 1739165322.96992 1081 0bceabd7fb6ff4bdb63277ef64905ebf ""
-  "ex_PressioParcial.tex" 1738772696.60611 1980 1edce216fcfa8901bb37582d228a850a ""
+  "ex_PressioParcial.tex" 1739182437.17516 2128 061606967f9a9639df0460308a78c881 ""
   (generated)
   "Exercise.aux"
   "Exercise.log"

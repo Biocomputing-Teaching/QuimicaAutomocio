@@ -1,0 +1,34 @@
+\begin{lstlisting}[language=Matlab, caption={Codi Matlab per dibuixar una distribució de Maxwell-Boltzmann}]
+    clc; clear; close all;
+    
+    % Definim constants
+    kB = 1.38e-23;  % Constant de Boltzmann (J/K)
+    T = 300;        % Temperatura en Kelvin
+    m = 4.65e-26;   % Massa de la molècula (kg) (exemple: molècula de nitrogen)
+    
+    % Definim el rang de velocitats
+    v = linspace(0, 2000, 1000);  % Rang de velocitats (m/s)
+    
+    % Funció de distribució de Maxwell-Boltzmann
+    f_v = ( (m / (2 * pi * kB * T))^(3/2) ) * 4 * pi * v.^2 .* exp(-m * v.^2 / (2 * kB * T));
+    
+    % Representació gràfica de la distribució
+    figure;
+    plot(v, f_v, 'b', 'LineWidth', 2);
+    xlabel('Velocitat (m/s)');
+    ylabel('Densitat de probabilitat f(v)');
+    title('Distribució de Maxwell-Boltzmann');
+    grid on;
+    
+    % Càlcul de la velocitat més probable, la velocitat mitjana i la velocitat quadràtica mitjana
+    v_mp = sqrt(2 * kB * T / m);  % Velocitat més probable
+    v_mitjana = sqrt(8 * kB * T / (pi * m));  % Velocitat mitjana
+    v_rms = sqrt(3 * kB * T / m);  % Velocitat quadràtica mitjana
+    
+    hold on;
+    xline(v_mp, '--r', 'Velocitat més probable', 'LabelHorizontalAlignment', 'right');
+    xline(v_mitjana, '--g', 'Velocitat mitjana', 'LabelHorizontalAlignment', 'right');
+    xline(v_rms, '--m', 'Velocitat RMS', 'LabelHorizontalAlignment', 'right');
+    legend('Distribució de Maxwell-Boltzmann', 'Velocitat més probable', 'Velocitat mitjana', 'Velocitat RMS');
+    hold off;
+    \end{lstlisting}

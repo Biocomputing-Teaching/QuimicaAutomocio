@@ -1,15 +1,13 @@
 \chapter{Les propietats i el comportament dels gasos}
 
-L'estudi dels gasos és fonamental per a comprendre el comportament de la matèria en estat gasós. Aquests conceptes són claus tant en la química moderna com en l'aplicació industrial. Les lleis dels gasos proporcionen una base per descriure el comportament macroscòpic dels gasos en funció de la temperatura, el volum i la pressió.
-
-
+L'estudi dels gasos és fonamental per a comprendre el comportament de la matèria en estat gasós. Aquests conceptes són claus tant en la química moderna com en l'aplicació industrial. Les lleis dels gasos proporcionen una base per descriure el comportament macroscòpic dels gasos en funció de la temperatura, el volum i la pressió. Aquestes lleis són fonamentals per a la comprensió de molts processos químics i físics, com ara la termodinàmica, la cinètica química i la química de superfícies.
 
 \section{Les lleis dels gasos}
 En general, el volum d'un gas està determinat per la seva temperatura i la pressió que suporta. Existeix una relació matemàtica entre aquests paràmetres, que s'expressa com l'\textbf{equació d'estat}:
 \begin{equation}
 V = V(T, P, n),
 \end{equation}
-on $V$ és el volum, $T$ és la temperatura, $P$ la pressió, i $n$ el nombre de mols del material. Es tracta d'una equació que pot ser molt complexa i específica per a líquids i sòlids, però en el cas dels gasos tots ells tenen un comportament molt similar. Això és degut a que en l'estat gas, les molècules són mes independents entre elles i, per tant, la seva naturalesa molecular no afecta substancialment al comportament del tot.
+on $V$ és el volum, $T$ és la temperatura, $P$ la pressió, i $n$ el nombre de mols del material. Es tracta d'una equació que pot ser molt complexa i específica per a líquids i sòlids, però en el cas dels gasos tots ells tenen un comportament molt similar. Això és degut a que en l'estat gas, les molècules són mes independents entre elles i, per tant, la seva naturalesa molecular no afecta substancialment al comportament del tot. 
 
 \begin{mybox}[title=De partícules i mols de partícules]
     El mol és la unitat bàsica del Sistema Internacional per mesurar la quantitat de substància, i s'utilitza per comptar partícules com àtoms, molècules o ions. Un mol conté exactament \(N_0=6,022 \times 10^{23}\) entitats elementals, un valor conegut com el nombre d'Avogadro. Aquesta constant permet connectar les dimensions microscòpiques (com la massa i el nombre de partícules) amb mesures macroscòpiques utilitzades en els experiments químics. Per exemple, un mol d'àtoms de carboni-12 (que representarem per \isotope*{12,C}, a partir d'ara) té una massa de 12 grams, facilitant així la relació entre l'estructura atòmica i la pràctica de la química.
@@ -17,7 +15,7 @@ on $V$ és el volum, $T$ és la temperatura, $P$ la pressió, i $n$ el nombre de
     
 \subsection{Pressió i força}
 
-Un dispositiu típic per mesurar la pressió és el baròmetre, que utilitza una columna de mercuri per determinar la pressió atmosfèrica. 
+Un dispositiu típic per mesurar la pressió és el baròmetre, que utilitza una columna de mercuri per determinar la pressió atmosfèrica.
 
 \begin{figure}[h]
     \centering
@@ -55,10 +53,24 @@ Calculem ara què és una atmosfera quan s'expressa en funció de força per àr
 = 10,13 \si{\newton}.
 \]
 
-Aquesta és la força que exerceix una columna de mercuri de 760 mm d'alçada i d'1 $\text{cm}^2$ de superfície de secció transversal. Per tant, és també la força per unitat de superfície (un centímetre quadrat) que correspon a la pressió d'una atmosfera. Així, es té que:
+\begin{longtable}{cc}
+    \hline
+    \textbf{Unitat de Pressió} & \textbf{Pressió (en relació a 1 atm)} \\ \midrule\endhead
+    Atmosfera (atm) & 1 atm \\ 
+    Pascal (Pa) & \( 101325 \, \text{Pa} \) \\ 
+    Bar & \( 1.01325 \, \text{bar} \) \\ 
+    Mil·límetre de mercuri (mmHg) & \( 760 \, \text{mmHg} \) \\ 
+    Torra (Torr) & \( 760 \, \text{Torr} \) \\ 
+    Pounds per square inch (psi) & \( 14.696 \, \text{psi} \) \\ 
+    Kilopascal (kPa) & \( 101.325 \, \text{kPa} \) \\    \bottomrule
+    \caption{Comparació de les unitats de pressió amb 1 atmosfera}
+    \end{longtable}
+
+Aquesta és la força que exerceix una columna de mercuri de 760 mm d'alçada i d'1 $\text{cm}^2$ de superfície de secció transversal. Per tant, és també la força per unitat de superfície (un centímetre quadrat) que correspon a la pressió d'una atmosfera.   
+ Així, es té que:
 
 \[
-1 \, \si{\atm} = 760,0 \, \si\mmHg= 760 \,\si\torr
+1 \, \si{\atm} = 760,0 \, \si\mmHg= 760 \,\si\Torr
 = 1,013 \times 10^6 \, \si{\dyn\per\square\cm} = 1,013 \times 10^5 \, \si{\newton\per\square\meter}.
 \]
 
@@ -135,15 +147,10 @@ La llei de Gay-Lussac és una llei dels gasos que estableix que la pressió \( P
 \end{equation}
 En altres paraules, si un gas ideal està confinat en un recipient amb volum constant i s'incrementa la temperatura, la pressió augmentarà proporcionalment a la temperatura.
 
-\begin{exr}
-    Un conductor comprova la pressió dels pneumàtics pel matí aviat, quan la temperatura és de 15\si\degreeCelsius, i és de 1.3$\times$10$^5$ Pa. Al migdia la temperatura és 15 graus més elevada. Quina és la pressió dels pneumàtics ara?.
-    \end{exr}
-
+\input{../Exercicis/ex_ideal1.tex}
+\input{../Exercicis/ex_ideal2.tex}
       
-    \begin{exr}
-        Dalt de l'Everest, la pressió atmosfèrica és de 0,33 atm i la temperatura de 50 sota zero. Quina és la densitat de l'aire si en CN és de 1.29\si{\gram\per\deci\meter\tothe{3}}?.
-        \end{exr}
-    
+
 
 \subsection{Llei dels Gasos Ideals}
 Combinant les tres lleis anteriors, obtenim la llei dels gasos ideals:
@@ -171,9 +178,8 @@ $R=\lim_{P \to 0} \frac{P V_{\rm m}}{T}= 0.08205 \frac{{\rm atm l}}{{\rm mol K}}
 }
 \label{fig:R2}
 \end{figure}
-\begin{exr}
-    Calcular el volum molar d'un gas ideal a condicions normals (1 atm i 0\si\degreeCelsius).
-    \end{exr}
+
+\input{../Exercicis/ex_ideal3.tex}
 
 \begin{mybox}[title=Condicions normals (o estàndard) de temperatura i pressió]
     En química, la \href{https://iupac.org/}{IUPAC} va establir la temperatura i la pressió estàndard o normal (en anglès, \emph{standard temperature and pressure} com a STP) com una temperatura de \qty{273.15}{\kelvin} (\qty{0}{\degC}, \qty{32}{\degF}) i una pressió absoluta de \qty{100}{\kilo\pascal} (\qty{14.504}{\psi}, \qty{0.986}{\atm}, \qty{1}{\bar}). 
@@ -185,14 +191,8 @@ $R=\lim_{P \to 0} \frac{P V_{\rm m}}{T}= 0.08205 \frac{{\rm atm l}}{{\rm mol K}}
     Podeu veure una interessant referència sobre aquest tema a \cite{doiron_20_2007}.
 \end{mybox}
 
-\begin{exr}
-    Quant gas hi ha en una mostra de volum 0.5 dm$^3$, a 80\si\degreeCelsius\ i 800 \si\torr\ de pressió?
-    \end{exr}
-
-       
-    \begin{exr}
-        Si a CN la densitat d'un gas ideal és de 1.62 g dm$^{-1}$, quina és la seva massa molar? i quina densitat tindrà a 300 K i 2.4$\times$10$^5$ Pa?
-        \end{exr}
+\input{../Exercicis/ex_ideal4.tex}
+\input{../Exercicis/ex_ideal5.tex}
 
 \subsection{Llei de Dalton}
 La llei de les pressions parcials de Dalton estableix que la pressió total d'una mescla de gasos ideals és igual a la suma de les pressions parcials dels gasos individuals en la mescla. Matemàticament, es pot expressar així:
@@ -205,63 +205,8 @@ on \(P_{\text{total}}\) és la pressió total de la mescla, i \(P_1, P_2, \dots,
 
 La pressió parcial d'un gas és la pressió que exerciria aquest gas si ocupés tot el volum per si sol, a la mateixa temperatura.
   
+\input{../Exercicis/ex_PressioParcial.tex}
 
-
-\begin{exr}
-    Una mostra de \ch{PCl5}, que pesa \SI{2.69}{\gram}, es va col·locar en un flascó d'\SI{1.00}{\litre} i es va evaporar completament a una temperatura de \SI{25}{\celsius}. La pressió observada a aquesta temperatura va ser \SI{1.00}{\atm}. Existeix la possibilitat que una part del \ch{PCl5} s'hagi dissociat d'acord amb l'equació:
-
-\[
-\ch{PCl5(g) -> PCl3(g) + Cl2(g)}
-\]
-
-Quines són les pressions parcials del \ch{PCl5}, \ch{PCl3} i \ch{Cl2} en aquestes condicions experimentals? (Adaptat de \cite{mahan_quimica_1997})
-
-\end{exr}
-\lct{
-    La solució d'aquest problema implica diverses etapes. Per determinar si s'ha dissociat una part del \ch{PCl5}, calculem primerament la pressió que s'hauria observat si no s'hagués dissociat el \ch{PCl5}. Això es pot calcular a partir del nombre de mols de \ch{PCl5} utilitzats, juntament amb el volum i la temperatura del flascó. Com que el pes molecular del \ch{PCl5} és \SI{208}{\gram\per\mole}, el nombre de mols de \ch{PCl5} inicialment presents en el flascó és:
-
-\[
-n = \SI{2.69}{\gram}\cdot \frac{1\si{\mole}}{\SI{208}{\gram}} = 0.0129\si{\mole}.
-\]
-
-La pressió corresponent a aquest nombre de mols seria:
-
-\[
-P = \frac{nRT}{V} = \frac{(0.0129\si{\mole})(\SI{0.082}{\liter\atm\per\mole\per\kelvin})(\SI{523.15}{\kelvin})}{\SI{1.00}{\liter}} = \SI{0.553}{\atm}.
-\]
-
-Com que la pressió observada és superior a aquesta, s'ha de produir certa dissociació del \ch{PCl5}. Aplicant la llei de les pressions parcials, podem escriure:
-
-\begin{equation}
-P_{\ch{PCl5}} + P_{\ch{PCl3}} + P_{\ch{Cl2}} = P_t = \SI{1.00}{\atm}.
-\label{eq:daltonpcl}
-\end{equation}
-
-Ara observem que:
-
-
-Atès que es produeix un mol de \ch{PCl3} i un mol de \ch{Cl2} per cada mol de \ch{PCl5} dissociat,
-\[
-P_{\ch{Cl2}} = P_{\ch{PCl3}}, \quad P_{\ch{PCl5}} = \SI{0.553}{\atm} - P_{\ch{Cl2}}.
-\]
-i podem reescriure l'Equació \ref{eq:daltonpcl} com:
-
-\[
-\SI{0.553}{\atm} - P_{\ch{Cl2}} + P_{\ch{Cl2}} + P_{\ch{Cl2}} = \SI{1.00}{\atm}.
-\]
-
-Resolent, obtenim:
-
-\[
-P_{\ch{Cl2}} = \SI{0.447}{\atm},
-\]
-
-i
-
-\[
-P_{\ch{PCl3}} = \SI{0.447}{\atm}, \quad P_{\ch{PCl5}} = \SI{0.106}{\atm}.
-\]
-}
 
 \section{Teoria Cinètica dels Gasos}
 
@@ -276,9 +221,9 @@ Per tal de relacionar aquestes descobertes amb l'estructura atòmica de la matè
 \caption{Representació del moviment de les partícules en un gas ideal.}
 \label{fig:TeoriaCinetica}
 \end{figure}
-\begin{exr}
-Pots calcular el volum ocupat per molècula en un gas ideal a CN?. Es troben dues molècules molt freqüentment en un gas a baixa pressió?
-\end{exr}
+
+\input{../Exercicis/ex_ideal5.tex}
+
 Aquesta teoria, de forma relativament simple, ens permet expressar la pressió que s'exerceix sobre les parets d'un recipient per part del gas que conté segons:
 \[
 PV=\frac{2}{3} \left< E_c \right> = \frac{2}{3} N_0 \left< \frac{mc^2}{2} \right>
@@ -291,13 +236,9 @@ o bé, si dividim pel número d'Avogadro a esquerra i dreta obtenim la constant 
 \[\frac{m <c^2>}{2}=\frac{3}{2} kT\]
 Aquest resultat ens diu que si dos gasos tenen la mateixa $T$, les seves molècules tenen la mateixa energia cinètica promig. 
 
-\begin{exr}
-Qui es mou més ràpid, una molècula d'oxigen o una de nitrogen en dues mostres d'aquests gasos a la mateixa temperatura? Pots explicar perquè la pressió és independent de la natura de les molècules?
-\end{exr}
+\input{../Exercicis/ex_TeoriaCineticaGasos1.tex}
+\input{../Exercicis/ex_TeoriaCineticaGasos1.tex}
 
-\begin{exr}
-Calcula la velocitat mitjana de les molècules d'hidrògen a 25\si\degreeCelsius.
-\end{exr}
 
 La distribució de les velocitats de les partícules d'un gas segueix la distribució de Maxwell-Boltzmann\cite{mahan_quimica_1997}:
 \[
@@ -335,7 +276,7 @@ Per tant, la capacitat calorífica extra pel fet de fer el procés a pressió co
 i, per tant, 
 \[C_P=C_V+R 
 =\frac{3}{2} R + R= \frac{5}{2}R\]
-És fàcil veure que $C_P/C_V=5/3=1.67$ i podem comparar aquests coeficients per a diversos gasos reals, per tal d'establir diferències amb el seu comportament ideal (Taula \ref{tab:cpcv}).
+És fàcil veure que $C_P/C_V=5/3=1.67$ i podem comparar aquests coeficients per a diversos gasos monoatòmics, per tal d'establir diferències amb el seu comportament ideal (Taula \ref{tab:cpcv}).
 \begin{table}
 	\begin{center}
 		\caption{Quocients de capacitat calorífica \cite{mahan_quimica_1997}.}
@@ -354,30 +295,9 @@ i, per tant,
 		\end{tabular}
 	\end{center}
 \end{table}
-\begin{exr}
-Perquè hi ha aquestes diferències entre la columna de l'esquerra i la de la dreta de la Taula \ref{tab:cpcv}? (Adona't que si un gas monoatòmic ideal, pel fet d'estar només augmentant la seva energia cinètica translacional té una $C_V=\frac{3}{2}R$, es pot entendre que per a cada component (eix) necessita $\frac{1}{2}R$)
-\end{exr}
-\lct{
-    Els quocients de la capacitat calorífica dels gasos diatòmics són molt menors que 1,67, i hem d'esbrinar la raó d'aquestes desviacions.
-
-    Primerament, notem que $C_V$, la capacitat calorífica deguda al moviment de translació de les molècules, és igual a $\frac{3}{2}R$, i que hi ha tres components independents de velocitat associats amb el moviment de translació. Per tant, podem inferir que cadascun dels tres moviments de translació independents contribueix amb $\frac{1}{2}R$ a la capacitat calorífica molar. Sobre aquesta base, podríem esperar que, si algun altre tipus de moviment fos accessible a les molècules de gas, hi hauria més contribucions a la capacitat molar i aquestes entrarien en unitats de $\frac{1}{2}R$.
-    
-   A més de tenir els tres moviments de translació, una molècula diatòmica pot rotar al voltant del seu centre de massa segons dos modes mútuament perpendiculars i independents. Assignant $\frac{1}{2}R$ com la contribució de cadascun d'aquests moviments a la capacitat calorífica, tenim:
-    
-    \[
-    C_V = \underbrace{\frac{3}{2}R}_{\text{traslació}} + \underbrace{\frac{1}{2}R + \frac{1}{2}R}_{\text{rotació}} = \frac{5}{2}R,
-    \]
-    
-    \[
-    C_P = C_V + R = \frac{7}{2}R,
-    \]
-    
-    \[
-    \frac{C_P}{C_V} = \frac{\frac{7}{2}R}{\frac{5}{2}R} = \frac{7}{5} = 1,40.
-    \]
-}
 
 
+\input{../Exercicis/ex_CvCp1.tex}
 
 
 \subsection{Gasos no ideals}
@@ -448,11 +368,7 @@ La Taula \ref{tab:van_der_waals} mostra els valors de $a$ i $b$ per a diferents 
 \label{tab:van_der_waals}
 \end{table}
 
-\begin{exr}
-Què passa segons l'Equació \ref{Eq:vdW} si la pressió es fa propera a zero o bé la temperatura es fa molt gran per a un gas real?   La figura mostra el factor de compressibilitat per a un mateix gas a diferents temperatures
-\begin{center}        \includegraphics[scale=1.0]{FactorCompressT.png}
-\end{center}
-\end{exr}
+\input{../Exercicis/ex_limitIdeal.tex}
 
 
 Les forces de van der Waals que fan que es perdi la idealitat són degudes a tres contribucions:
@@ -462,44 +378,9 @@ Les forces de van der Waals que fan que es perdi la idealitat són degudes a tre
 \item Efecte de dispersió: forces de dispersió.
 \end{enumerate}
 
-\begin{exr}
-Perquè \ch{CO2} i \ch{O2} tenen una desviació negativa respecte al comportament del gas ideal a pressions i temperatures moderades, mentres que l'He i el \ch{H2} presenten una deviació positiva en les mateixes condicions?
-\end{exr}
+\input{../Exercicis/ex_desviacioIdeal.tex}
 
 \newpage
 \section{Codis}
 
-\begin{lstlisting}[language=Matlab, caption={Codi Matlab per dibuixar una distribució de Maxwell-Boltzmann}]
-    clc; clear; close all;
-    
-    % Definim constants
-    kB = 1.38e-23;  % Constant de Boltzmann (J/K)
-    T = 300;        % Temperatura en Kelvin
-    m = 4.65e-26;   % Massa de la molècula (kg) (exemple: molècula de nitrogen)
-    
-    % Definim el rang de velocitats
-    v = linspace(0, 2000, 1000);  % Rang de velocitats (m/s)
-    
-    % Funció de distribució de Maxwell-Boltzmann
-    f_v = ( (m / (2 * pi * kB * T))^(3/2) ) * 4 * pi * v.^2 .* exp(-m * v.^2 / (2 * kB * T));
-    
-    % Representació gràfica de la distribució
-    figure;
-    plot(v, f_v, 'b', 'LineWidth', 2);
-    xlabel('Velocitat (m/s)');
-    ylabel('Densitat de probabilitat f(v)');
-    title('Distribució de Maxwell-Boltzmann');
-    grid on;
-    
-    % Càlcul de la velocitat més probable, la velocitat mitjana i la velocitat quadràtica mitjana
-    v_mp = sqrt(2 * kB * T / m);  % Velocitat més probable
-    v_mitjana = sqrt(8 * kB * T / (pi * m));  % Velocitat mitjana
-    v_rms = sqrt(3 * kB * T / m);  % Velocitat quadràtica mitjana
-    
-    hold on;
-    xline(v_mp, '--r', 'Velocitat més probable', 'LabelHorizontalAlignment', 'right');
-    xline(v_mitjana, '--g', 'Velocitat mitjana', 'LabelHorizontalAlignment', 'right');
-    xline(v_rms, '--m', 'Velocitat RMS', 'LabelHorizontalAlignment', 'right');
-    legend('Distribució de Maxwell-Boltzmann', 'Velocitat més probable', 'Velocitat mitjana', 'Velocitat RMS');
-    hold off;
-    \end{lstlisting}
+\input{matlab_MaxwellBoltzmann.tex}

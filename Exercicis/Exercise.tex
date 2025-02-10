@@ -12,6 +12,7 @@
 \DeclareSIUnit\ounce{oz}
 \DeclareSIUnit\pound{lb}
 \DeclareSIUnit\ton{t}
+\DeclareSIUnit\torr{Torr}
 
 \DeclareSIUnit\cubicinch{\inch\cubed}
 \DeclareSIUnit\cubicfoot{\foot\cubed}
@@ -25,7 +26,8 @@
 \newcommand{\degF}{\degreeFahrenheit}
 % mates
 \usepackage{cancel}
-
+\usepackage{graphicx}
+\graphicspath{{../figures/}}
 
 \usepackage{framed}
 \newcounter{myc}
@@ -56,7 +58,6 @@
 % in principle the lecturer text includes some examples to be done in the c lass
 \usepackage{ifthen}
 \newboolean{LECT}
-\setboolean{LECT}{false}
 \setboolean{LECT}{true}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -92,10 +93,21 @@
 \begin{document}
 
 \section{Tema 1. Els gasos i el seu comportament}
+\input{../Exercicis/ex_ideal1.tex}	
+\input{../Exercicis/ex_ideal2.tex}	
+\input{../Exercicis/ex_ideal3.tex}
+\input{../Exercicis/ex_ideal4.tex}
+\input{../Exercicis/ex_ideal5.tex}
+\input{../Exercicis/ex_ideal6.tex}
+\input{../Exercicis/ex_limitIdeal.tex}
 \input{ex5.tex} % Dalton
 \input{EX1_fraccioMeta.tex}
 \input{ex_PressioParcial.tex}
+\input{../Exercicis/ex_CvCp1.tex}
+\input{../Exercicis/ex_TeoriaCineticaGasos1.tex}
+\input{../Exercicis/ex_TeoriaCineticaGasos2.tex}
 \input{EX1_TvanderWaals.tex}
+\input{../Exercicis/ex_desviacioIdeal.tex}
 %\input{ex1.tex} % Raoult
 %\input{ex2.tex} % Henry
 %\input{ex3.tex} % Henry
