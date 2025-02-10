@@ -1,4 +1,43 @@
     \begin{exr}
         Dalt de l'Everest, la pressió atmosfèrica és de 0,33 atm i la temperatura de 50 sota zero. Quina és la densitat de l'aire si en CN és de 1.29\si{\gram\per\deci\meter\tothe{3}}?.
         \end{exr}
-    
+    \lct{
+
+
+Sabem que la densitat de l'aire en condicions normals (CN) és:
+
+\[
+\rho_{\text{CN}} = \SI{1.29}{\gram\per\deci\meter\cubed}
+\]
+
+Les condicions a dalt de l’Everest són:
+
+\begin{itemize}
+    \item Pressió atmosfèrica: \( P = \SI{0.33}{\atm} \)
+    \item Temperatura: \( T = \SI{-50}{\celsius} = \SI{223}{\kelvin} \)
+    \item Condicions normals (CN):
+    \begin{itemize}
+        \item Pressió normal: \( P_{\text{CN}} = \SI{1}{\atm} \)
+        \item Temperatura normal: \( T_{\text{CN}} = \SI{273}{\kelvin} \)
+    \end{itemize}
+\end{itemize}
+
+Sabem que la densitat d'un gas està relacionada amb la pressió i la temperatura segons l'expressió:
+
+\[
+\frac{\rho}{\rho_{\text{CN}}} = \frac{P}{P_{\text{CN}}} \times \frac{T_{\text{CN}}}{T}
+\]
+
+Aïllant \( \rho \):
+
+\[
+\rho = \rho_{\text{CN}} \times \frac{P}{P_{\text{CN}}} \times \frac{T_{\text{CN}}}{T}
+\]
+
+Substituïm els valors donats:
+
+\[
+\rho = (\SI{1.29}{\gram\per\deci\meter\cubed}) \times \frac{\SI{0.33}{\atm}}{\SI{1}{\atm}} \times \frac{\SI{273}{\kelvin}}{\SI{223}{\kelvin}}=\SI{0.52}{\gram\per\deci\meter\cubed}
+\]
+
+    }

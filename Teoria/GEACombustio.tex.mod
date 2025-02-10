@@ -1,0 +1,42 @@
+\chapter{Combustió}
+
+\begin{mybox}[title=Determinació de la reacció teòrica de combustió del \textit{n}-octà amb aire]
+
+
+    La base de càlcul és \qty{1}{\mole} de \ch{C8H18}. Plantegem la reacció de combustió de \qty{1}{\mole} amb $A$ moles d’aire:
+
+    \begin{equation}
+        \ch{C8H18} + A(0.21 \ch{O2} + 0.79 \ch{N2}) \ch{-> b CO2 + c H2O + d N2}
+    \end{equation}
+    
+    Els coeficients estequiomètrics $A$, $b$, $c$, $d$ es calculen mitjançant el balanç de les espècies atòmiques C, H, O i N:
+    
+    \begin{itemize}
+        \item Balanç de C: \quad $8 = b$ \quad $\Rightarrow$ \quad $b = \qty{8}{\mole} \ch{CO2}/\qty{1}{\mole} \ch{C8H18}$
+        \item Balanç de H: \quad $18 = 2c$ \quad $\Rightarrow$ \quad $c = \qty{9}{\mole} \ch{H2O}/\qty{1}{\mole} \ch{C8H18}$
+        \item Balanç de \ch{O2}: \quad $0.21A = b + \frac{c}{2}$ \quad $\Rightarrow$ \quad $A = \qty{59.52}{\mole} \text{aire}/\qty{1}{\mole} \ch{C8H18}$
+        \item Balanç de \ch{N2}: \quad $0.79A = d$ \quad $\Rightarrow$ \quad $d = \qty{47.02}{\mole} \ch{N2}/\qty{1}{\mole} \ch{C8H18}$
+    \end{itemize}
+    
+    Així, la reacció teòrica de combustió és:
+    
+    \begin{equation}
+        \ch{C8H18 + 59.52( 0.21 O2 + 0.79 N2 ) -> 8 CO2 + 9 H2O + 47.02 N2}
+    \end{equation}
+    
+    Un mètode alternatiu és plantejar la reacció de combustió en funció només de l'oxigen:
+    
+    \begin{equation}
+        \ch{C8H18} + a \left( \ch{O2} + \frac{79}{21} \ch{N2}\right) \ch{-> b CO2 + c H2O + d N2}
+    \end{equation}
+    
+    Els balanços es fan com segueix:
+    
+    \begin{itemize}
+        \item Balanç de C: \quad $8 = b$ \quad $\Rightarrow$ \quad $b = \qty{8}{\mole} \ch{CO2}/\qty{1}{\mole} \ch{C8H18}$
+        \item Balanç de H: \quad $18 = 2c$ \quad $\Rightarrow$ \quad $c = \qty{9}{\mole} \ch{H2O}/\qty{1}{\mole} \ch{C8H18}$
+        \item Balanç de \ch{O2}: \quad $a = b + \frac{c}{2}$ \quad $\Rightarrow$ \quad $a = \qty{12.5}{\mole} \ch{O2}/\qty{1}{\mole} \ch{C8H18}$
+        \item Balanç de \ch{N2}: \quad $\frac{79}{21}a = d$ \quad $\Rightarrow$ \quad $d = \qty{47.02}{\mole} \ch{N2}/\qty{1}{\mole} \ch{C8H18}$
+    \end{itemize}
+
+\end{mybox}
