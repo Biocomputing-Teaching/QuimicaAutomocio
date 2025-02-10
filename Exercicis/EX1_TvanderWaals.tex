@@ -1,0 +1,49 @@
+\begin{qst}
+Considerant que no es comporta idealment, calcula la temperatura de \qty{10}{\mole} de monòxid de carboni (\ch{CO}) sotmesos a una pressió de \qty{5}{\kilo\pascal} en un volum de \qty{2}{\meter\tothe{3}}.
+\end{qst}
+\lct{
+    L'equació de Van der Waals per gasos reals és:
+
+    \[
+    \left( P + \frac{n^2 a}{V^2} \right) (V - nb) = nRT
+    \]
+    
+on $a$ i $b$ són constants que depenen de la naturalesa del gas. En el nostre cas:
+
+\begin{itemize}
+    \item Nombre de mols: \( n = 10 \) mol  
+    \item Pressió: \( P = \qty{5}{\kilo\pascal} \cdot \frac{\qty{1}{\atm}}{\qty{101.325}{\kPa}} = \qty{0.0493}{\atm} \)  
+    \item Volum: \( V = \qty{2}{\meter\tothe{3}} = \qty{2000}{\liter} \)  
+    \item Constants de Van der Waals per \ch{CO}:
+    \begin{itemize}
+        \item \( a = \qty{1.4850}{\liter\squared\atm\per\mole\squared} \)
+        \item \( b = \qty{0.03985}{\liter\per\mole} \)
+    \end{itemize}
+    \item Constant dels gasos: \( R = \qty{0.0821}{\liter\atm\per\mole\per\kelvin} \)
+\end{itemize}
+
+Calculem el terme de correcció de la pressió:
+
+\[
+    P + \frac{a n^2}{V^2} = 0.0493+\frac{(1.4850)(10)^2}{(2000)^2} = \qty{0.0493}{\atm}
+\]
+
+
+Calculem el volum corregit:
+
+\[
+V - nb = 2000 - (10 \times 0.03985) = 2000 - 0.3985 = \qty{1999.6}{\liter}
+\]
+
+Es pot veure com l'efecte de la no idealitat en aquest gas és molt reduït.  
+Substituïm a l'equació:
+
+\[
+(0.0493)(1999.6) = (10)(0.0821)T
+\]
+
+
+\[
+T = \frac{98.57}{0.821} = \qty{120}{\kelvin}
+\]
+}

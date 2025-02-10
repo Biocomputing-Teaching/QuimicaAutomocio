@@ -4,7 +4,25 @@
 \usepackage[catalan]{babel}
 \usepackage{chemformula}
 \usepackage{siunitx}
+% Definició d'unitats personalitzades per al sistema imperial
+\DeclareSIUnit\inch{in}
+\DeclareSIUnit\foot{ft}
+\DeclareSIUnit\atm{atm}
+\DeclareSIUnit\oz{oz}
+\DeclareSIUnit\ounce{oz}
+\DeclareSIUnit\pound{lb}
+\DeclareSIUnit\ton{t}
 
+\DeclareSIUnit\cubicinch{\inch\cubed}
+\DeclareSIUnit\cubicfoot{\foot\cubed}
+\DeclareSIUnit\gallon{gal}
+\DeclareSIUnit\psi{psi}
+\DeclareSIUnit\inchHg{inHg}
+\DeclareSIUnit\dyn{dynes}
+
+\DeclareSIUnit{\degreeFahrenheit}{\unit{\degree}F}
+\newcommand{\degC}{\degreeCelsius}
+\newcommand{\degF}{\degreeFahrenheit}
 % mates
 \usepackage{cancel}
 
@@ -73,8 +91,9 @@
 
 \begin{document}
 
-
+\input{EX1_fraccioMeta.tex}
 \input{ex_PressioParcial.tex}
+\input{EX1_TvanderWaals.tex}
 \input{ex1.tex}
 \input{ex2.tex}
 \input{ex3.tex}
