@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1739166143.72667 "Exercise.tex" "Exercise.pdf" "Exercise" 1739166144.97775 0
+["pdflatex"] 1739166414.68819 "Exercise.tex" "Exercise.pdf" "Exercise" 1739166415.7413 0
   "/etc/texmf/web2c/texmf.cnf" 1693479407.22171 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -147,14 +147,9 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1726152742 6852505 e04ce9148cb683c6cca801ac78b863b2 ""
   "EX1_TvanderWaals.tex" 1739165348.92708 1482 1554f6c0da3614b9b1343f54c2373cbd ""
   "EX1_fraccioMeta.tex" 1739163902.89867 1846 e986ba1c4d76369fd5b8cdb9f6f91ebc ""
-  "Exercise.aux" 1739166144.89266 132 9bb0bf918a865ff1056a3dbf3192991f "pdflatex"
-  "Exercise.tex" 1739164661.18381 2463 3821e878f7771baa9b07e12bf33804e0 ""
-  "ex1.tex" 1738244688.59872 845 bd52e6210ce778ff3b69c4e452a06a67 ""
-  "ex2.tex" 1738771808.42421 454 4c85277c87656f32cbcebeb50f10a9fc ""
-  "ex3.tex" 1738772092.56132 679 3589dde7b4dbdc2d975af24f20358d3c ""
-  "ex4.tex" 1739166140.26683 697 86961f4d5817eef5452499ff0234642f ""
+  "Exercise.aux" 1739166415.6521 132 a983402d2103fbce6b1776c8889966be "pdflatex"
+  "Exercise.tex" 1739166411.46614 2539 0f72db4aeb394d909412bf301cafbcce ""
   "ex5.tex" 1739165322.96992 1081 0bceabd7fb6ff4bdb63277ef64905ebf ""
-  "ex6.tex" 1738244688.59872 788 117abd454d04770852a05a23e205da1c ""
   "ex_PressioParcial.tex" 1738772696.60611 1980 1edce216fcfa8901bb37582d228a850a ""
   (generated)
   "Exercise.aux"
