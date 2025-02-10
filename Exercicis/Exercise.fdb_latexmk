@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1739166414.68819 "Exercise.tex" "Exercise.pdf" "Exercise" 1739166415.7413 0
+["pdflatex"] 1739166462.75197 "Exercise.tex" "Exercise.pdf" "Exercise" 1739166463.76072 0
   "/etc/texmf/web2c/texmf.cnf" 1693479407.22171 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -11,6 +11,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1136768653 1520 eccf95517727cb11801f4f1aee3a21b4 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1136768653 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
@@ -147,8 +148,8 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1726152742 6852505 e04ce9148cb683c6cca801ac78b863b2 ""
   "EX1_TvanderWaals.tex" 1739165348.92708 1482 1554f6c0da3614b9b1343f54c2373cbd ""
   "EX1_fraccioMeta.tex" 1739163902.89867 1846 e986ba1c4d76369fd5b8cdb9f6f91ebc ""
-  "Exercise.aux" 1739166415.6521 132 a983402d2103fbce6b1776c8889966be "pdflatex"
-  "Exercise.tex" 1739166411.46614 2539 0f72db4aeb394d909412bf301cafbcce ""
+  "Exercise.aux" 1739166463.67283 259 a15d6efaed67f1d53e60a74c5d96a876 "pdflatex"
+  "Exercise.tex" 1739166458.00985 2589 1aeecdb4744c00e09e669eaaa3d64b28 ""
   "ex5.tex" 1739165322.96992 1081 0bceabd7fb6ff4bdb63277ef64905ebf ""
   "ex_PressioParcial.tex" 1738772696.60611 1980 1edce216fcfa8901bb37582d228a850a ""
   (generated)
