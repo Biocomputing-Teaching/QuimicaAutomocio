@@ -33,7 +33,7 @@ Theory: ${PROJECT}.pdf
 # 		rm -f temp_header_footer.tex temp_header_footer_modified.tex; \
 # 	done
 
-GEA_pdfs:
+files:
 	@for file in $(wildcard GEA*.tex); do \
 		cp $(HEADER_FOOTER_TEMPLATE) temp_header_footer.tex; \
 		cp $$file $$file.mod; \

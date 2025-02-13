@@ -1,0 +1,45 @@
+\begin{exr}
+Es prepara una mescla de gasos d'hidrogen ($\ch{H2}$) i heli ($\ch{He}$) tal que les molècules de cada gas produeixin el mateix nombre de col·lisions amb la paret per unitat de temps. Determinem quin gas té la concentració més alta.
+\end{exr}
+\lct{
+\textbf{Consideració com a gasos ideals}
+
+L'energia cinètica translacional d'un mol de gas és 
+\[\left<E_c\right>=N_0 \frac{m <c^2>}{2}=\frac{3}{2} RT\]
+on $M=N_0m$ és la massa molecular del gas en \si{\kilogram\per\mole}. 
+
+Per tant, la velocitat quadràtica mitjana és:
+\begin{equation}
+    c_{\text{rms}} = \sqrt{\frac{3RT}{M}}
+\end{equation}
+Com que la taxa de col·lisions amb la paret és proporcional a $n v_{\text{rms}}$, imposem la condició d’igualtat:
+\begin{equation}
+    n_{\ch{H}} \cdot \sqrt{\frac{3RT}{M_{\ch{H}}}} = n_{\ch{He}} \cdot \sqrt{\frac{3RT}{M_{\ch{He}}}}
+\end{equation}
+Substituint masses moleculars $M_{\ch{H}} = 2$ g/mol i $M_{\ch{He}} = 4$ g/mol:
+\begin{equation}
+    n_{\ch{H}} \cdot \sqrt{\frac{1}{2}} = n_{\ch{He}} \cdot \sqrt{\frac{1}{4}}
+\end{equation}
+\begin{equation}
+    n_{\ch{H}} \cdot \frac{1}{\sqrt{2}} = n_{\ch{He}} \cdot \frac{1}{2}
+\end{equation}
+Resolent per $n_{\ch{H}}$:
+\begin{equation}
+    n_{\ch{H}} = \frac{n_{\ch{He}}}{\sqrt{2}}
+\end{equation}
+Per tant, la concentració de $\ch{H2}$ ha de ser més alta que la de $\ch{He}$.
+\\[10pt]
+\textbf{Consideració com a gasos no ideals}
+
+Si considerem gasos reals, hem de corregir la velocitat mitjana tenint en compte el factor de compressibilitat $Z$:
+\begin{equation}
+    v_{\text{rms}} = \sqrt{\frac{3ZRT}{M}}
+\end{equation}
+A pressions altes, $Z_{\ch{H2}} > Z_{\ch{He}}$ per les interaccions intermoleculars més fortes d’hidrogen, la qual cosa redueix la seva velocitat i altera la relació de concentracions calculada abans. 
+
+Amb l’equació de van der Waals:
+\begin{equation}
+    \left( P + \frac{a}{V^2} \right) (V - b) = RT
+\end{equation}
+On $a_{\ch{H}} > a_{\ch{He}}$, la densitat efectiva de $\ch{H2}$ serà menor que en el cas ideal, cosa que, novament, fa necessari afegir més partícules de \ch{H2} que d'\ch{He} per a assolir la mateixa taxa de col·lisions.
+}

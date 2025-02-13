@@ -3,6 +3,11 @@
 \usepackage[utf8]{inputenc}
 \usepackage[catalan]{babel}
 \usepackage{chemformula}
+\usepackage{chemmacros}
+\chemsetup[reactions]{
+    before-tag = R,
+    tag-open = [ , tag-close = ]
+}
 \usepackage{siunitx}
 % Definició d'unitats personalitzades per al sistema imperial
 \DeclareSIUnit\inch{in}
@@ -74,9 +79,9 @@
 
 \newcommand{\lct}[1]{\ifthenelse{\boolean{LECT}}{\begin{lect} #1 \end{lect}}{}}
 
-
 % header and footer
 \usepackage{fancyhdr}
+
 \pagestyle{fancy}       %
 \lhead{\bf Química GEA-17UV}                %
 \chead{}                %
@@ -85,33 +90,22 @@
 \lfoot{Exercicis resolts}
 \cfoot{\today}                %
 
+\usepackage[backend=bibtex,style=numeric]{biblatex} 
 
 \title{Química Enginyeria de l'Automoció: Exercicis}
 \date{Març 2018}
 \author{Jordi Vill\`a i Freixa (jordi.villa@uvic.cat)}
-
+\addbibresource{../Teoria/QuimAutom.bib}
 \begin{document}
 
 \section{Tema 1. Els gasos i el seu comportament}
-\input{../Exercicis/ex_ideal1.tex}	
-\input{../Exercicis/ex_ideal2.tex}	
-\input{../Exercicis/ex_ideal3.tex}
-\input{../Exercicis/ex_ideal4.tex}
-\input{../Exercicis/ex_ideal5.tex}
-\input{../Exercicis/ex_ideal6.tex}
-\input{../Exercicis/ex_limitIdeal.tex}
-\input{ex5.tex} % Dalton
-\input{EX1_fraccioMeta.tex}
-\input{ex_PressioParcial.tex}
-\input{../Exercicis/ex_CvCp1.tex}
-\input{../Exercicis/ex_TeoriaCineticaGasos1.tex}
-\input{../Exercicis/ex_TeoriaCineticaGasos2.tex}
-\input{EX1_TvanderWaals.tex}
-\input{../Exercicis/ex_desviacioIdeal.tex}
+\input{../Exercicis/ex_GEAGasos.tex}
 %\input{ex1.tex} % Raoult
 %\input{ex2.tex} % Henry
 %\input{ex3.tex} % Henry
 %\input{ex4.tex} % solubilitat
 %\input{ex6.tex} % entalpia de formació
+
+\printbibliography
 
 \end{document}

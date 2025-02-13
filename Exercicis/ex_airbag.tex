@@ -1,0 +1,122 @@
+\begin{exr}
+    Els coixins de seguretat ({\em airbag}) dels cotxes s'inflen mitjançant una sèrie de reaccions químiques ràpides que produeixen gas en menys de \qty{0.04}{\second}. En les seves primeres versions, la reacció es basava en la descomposició de \ch{NaN3} (extremadament tòxic), seguida de dues reaccions addicionals per neutralitzar els subproductes perillosos. Les equacions químiques d'aquest procés són:  
+ 
+    \begin{reactions}
+        2 NaN3 &-> 2 Na + 3 N2 (g) "\label{reac:nan3}"\\
+        10 Na + 2 KNO3 &-> K2O + 5 Na2O + N2 (g) "\label{reac:na}"\\
+        K2O + Na2O + 2 SiO2 &-> K2SiO3 + Na2SiO3
+    \end{reactions}
+
+Un coixí de seguretat de conductor té un volum aproximat de \qty{65}{\liter} i la pressió final dins del coixí és de \qty{1.35}{\atm}. La temperatura dins del coixí just després de la reacció és \qty{300}{\celsius} (\qty{573}{\kelvin}). Suposem que s'utilitzen \qty{65}{\gram} de \ch{NaN3}.  
+
+ 
+\begin{enumerate}
+    \item Quina quantitat de nitrogen gas (\ch{N2}) es genera en mols només en la primera reacció?
+    \item Quin volum ocuparà aquest gas dins del coixí de seguretat segons la llei dels gasos ideals? És suficient aquest volum per inflar completament el coixí de seguretat?
+    \item Si considerem també la segona reacció, que genera més nitrogen gas, com afectaria això el volum total de gas produït?
+    \item Quan el gas s'expandeix a l'exterior a través dels orificis del coixí, la seva pressió baixa de \qty{1.35}{\atm} a \qty{1.00}{\atm}. Quin percentatge de reducció de temperatura es produeix durant aquesta expansió?
+\end{enumerate}
+(Adaptat de \cite{bowers_understanding_2014}).
+\end{exr}
+
+\lct{
+     \begin{enumerate}
+    \item Quantitat de nitrogen gas (\ch{N2}) generada a R\ref{reac:nan3}:
+    
+    La reacció de descomposició de \ch{NaN3} és:  
+    
+    \begin{equation*}
+        \ch{2 NaN3 -> 2 Na + 3 N2 (g)}
+    \end{equation*}
+    
+    Primer, calculem el nombre de mols de \ch{NaN3} disponibles:  
+    
+    \begin{equation}
+        n_{\ch{NaN3}} = \frac{\qty{65}{\gram}}{\qty{65.019}{\gram\per\mol}} = \qty{1.00}{\mol}
+    \end{equation}
+    
+    De l'estequiometria de la reacció, per cada \qty{2}{\mol} de \ch{NaN3}, es formen \qty{3}{\mol} de \ch{N2}:  
+    
+    \begin{equation}
+        n_{\ch{N2}} = \qty{1.00}{\mol} \times \frac{3}{2} = \qty{1.50}{\mol}
+    \end{equation}
+    
+    \item Volum ocupat pel gas segons la llei dels gasos ideals:
+    
+    Utilitzem l'equació dels gasos ideals:  
+    
+    \begin{equation}
+        V = \frac{nRT}{P}
+    \end{equation}
+    
+    On:
+    \begin{itemize}
+        \item $n = \qty{1.50}{\mol}$
+        \item $R = \qty{0.0821}{\liter\atm\per\mol\per\kelvin}$
+        \item $T = \qty{573}{\kelvin}$
+        \item $P = \qty{1.35}{\atm}$
+    \end{itemize}
+    
+    \begin{equation}
+        V = \frac{\qty{1.50}{\mol} \times \qty{0.0821}{\liter\atm\per\mol\per\kelvin} \times \qty{573}{\kelvin}}{\qty{1.35}{\atm}}= \qty{52.3}{\liter}
+    \end{equation}
+      
+    El volum necessari per inflar el coixí de seguretat és d'uns \qty{65}{\liter}. Atès que només la primera reacció genera \qty{52.3}{\liter}, sembla que no és suficient. No obstant això, la segona reacció també genera gas \ch{N2}, augmentant el volum total.  
+    
+    \item Contribució de la segona reacció al volum total de gas:
+    
+    La reacció R\ref{reac:na} genera gas addicional:  
+    
+    \begin{equation}
+        \ch{10 Na + 2 KNO3 -> K2O + 5 Na2O + N2 (g)}
+    \end{equation}
+    
+    Cada \qty{10}{\mol} de Na reacciona per produir \qty{1}{\mol} de \ch{N2}. Sabem que la primera reacció va generar \qty{1.00}{\mol} de Na. Per tant, la segona reacció produeix:  
+    
+    \begin{equation}
+        n_{\ch{N2,2}} = \qty{1.00}{\mol} \times \frac{1}{10} = \qty{0.10}{\mol}
+    \end{equation}
+    
+    Afegint aquest nitrogen al total:  
+    
+    \begin{equation}
+        n_{\ch{N2,\text{total}}} = \qty{1.50}{\mol} + \qty{0.10}{\mol} = \qty{1.60}{\mol}
+    \end{equation}
+    
+    El nou volum total serà:  
+    
+    \begin{equation}
+        V_{\text{total}} = \frac{\qty{1.60}{\mol} \times \qty{0.0821}{\liter\atm\per\mol\per\kelvin} \times \qty{573}{\kelvin}}{\qty{1.35}{\atm}} = \qty{55.7}{\liter}
+    \end{equation}
+    
+    Aquest volum segueix estant lleugerament per sota del mínim requerit (\qty{65}{\liter}), però cal recordar que les reaccions són fortament exotèrmiques, la qual cosa elevarà la temperatura i, en conseqüència, augmentarà el volum de gas.
+    
+    \item Refredament del gas en expandir-se fora del coixí:
+    
+    Segons la llei de Gay-Lussac:
+    
+    \begin{equation}
+        \frac{P_1}{T_1} = \frac{P_2}{T_2}
+    \end{equation}
+    
+    On:
+    \begin{itemize}
+        \item $P_1 = \qty{1.35}{\atm}$, $T_1 = \qty{573}{\kelvin}$
+        \item $P_2 = \qty{1.00}{\atm}$, $T_2$ és la temperatura final
+    \end{itemize}
+    
+    \begin{equation}
+        T_2 = T_1 \times \frac{P_2}{P_1}
+ = \qty{573}{\kelvin} \times \frac{\qty{1.00}{\atm}}{\qty{1.35}{\atm}}
+= \qty{424}{\kelvin}
+    \end{equation}
+    
+    El percentatge de reducció de temperatura és:
+    
+    \begin{equation}
+        \frac{T_1 - T_2}{T_1} \times 100 = \frac{\qty{573}{\kelvin} - \qty{424}{\kelvin}}{\qty{573}{\kelvin}} \times 100 = 25.9\%
+    \end{equation}
+    
+    Així, la temperatura del gas disminueix aproximadament un \qty{26}{\percent} quan s'expandeix fora del coixí de seguretat, ajudant a evitar cremades als passatgers.
+\end{enumerate}
+}

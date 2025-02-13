@@ -2,11 +2,10 @@
 
 \begin{mybox}[title=Determinació de la reacció teòrica de combustió del \textit{n}-octà amb aire]
 
-
-    La base de càlcul és \qty{1}{\mole} de \ch{C8H18}. Plantegem la reacció de combustió de \qty{1}{\mole} amb $A$ moles d’aire:
+    La base de càlcul és \qty{1}{\mole} de \ch{C8H18}. Plantegem la reacció de combustió de \qty{1}{\mole} amb $A$ moles d'aire:
 
     \begin{equation}
-        \ch{C8H18} + A(0.21 \ch{O2} + 0.79 \ch{N2}) \ch{-> b CO2 + c H2O + d N2}
+        \ch{C8H18} + a(0.21 \ch{O2} + 0.79 \ch{N2}) \ch{-> b CO2 + c H2O + d N2}
     \end{equation}
     
     Els coeficients estequiomètrics $A$, $b$, $c$, $d$ es calculen mitjançant el balanç de les espècies atòmiques C, H, O i N:

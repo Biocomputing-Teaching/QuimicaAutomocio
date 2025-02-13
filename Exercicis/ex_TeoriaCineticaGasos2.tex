@@ -2,3 +2,45 @@
 \begin{exr}
 Calcula la velocitat mitjana de les molècules d'hidrògen a 25\si\degreeCelsius.
 \end{exr}
+\lct{
+La velocitat mitjana de les molècules d'un gas es pot calcular a partir de la distribució de Maxwell-Boltzmann. Utilitzant la distribució de Maxwell com a distribució de probabilitats, es pot determinar la velocitat mitjana molecular en una mostra de gasos:
+
+\begin{equation*}
+    \langle v \rangle = \int_{-\infty}^{\infty} v f(v) dv
+\end{equation*}
+
+Substituint la funció de distribució de Maxwell-Boltzmann:
+
+\begin{equation*}
+    \langle v \rangle = \int_{-\infty}^{\infty} v \cdot 4\pi \left(\frac{m}{2\pi k_B T}\right)^{\frac{3}{2}} v^2 \exp{\left(-\frac{m v^2}{2 k_B T} \right)} dv
+\end{equation*}
+
+\noindent Aplicant la següent integral coneguda de les taules d'integrals:
+
+\begin{equation*}
+    \int_0^{\infty} x^{2n+1} e^{-a x^2} dx = \frac{n!}{2 a^{n+1}}
+\end{equation*}
+i agafant $n=1$, s'obté:
+
+\begin{equation*}
+    \langle v \rangle = 4\pi \left(\frac{m}{2\pi k_B T}\right)^{\frac{3}{2}} \cdot \frac{1}{2} \left(\frac{m}{2 k_B T}\right)^{-2}
+\end{equation*}
+
+Finalment, simplificant,
+
+\begin{equation}
+    \langle v \rangle = \sqrt{\frac{8 k_B T}{\pi m}}
+    \label{eq:velocitatMitjana}
+\end{equation}
+
+Substituint les dades a l'Eq. \ref{eq:velocitatMitjana}::
+\begin{equation}
+    R = 8.314 \text{ J/mol·K}, \quad T = 298 \text{ K}, \quad M = 2.016 \times 10^{-3} \text{ kg/mol}
+\end{equation}
+\begin{equation}
+    v_{mitjana} = \sqrt{\frac{8 \times 8.314 \times 298}{\pi \times 2.016 \times 10^{-3}}}
+\end{equation}
+\begin{equation}
+    v_{mitjana} \approx 1.57 \times 10^3 \text{ m/s}
+\end{equation}
+}
