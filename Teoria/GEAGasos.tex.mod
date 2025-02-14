@@ -599,8 +599,8 @@ La taula següent mostra els valors de \( \varepsilon \) i \( \sigma \) per a di
       \label{rep}
       \node [draw,fill=white] at (rel axis cs: 0.8,0.8) {\shortstack[l]{
               \ref{LJ} Lennard Jones \\
-              \ref{att} Attraction \\
-              \ref{rep} Repulsion}};
+              \ref{att} Atracció \\
+              \ref{rep} Repulsió}};
       \end{axis}
   \end{tikzpicture}
     \caption{Potencial de Lennard-Jones amb valors típics (\(\varepsilon = \qty{0.010}{\electronvolt}\), \(\sigma = \qty{3.4}{\angstrom}\)). L'energia potencial disminueix inicialment fins a un mínim, corresponent a la distància d'equilibri on la interacció és més estable. Quan les molècules s'acosten massa, la repulsió electrònica domina i l'energia potencial augmenta ràpidament.}
