@@ -381,6 +381,10 @@ INPUT ../Exercicis/ex_hidrogenacioEtile.tex
 INPUT ../Exercicis/ex_PressioParcial.tex
 INPUT ../Exercicis/ex_PressioParcial.tex
 INPUT ../Exercicis/ex_PressioParcial.tex
+INPUT ../Exercicis/ex_airbag.tex
+INPUT ../Exercicis/ex_airbag.tex
+INPUT ../Exercicis/ex_airbag.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT ../Exercicis/ex_CvCp1.tex
 INPUT ../Exercicis/ex_CvCp1.tex
 INPUT ../Exercicis/ex_CvCp1.tex
@@ -398,10 +402,6 @@ INPUT ../Exercicis/EX1_TvanderWaals.tex
 INPUT ../Exercicis/ex_desviacioIdeal.tex
 INPUT ../Exercicis/ex_desviacioIdeal.tex
 INPUT ../Exercicis/ex_desviacioIdeal.tex
-INPUT ../Exercicis/ex_airbag.tex
-INPUT ../Exercicis/ex_airbag.tex
-INPUT ../Exercicis/ex_airbag.tex
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT Exercise.aux
