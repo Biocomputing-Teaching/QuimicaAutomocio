@@ -503,13 +503,112 @@ La Taula \ref{tab:van_der_waals} mostra els valors de $a$ i $b$ per a diferents 
 
 %\input{../Exercicis/ex_limitIdeal.tex}
 
+\section{Les forces de van der Waals}
 
-Les forces de van der Waals que fan que es perdi la idealitat són degudes a tres contribucions:
+Les forces de van der Waals són degudes a tres contribucions:
 \begin{enumerate}
-\item Efecte d'orientació: forces dipol-dipol.
+\item  forces dipol-dipol.
 \item Efecte de distorsió: forces d'inducció.
 \item Efecte de dispersió: forces de dispersió.
 \end{enumerate}
+
+
+Les forces de van der Waals, que contribueixen a la pèrdua d'idealitat en una gas, són interaccions intermoleculars dèbils que apareixen entre molècules neutres. Aquestes forces inclouen:
+
+\begin{itemize}
+    \item {\bf Forces de dispersió} de London, que són degudes a fluctuacions temporals en la distribució electrònica.
+    \item  {\bf Forces dipol-dipol}, que actuen entre molècules amb moments dipolars permanents.
+    \item {\bf Forces d'inducció}, o forces dipol-induït, que es donen quan una molècula polar indueix un dipol en una molècula apolar.
+\end{itemize}
+
+L'energia potencial associada a les forces de van der Waals es pot aproximar mitjançant el potencial de Lennard-Jones:  
+
+\begin{equation}
+    U(r) = 4 \varepsilon \left[ \left( \frac{\sigma}{r} \right)^{12} - \left( \frac{\sigma}{r} \right)^{6} \right]
+\end{equation}
+
+on:
+\begin{itemize}
+    \item \( U(r) \) és l'energia potencial en funció de la distància intermolecular \( r \).
+    \item \( \varepsilon \) és la profunditat del pou de potencial, representant la intensitat de la interacció.
+    \item \( \sigma \) és la distància a la qual el potencial és zero.
+\end{itemize}
+
+La taula següent mostra els valors de \( \varepsilon \) i \( \sigma \) per a diferents gasos.
+
+\begin{table}[h]
+  \centering
+  \caption{Paràmetres de Lennard-Jones parameters, $\varepsilon$ i $\sigma$, per a diverses substàncies.}
+  \begin{tabular}{l S[table-format=3.1] S[table-format=3.0]}
+      \hline
+      \textbf{Species} & {($\varepsilon / k_B$)/K} & {$\sigma$/pm} \\
+      \hline
+      \ch{He}   & 10.22  & 256  \\
+      \ch{Ne}   & 35.6   & 275  \\
+      \ch{Ar}   & 120    & 341  \\
+      \ch{Kr}   & 164    & 383  \\
+      \ch{Xe}   & 229    & 406  \\
+      \ch{H2}   & 37.0   & 293  \\
+      \ch{N2}   & 95.1   & 370  \\
+      \ch{O2}   & 118    & 358  \\
+      \ch{CO}   & 100    & 376  \\
+      \ch{CO2}  & 189    & 449  \\
+      \ch{CF4}  & 152    & 470  \\
+      \ch{CH4}  & 149    & 378  \\
+      \ch{C2H4} & 199    & 452  \\
+      \ch{C2H6} & 243    & 395  \\
+      \ch{C3H8} & 242    & 564  \\
+      \ch{C(CH3)4} & 232 & 744  \\
+      \hline
+  \end{tabular}
+\end{table}
+
+
+\begin{figure}
+    \begin{tikzpicture}
+        \begin{axis}[
+            width=12cm, height=8cm,
+            xlabel={Distància \( r \) (\si{\angstrom})},
+            ylabel={Energia potencial \( U(r) \) (\si{\electronvolt})},
+            domain=3:5,
+            samples=100,
+            grid=major,
+            thick,
+            legend pos=north east
+        ]
+        \addplot[blue, thick] {4*0.0103*((3.4/x)^12 - (3.4/x)^6)};
+        \legend{Potencial de Lennard-Jones}
+        \end{axis}
+    \end{tikzpicture}
+    \begin{tikzpicture}
+      \begin{axis}[
+          width=12cm, height=8cm,
+          xlabel={Distància \( r \) (\si{\angstrom})},
+          ylabel={Energia potencial \( U(r) \) (\si{\electronvolt})},
+          domain=3:5,
+          samples=100,
+          grid=major,
+          thick,
+          legend pos=north east
+      ]
+      \addplot[blue, thick] {4*0.0103*((3.4/x)^12 - (3.4/x)^6)};
+      \label{LJ}
+      \addplot[red, thick] {4*0.0103*(- (3.4/x)^6)};
+      \label{att}
+      \addplot[green, thick] {4*0.0103*((3.4/x)^12) };
+      \label{rep}
+      \node [draw,fill=white] at (rel axis cs: 0.8,0.8) {\shortstack[l]{
+              \ref{LJ} Lennard Jones \\
+              \ref{att} Attraction \\
+              \ref{rep} Repulsion}};
+      \end{axis}
+  \end{tikzpicture}
+    \caption{Potencial de Lennard-Jones amb valors típics (\(\varepsilon = \qty{0.010}{\electronvolt}\), \(\sigma = \qty{3.4}{\angstrom}\)). L'energia potencial disminueix inicialment fins a un mínim, corresponent a la distància d'equilibri on la interacció és més estable. Quan les molècules s'acosten massa, la repulsió electrònica domina i l'energia potencial augmenta ràpidament.}
+\end{figure}
+
+
+
+
 
 %\input{../Exercicis/ex_desviacioIdeal.tex}
 
