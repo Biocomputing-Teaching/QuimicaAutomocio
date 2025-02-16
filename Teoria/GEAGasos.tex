@@ -1,4 +1,4 @@
-\chapter{Les propietats i el comportament dels gasos}
+\chapter*{Les propietats i el comportament dels gasos}
 
 L'estudi dels gasos és fonamental per a comprendre el comportament de la matèria en estat gasós. Aquests conceptes són claus tant en la química moderna com en l'aplicació industrial. Les lleis dels gasos proporcionen una base per descriure el comportament macroscòpic dels gasos en funció de la temperatura, el volum i la pressió. Aquestes lleis són fonamentals per a la comprensió de molts processos químics i físics, com ara la termodinàmica, la cinètica química i la química de superfícies.
 

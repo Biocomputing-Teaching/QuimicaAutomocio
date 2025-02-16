@@ -14,4 +14,7 @@
 *.blg
 *.bbl
 *.pro
+*.mod
+*.fdb_latexmk
+temp*
 

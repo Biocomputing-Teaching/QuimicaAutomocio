@@ -95,6 +95,8 @@
 
 \usepackage{tikz}
 \usetikzlibrary{patterns,decorations.pathmorphing}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{calc,shadings,shapes.symbols}
 \usetikzlibrary{arrows.meta}
 \tikzset{>=latex}
 
@@ -129,3 +131,11 @@
 
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
+
+
+% diferencials
+
+\newcommand{\diff}{\mathop{}\!\mathrm{d}}
+% http://tex.stackexchange.com/a/253108/4427
+\newcommand{\dbar}{{\mkern2mu\mathchar'26\mkern-11mu \mathrm{d}}}
+\newcommand{\idiff}{\mathop{}\!\dbar}
