@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex Exercise"] 1739742777.42697 "Exercise.aux" "Exercise.bbl" "Exercise" 1739742805.7193 0
-  "../Teoria/QuimAutom.bib" 1739737988.15419 11563 34fb666978ae73346cb2275de3c5a926 ""
-  "./Exercise-blx.bib" 1739742805.33748 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad ""
+["bibtex Exercise"] 1739776824.76436 "Exercise.aux" "Exercise.bbl" "Exercise" 1739776952.98924 0
+  "../Teoria/QuimAutom.bib" 1739767649.77178 11842 448167a3b0cd31a6340a74df07c8857f ""
+  "./Exercise-blx.bib" 1739776952.6736 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1678141846 65484 b7949c47a88ed6dca66ebc7a04577312 ""
-  "Exercise.aux" 1739742805.33548 1708 8498e3f403895340129463393aa01dde "pdflatex"
+  "Exercise.aux" 1739776952.6716 1708 8498e3f403895340129463393aa01dde "pdflatex"
   (generated)
   "Exercise.bbl"
   "Exercise.blg"
   (rewritten before read)
-["pdflatex"] 1739742802.42585 "Exercise.tex" "Exercise.pdf" "Exercise" 1739742805.71949 0
+["pdflatex"] 1739776949.5326 "Exercise.tex" "Exercise.pdf" "Exercise" 1739776952.98956 0
   "../Exercicis/EX1_TvanderWaals.tex" 1739451862.947 1482 a996da2edbf5ecce3828742b0d93af7e ""
   "../Exercicis/EX1_fraccioMeta.tex" 1739451917.46042 1844 226d51a55ca43db0bbeb66fa2e9bebe4 ""
   "../Exercicis/ex5.tex" 1739451888.24419 1081 1c3f34f70c0816cb59413691f6de34dc ""
@@ -20,7 +20,7 @@
   "../Exercicis/ex_TeoriaCineticaGasos1.tex" 1739182612.09488 226 6dc04157cbc1db7cc6205ef30aade0a3 ""
   "../Exercicis/ex_TeoriaCineticaGasos2.tex" 1739454447.28323 1639 0880b834df553d6c18bf31569161b0d5 ""
   "../Exercicis/ex_airbag.tex" 1739480475.41241 5501 1d0d82a39d36850bcb22d54dd75ca24a ""
-  "../Exercicis/ex_balancCombustio.tex" 1739739794.10032 2125 19dba0048d8953ea3f531b856b8a2480 ""
+  "../Exercicis/ex_balancCombustio.tex" 1739776944.07754 2158 c0153768ce1880a0de5a77e0abb81553 ""
   "../Exercicis/ex_combustioBenze.tex" 1739741737.90044 811 082fb132252a55a27519e739996d46ca ""
   "../Exercicis/ex_composicio.tex" 1739438968.2876 1781 51abc9abb1b43f7ee5ffb0ab2e4a4fa7 ""
   "../Exercicis/ex_desviacioIdeal.tex" 1739453127.15461 1087 679805ba8f4c820ff031449d05d5bbe5 ""
@@ -237,11 +237,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1725009813.69924 5349216 bf3a80e68d946c7acd95ff030fd9bb63 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1726152742 6852505 e04ce9148cb683c6cca801ac78b863b2 ""
-  "Exercise.aux" 1739742805.33548 1708 8498e3f403895340129463393aa01dde "pdflatex"
-  "Exercise.bbl" 1739742777.48534 2400 fbca5c270f531837da936cf7204c5a1b "bibtex Exercise"
-  "Exercise.run.xml" 1739742805.33848 2567 451c4183d2ed7a433a0b415ccea14f0f "pdflatex"
+  "Exercise.aux" 1739776952.6716 1708 8498e3f403895340129463393aa01dde "pdflatex"
+  "Exercise.bbl" 1739776824.82174 2400 fbca5c270f531837da936cf7204c5a1b "bibtex Exercise"
+  "Exercise.run.xml" 1739776952.6746 2567 451c4183d2ed7a433a0b415ccea14f0f "pdflatex"
   "Exercise.tex" 1739742800.89246 2882 c5e67118f42146d3b225f208abc5e4cf ""
-  "Exercise.toc" 1739742805.33848 182 0c1a41229a222b74d492e2759328adda "pdflatex"
+  "Exercise.toc" 1739776952.6746 182 0c1a41229a222b74d492e2759328adda "pdflatex"
   (generated)
   "Exercise-blx.bib"
   "Exercise.aux"

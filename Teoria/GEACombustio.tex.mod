@@ -210,7 +210,7 @@ Aquest motor permet una major efici\`encia t\'ermica i t\'e avantatges econ\`omi
 
 Normalment, la combusti\'o es presenta en qu\'imica general i org\`anica com la reacci\'o dels combustibles hidrocarbonats amb l'oxigen per produir di\`oxid de carboni i aigua:
 \begin{equation}
-\ch{CH4 + 2O2 -> CO2 + 2H2O}
+\ch{CH4 + 2 O2 -> CO2 + 2 H2O}
 \end{equation}
 
 No obstant aix\`o, els combustibles org\`anics contenen m\'es elements que nom\'es carboni i hidrogen, i produeixen altres gasos a banda del di\`oxid de carboni i l'aigua. Els motors de combusti\'o interna tamb\'e generen combustibles hidrocarbonats no cremats i els anomenats NOx t\'ermics, gasos amb la f\'ormula \ch{NO_x} que es formen quan el nitrogen atmosf\`eric es torna molt calent i reacciona amb l'oxigen atmosf\`eric. Aquests gasos contribueixen a les emissions dels motors i es redueixen mitjan\c{c}ant tecnologies d'emissions que es tractaran més endavant.
@@ -224,7 +224,7 @@ Aquests components se separen del petroli mitjançant destil·lació, un procés
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{TorreDestillacio.jpg}
+    \includegraphics[width=\textwidth]{TorreDestillacio.jpg}
     \caption{Destil·lació fraccionada del petroli\cite{noauthor_38_2015}.}
     \label{fig:torredestillacio}
 \end{figure}
