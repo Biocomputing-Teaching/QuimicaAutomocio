@@ -165,10 +165,11 @@ Molts dels comportaments del motor es poden descriure mitjan\c{c}ant els concept
 
     \subsection{Cicle Otto Real}
 
-    El procés Otto real (Figura \ref{fig:real_otto}) s'allunya lleugerament (però de forma significativa) de l'ideal. 
+    El procés Otto real (Figura \ref{fig:real_otto}) s'allunya \href{http://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node26.html}{de forma significativa} de l'ideal. 
 
     \begin{figure}
-    \includegraphics{../figures/300px-Real_otto_cycle.png}
+        \centering
+    \includegraphics{../figures/Otto-real.png}
     \caption{Cicle termodinàmic del procés 'Otto' real.}
     \label{fig:real_otto}
     \end{figure}
