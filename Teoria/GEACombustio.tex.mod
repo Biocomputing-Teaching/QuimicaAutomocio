@@ -104,7 +104,7 @@ En conseq\"u\`encia, el fluid de treball est\`a format inicialment per l'aire i 
 \begin{itemize}
 
 \item{Primer pas o admissió}
-En aquesta etapa, quan el pistó baixa des del Pnt Mort superior (PMS o, en anglès, top dead center, TDC) al Punt Mort Inferior (PMI o, en anglès bottom dead center, BDC), permet que el nou combustible entri per la vàlvula d'injecció. Mentre s'obre aquesta vàlvula, la d'escapament es manté tancada.
+En aquesta etapa, quan el pistó baixa des del Punt Mort superior (PMS o, en anglès, top dead center, TDC) al Punt Mort Inferior (PMI o, en anglès bottom dead center, BDC), permet que el nou combustible entri per la vàlvula d'injecció. Mentre s'obre aquesta vàlvula, la d'escapament es manté tancada.
 
 \item{Segon pas o compressió}
 Al final de l'execució anterior, el gas dins del cilindre es comprimeix per mitjà del moviment ascendent del pistó, de manera que la vàlvula d'injecció es tanca per la pressió.
@@ -168,7 +168,7 @@ Molts dels comportaments del motor es poden descriure mitjan\c{c}ant els concept
     El procés Otto real (Figura \ref{fig:real_otto}) s'allunya lleugerament (però de forma significativa) de l'ideal. 
 
     \begin{figure}
-    \includegraphics[width=\textwidth]{../figures/300px-Real_otto_cycle.png}
+    \includegraphics{../figures/300px-Real_otto_cycle.png}
     \caption{Cicle termodinàmic del procés 'Otto' real.}
     \label{fig:real_otto}
     \end{figure}
@@ -273,9 +273,9 @@ El número d'octà es determina en un laboratori, cremant el combustible en un m
     \label{tab:octa}
 \end{table}
 
-Molts compostos actuals tenen un índex d'octà superior a 100, cosa que els fa millors combustibles que l'isooctà pur. A més, s'han desenvolupat agents anticolp, també anomenats potenciadors d'octà. Durant molts anys, un dels més utilitzats va ser el tetraetilplom \ch{(C2H5)4Pb}, que a una concentració d'aproximadament 3 g/gal augmentava l'índex d'octà en 10-15 punts. No obstant això, des de 1975, els compostos de plom han estat eliminats com a additius de la gasolina a causa de la seva elevada toxicitat.
+Molts compostos actuals tenen un índex d'octà superior a 100, cosa que els fa millors combustibles que l'isooctà pur. A més, s'han desenvolupat agents anticolp, també anomenats potenciadors d'octà. Durant molts anys, un dels més utilitzats va ser el tetraetilplom \ch{(C2H5)4Pb}, que a una concentració d'aproximadament \qty{11.36}{\gram\per\litre} augmentava l'índex d'octà en 10-15 punts. No obstant això, des de 1975, els compostos de plom han estat progressivament eliminats com a additius de la gasolina a causa de la seva elevada toxicitat.
 
-Per substituir-los, es van desenvolupar altres potenciadors com el metil terc-butil èter (MTBE), que té un índex d'octà elevat i causa poca corrosió al motor i al sistema de combustible. Tanmateix, les fuites de gasolina amb MTBE des de dipòsits subterranis han contaminat aigües subterrànies en algunes zones, fet que ha portat a restriccions o prohibicions del seu ús. Com a alternativa, s'està promovent l'ús d'etanol, que es pot obtenir de fonts renovables com el blat de moro, la canya de sucre i, en el futur, tiges de blat de moro i gramínies.
+Per substituir-los, es van desenvolupar altres potenciadors com el metil terc-butil èter (MTBE), que té un índex d'octà elevat i causa poca corrosió al motor i al sistema de combustible. Tanmateix, les fuites de gasolina amb MTBE des de dipòsits subterranis han contaminat aigües subterrànies en algunes zones, fet que ha portat a restriccions o prohibicions del seu ús. Com a alternativa, s'està promovent l'ús d'etanol, que es pot obtenir de fonts renovables com el blat de moro, la canya de sucre o les gramínies.
 
 %\section{Convertidors catalítics}
 
