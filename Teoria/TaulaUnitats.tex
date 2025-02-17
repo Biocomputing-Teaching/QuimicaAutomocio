@@ -2,7 +2,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[catalan]{babel}
 \usepackage{siunitx}
-
+\usepackage{chemformula}
+\usepackage{biblatex}
+\addbibresource{QuimAutom.bib}
 % Definició d'unitats personalitzades per al sistema imperial
 \DeclareSIUnit\inch{in}
 \DeclareSIUnit\foot{ft}
@@ -101,6 +103,167 @@ Potència & watt & \si\watt &&&\\
         \label{tab:gas_constant}
     \end{longtable}
 
+\newpage
+\section*{Dades termodinàmiques}
+\begin{longtable}{lcccc}
+    \toprule
+    \textbf{Substància} & \multicolumn{2}{c}{\textbf{Calor de Fusió}} & \multicolumn{2}{c}{\textbf{Calor de Vaporització}} \\
+    & $\Delta H_\text{fus}$ (J/g) & $\Delta H_\text{fus}$ (kJ/mol) & $\Delta H_\text{vap}$ (J/g) & $\Delta H_\text{vap}$ (kJ/mol) \\
+    \midrule\endhead
+    Alumini & 321 & 8.66 & 11400 & 307.6 \\
+    Benzè & 127.4 & 10.0 & 390 & 30.5 \\
+    Coure & 207 & 13.2 & 5069 & 322.1 \\
+    Or & 67 & 13.2 & 1578 & 310.9 \\
+    Ferro & 209 & 11.7 & 6340 & 354.1 \\
+    Plom & 22.4 & 4.64 & 871 & 180.5 \\
+    Metà & 59 & 0.946 & 537 & 8.61 \\
+    Mercuri & 11.6 & 2.33 & 295 & 5.92 \\
+    Metanol & 98.8 & 3.17 & 1100 & 35.2 \\
+    Nitrogen & 25.5 & 0.715 & 200 & 5.60 \\
+    Sodi & 113 & 2.60 & 4237 & 97.42 \\
+    Aigua & 334 & 6.02 & 2260 & 40.7 \\
+    \bottomrule
+    \caption{Calor de Fusió i Vaporització d'algunes substàncies pures (específic $\Delta H$ en J/g i Molar $\Delta H$ en kJ/mol)}
+\end{longtable}
+
+\subsection*{Valors Clau de Termodinàmica}
+La taula següent mostra els valors clau de termodinàmica per a diverses substàncies, extrets de la taula "CODATA KEY VALUES FOR THERMODYNAMICS" a \cite{lide_crc_2005}.
+La taula inclou l'entalpia estàndard de formació a \qty{298.15}{\kelvin}, l'entropia a \qty{298.15}{\kelvin} i la quantitat \(H^\circ\) (\qty{298.15}{\kelvin})-\(H^\circ\) (\qty{0}{\kelvin}). Un valor de 0 a la columna \(\Delta_f H^\circ\) per a un element indica l'estat de referència per a aquest element. La pressió de l'estat estàndard és \qty{100000}{\pascal} (1 bar).
 
 
+\begin{longtable}{lccc}
+    \toprule
+    \textbf{Substància} & \(\Delta_f H^\circ\) (298.15 K) & \(S^\circ\) (298.15 K) & \(H^\circ\) (298.15 K)–\(H^\circ\) (0) \\
+    & \text{(kJ/mol)} & \text{(J/K/mol)} & \text{(kJ/mol)} \\
+    \midrule\endhead
+    \ch{Ar} (g) & 0 & 154.846 $\pm$ 0.003 & 6.197 $\pm$ 0.001 \\
+    \ch{C} (cr, graphite) & 0 & 5.74 $\pm$ 0.10 & 1.050 $\pm$ 0.020 \\
+    \ch{C} (g) & 716.68 $\pm$ 0.45 & 158.100 $\pm$ 0.003 & 6.536 $\pm$ 0.001 \\
+    \ch{CO} (g) & -110.53 $\pm$ 0.17 & 197.660 $\pm$ 0.004 & 8.671 $\pm$ 0.001 \\
+    \ch{CO2} (aq, undissoc.) & -413.26 $\pm$ 0.20 & 119.36 $\pm$ 0.60 & \\
+    \ch{CO2} (g) & -393.51 $\pm$ 0.13 & 213.785 $\pm$ 0.010 & 9.365 $\pm$ 0.003 \\
+    \ch{CO3^{2-}} (aq) & -675.23 $\pm$ 0.25 & -50.0 $\pm$ 1.0 & \\
+    \ch{H2} (g) & 0 & 130.680 $\pm$ 0.003 & 8.468 $\pm$ 0.001 \\
+    \ch{H2O} (g) & -241.826 $\pm$ 0.040 & 188.835 $\pm$ 0.010 & 9.905 $\pm$ 0.005 \\
+    \ch{H2O} (l) & -285.830 $\pm$ 0.040 & 69.95 $\pm$ 0.03 & 13.273 $\pm$ 0.020 \\
+    \ch{H2PO4^{-}} (aq) & -1302.6 $\pm$ 1.5 & 92.5 $\pm$ 1.5 & \\
+    \ch{H2S} (aq, undissoc.) & -38.6 $\pm$ 1.5 & 126 $\pm$ 5 & \\
+    \ch{H2S} (g) & -20.6 $\pm$ 0.5 & 205.81 $\pm$ 0.05 & 9.957 $\pm$ 0.010 \\
+    \ch{N} (g) & 472.68 $\pm$ 0.40 & 153.301 $\pm$ 0.003 & 6.197 $\pm$ 0.001 \\
+    \ch{NH3} (g) & -45.94 $\pm$ 0.35 & 192.77 $\pm$ 0.05 & 10.043 $\pm$ 0.010 \\
+    \ch{NH4^{+}} (aq) & -133.26 $\pm$ 0.25 & 111.17 $\pm$ 0.40 & \\
+    \ch{NO3^{-}} (aq) & -206.85 $\pm$ 0.40 & 146.70 $\pm$ 0.40 & \\
+    \ch{N2} (g) & 0 & 191.609 $\pm$ 0.004 & 8.670 $\pm$ 0.001 \\
+    \ch{S} (g) & 277.17 $\pm$ 0.15 & 167.829 $\pm$ 0.006 & 6.657 $\pm$ 0.001 \\
+    \ch{SO2} (g) & -296.81 $\pm$ 0.20 & 248.223 $\pm$ 0.050 & 10.549 $\pm$ 0.010 \\
+    \ch{SO4^{2-}} (aq) & -909.34 $\pm$ 0.40 & 18.50 $\pm$ 0.40 & \\
+    \ch{C3H8} (g) & -104.7 $\pm$ 0.4 & 269.91 $\pm$ 0.10 & 14.66 $\pm$ 0.05 \\
+    \ch{H2} (g) & 0 & 130.680 $\pm$ 0.003 & 8.468 $\pm$ 0.001 \\
+    \ch{H2O} (g) & -241.826 $\pm$ 0.040 & 188.835 $\pm$ 0.010 & 9.905 $\pm$ 0.005 \\
+    \ch{H2O} (l) & -285.830 $\pm$ 0.040 & 69.95 $\pm$ 0.03 & 13.273 $\pm$ 0.020 \\
+    \ch{H2PO4^{-}} (aq) & -1302.6 $\pm$ 1.5 & 92.5 $\pm$ 1.5 & \\
+    \ch{H2S} (aq, undissoc.) & -38.6 $\pm$ 1.5 & 126 $\pm$ 5 & \\
+    \ch{H2S} (g) & -20.6 $\pm$ 0.5 & 205.81 $\pm$ 0.05 & 9.957 $\pm$ 0.010 \\
+    \ch{N} (g) & 472.68 $\pm$ 0.40 & 153.301 $\pm$ 0.003 & 6.197 $\pm$ 0.001 \\
+    \ch{NH3} (g) & -45.94 $\pm$ 0.35 & 192.77 $\pm$ 0.05 & 10.043 $\pm$ 0.010 \\
+    \ch{NH4^{+}} (aq) & -133.26 $\pm$ 0.25 & 111.17 $\pm$ 0.40 & \\
+    \ch{NO3^{-}} (aq) & -206.85 $\pm$ 0.40 & 146.70 $\pm$ 0.40 & \\
+    \ch{N2} (g) & 0 & 191.609 $\pm$ 0.004 & 8.670 $\pm$ 0.001 \\
+    \ch{S} (g) & 277.17 $\pm$ 0.15 & 167.829 $\pm$ 0.006 & 6.657 $\pm$ 0.001 \\
+    \ch{SO2} (g) & -296.81 $\pm$ 0.20 & 248.223 $\pm$ 0.050 & 10.549 $\pm$ 0.010 \\
+    \ch{SO4^{2-}} (aq) & -909.34 $\pm$ 0.40 & 18.50 $\pm$ 0.40 & \\
+    \bottomrule
+    \caption{Valors clau de termodinàmica per a diverses substàncies \cite{wagman_codata_1989}}
+\end{longtable}
+
+\subsection*{Calor de Combustió}
+
+El calor de combustió d'una substància a 25°C es pot calcular a partir de les dades d'entalpia de formació (\(\Delta_f H^\circ\)). Podem escriure la reacció general de combustió com:
+\[ \ch{X + O2 -> CO2 (g) + H2O (l) + Y} \]
+
+Per a un compost que conté només carboni, hidrogen i oxigen, la reacció és simplement:
+
+\[
+\ch{C_{a}H_{b}O_{c} + $\left({a}+\frac{b}{4}-\frac{c}{2}\right)$ O2 -> a CO2 (g) + $\frac{b}{2}$ H2O (l)}
+\]
+i la calor estàndard de combustió \(\Delta_c H^\circ\), que es defineix com el negatiu del canvi d'entalpia per a la reacció (és a dir, el calor alliberat en el procés de combustió), es dóna per:
+\[ \Delta_c H^\circ = -a \Delta_f H^\circ (CO_2, g) - \frac{b}{2} \Delta_f H^\circ (H_2O, l) + \Delta_f H^\circ (\text{C}_a \text{H}_b \text{O}_c) \]
+\[ = 393.51a + 142.915b + \Delta_f H^\circ (\text{C}_a \text{H}_b \text{O}_c) \]
+
+Aquesta equació s'aplica si els reactius comencen en els seus estats estàndard (25°C i una atmosfera de pressió) i els productes tornen a les mateixes condicions. La mateixa equació s'aplica a un compost que conté un altre element si aquest element acaba en el seu estat de referència estàndard (per exemple, nitrogen, si el producte és \ch{N2}); en general, però, els productes exactes que contenen els altres elements han de ser coneguts per calcular el calor de combustió.
+
+La taula següent dóna la calor estàndard de combustió calculat d'aquesta manera per a algunes substàncies representatives (adaptat de la taula "Heat of Combustion" a \cite{lide_crc_2005}).
+
+\begin{longtable}{lcc}
+    \toprule
+    \textbf{Fórmula Molecular} & \textbf{Nom} & \(\Delta_c H^\circ\) (kJ/mol) \\
+    \midrule\endhead
+    \ch{C3H8O} & 1-Propanol (l) & 2021.3 \\
+    \ch{C3H8O3} & Glicerol (l) & 1655.4 \\
+    \ch{C4H10O} & Èter dietílic (l) & 2723.9 \\
+    \ch{C5H12O} & 1-Pentanol (l) & 3330.9 \\
+    \ch{C6H6} & Fenol (s) & 3053.5 \\
+    \midrule
+    \textbf{Substàncies Inorgàniques} & & \\
+    \ch{C} & Carboni (grafit) & 393.5 \\
+    \ch{CO} & Monòxid de carboni (g) & 283.0 \\
+    \ch{H2} & Hidrogen (g) & 285.8 \\
+    \ch{H3N} & Amoníac (g) & 382.8 \\
+    \ch{H4N2} & Hidrazina (g) & 667.1 \\
+    \ch{N2O} & Òxid nitrós (g) & 82.1 \\
+    \midrule
+    \textbf{Compostos de Carbonil} & & \\
+    \ch{CH2O} & Formaldehid (g) & 726.1 \\
+    \ch{C2H2O} & Cetè (g) & 1366.8 \\
+    \ch{C2H4O} & Acetaldehid (l) & 1460.4 \\
+    \ch{C3H6O} & Acetona (l) & 1189.2 \\
+    \ch{C3H6O} & Propanal (l) & 1822.7 \\
+    \ch{C4H8O} & 2-Butanona (l) & 2444.1 \\
+    \midrule
+    \textbf{Hidrocarburs} & & \\
+    \ch{CH4} & Metà (g) & 890.8 \\
+    \ch{C2H2} & Acetilè (g) & 1301.1 \\
+    \ch{C2H4} & Etilè (g) & 1411.2 \\
+    \ch{C2H6} & Età (g) & 1560.7 \\
+    \ch{C3H6} & Propilè (g) & 2058.0 \\
+    \ch{C3H6} & Ciclopropà (g) & 2091.3 \\
+    \ch{C3H8} & Propà (g) & 2219.2 \\
+    \ch{C4H6} & 1,3-Butadiè (g) & 2541.5 \\
+    \ch{C4H10} & Butà (g) & 2877.6 \\
+    \ch{C5H12} & Pentà (l) & 3509.0 \\
+    \ch{C6H6} & Benzè (l) & 3267.6 \\
+    \ch{C6H12} & Ciclohexà (l) & 3919.6 \\
+    \ch{C6H14} & Hexà (l) & 4163.2 \\
+    \ch{C7H8} & Toluè (l) & 3910.3 \\
+    \ch{C7H16} & Heptà (l) & 4817.0 \\
+    \ch{C10H8} & Naftalè (s) & 5156.3 \\
+    \midrule
+    \textbf{Alcohols i Èters} & & \\
+    \ch{CH4O} & Metanol (l) & 570.7 \\
+    \ch{C2H6O} & Etanol (l) & 1025.4 \\
+    \ch{C2H6O} & Èter dimetílic (g) & 1166.9 \\
+    \ch{C2H6O2} & Etilè glicol (l) & 1789.9 \\
+    \midrule
+    \textbf{Àcids i Èsters} & & \\
+    \ch{CH2O2} & Àcid fòrmic (l) & 254.6 \\
+    \ch{C2H4O2} & Àcid acètic (l) & 874.2 \\
+    \ch{C2H4O2} & Formiat de metil (l) & 972.6 \\
+    \ch{C3H6O2} & Acetat de metil (l) & 1592.2 \\
+    \ch{C4H8O2} & Acetat d'etil (l) & 2238.1 \\
+    \ch{C7H6O2} & Àcid benzoic (s) & 3226.9 \\
+    \midrule
+    \textbf{Compostos de Nitrogen} & & \\
+    \ch{CHN} & Cianur d'hidrogen (g) & 671.5 \\
+    \ch{CH3NO2} & Nitrometà (l) & 709.2 \\
+    \ch{CH5N} & Metilamina (g) & 1085.6 \\
+    \ch{C2H3N} & Acetonitril (l) & 1247.2 \\
+    \ch{C2H5NO} & Acetamida (s) & 1184.6 \\
+    \ch{C3H9N} & Trimetilamina (g) & 2443.1 \\
+    \ch{C5H5N} & Piridina (l) & 2782.3 \\
+    \ch{C6H7N} & Anilina (l) & 3392.8 \\
+    \bottomrule
+    \caption{Calor estàndard de combustió de diverses substàncies. Adaptat de la taula "Heat of Combustion" a \cite{lide_crc_2005}}
+\end{longtable}
+
+\printbibliography
 \end{document}
