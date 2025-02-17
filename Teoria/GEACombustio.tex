@@ -1,8 +1,12 @@
-\chapter*{Combustió}
+ \chapter*{Combustió}
 
 \section{El motor de combustió interna}
 
-En un motor de combusti\'o interna (IC) s'introdueix aire i combustible. En els motors d'encesa per espurna, la mescla d'aire i combustible es preparava antigament en el carburador i es condu\"ia al cilindre. Ara es realitza per mitj\`a d'injectors, cosa que permet un estalvi de combustible i un millor aprofitament d'aquest. En els motors d'encesa per compressi\'o (Diesel), la mescla es realitza directament dins del cilindre, on el combustible s'injecta despr\'es d'haver-hi introdu\"it i comprimit l'aire. Cada cilindre del motor t\'e una v\`alvula d'admissi\'o i una d'escapament, que s'obren i tanquen en el moment oport\'u per permetre l'entrada i sortida de gasos. Els motors típics tenen entre 3 i 12 cilindres, i la pot\`encia es pot augmentar afegint m\'es cilindres.
+Un motor de combustió interna (IC) és un conjunt d'elements mecànics que permeten obtenir energia mecànica a partir de l'estat tèrmic d'un fluid de treball generat en el seu propi interior mitjançant un procés de combustió.
+
+Els motors de combustió interna, ja siguin alternatius o de reacció, són les principals fonts d'energia en el transport terrestre, marítim i aeri gràcies a la seva elevada potència específica. Aquests motors només competeixen amb els motors elèctrics en algunes aplicacions del transport ferroviari i, de manera creixent, en vehicles elèctrics purs o en configuració híbrida\cite{de_antonio_motores_2015}.
+
+En un motor de combusti\'o interna s'introdueix aire i combustible. En els motors d'encesa per espurna, la mescla d'aire i combustible es preparava antigament en el carburador i es condu\"ia al cilindre. Ara es realitza per mitj\`a d'injectors, cosa que permet un estalvi de combustible i un millor aprofitament d'aquest. En els motors d'encesa per compressi\'o (Diesel), la mescla es realitza directament dins del cilindre, on el combustible s'injecta despr\'es d'haver-hi introdu\"it i comprimit l'aire. Cada cilindre del motor t\'e una v\`alvula d'admissi\'o i una d'escapament, que s'obren i tanquen en el moment oport\'u per permetre l'entrada i sortida de gasos. Els motors típics tenen entre 3 i 12 cilindres, i la pot\`encia es pot augmentar afegint m\'es cilindres.
 
 La paret de la cambra de combustió està formada per una camisa de ferro o alumini, i està inserida en un bloc de ferro o acer.
 
@@ -15,7 +19,7 @@ En conseq\"u\`encia, el fluid de treball est\`a format inicialment per l'aire i 
 
 \subsection{El motor de quatre temps}
 
-    Un motor de quatre temps és aquell que necessita quatre recorreguts del pistó, dues voltes completes del cigonyal, per completar el seu cicle termodinàmic.
+    Un motor de quatre temps és aquell que necessita quatre recorreguts del pistó, dues voltes completes del cigonyal, per completar el seu cicle termodinàmic (veure animació a \url{https://www.grc.nasa.gov/www/k-12/airplane/engopt.html}).
 
     \newif\ifspark
 \tikzset{tangent of circles/.style args={% https://tex.stackexchange.com/a/464143/194703
@@ -100,7 +104,7 @@ En conseq\"u\`encia, el fluid de treball est\`a format inicialment per l'aire i 
 \begin{itemize}
 
 \item{Primer pas o admissió}
-En aquesta etapa, quan el pistó baixa des del Pnt Mort superior (PMS) al Punt Mort Inferior (PMI), permet que el nou combustible entri per la vàlvula d'injecció. Mentre s'obre aquesta vàlvula, la d'escapament es manté tancada.
+En aquesta etapa, quan el pistó baixa des del Pnt Mort superior (PMS o, en anglès, top dead center, TDC) al Punt Mort Inferior (PMI o, en anglès bottom dead center, BDC), permet que el nou combustible entri per la vàlvula d'injecció. Mentre s'obre aquesta vàlvula, la d'escapament es manté tancada.
 
 \item{Segon pas o compressió}
 Al final de l'execució anterior, el gas dins del cilindre es comprimeix per mitjà del moviment ascendent del pistó, de manera que la vàlvula d'injecció es tanca per la pressió.
@@ -161,6 +165,14 @@ Molts dels comportaments del motor es poden descriure mitjan\c{c}ant els concept
 
     \subsection{Cicle Otto Real}
 
+    El procés Otto real (Figura \ref{fig:real_otto}) s'allunya lleugerament (però de forma significativa) de l'ideal. 
+
+    \begin{figure}
+    \includegraphics[width=\textwidth]{../figures/300px-Real_otto_cycle.png}
+    \caption{Cicle termodinàmic del procés 'Otto' real.}
+    \label{fig:real_otto}
+    \end{figure}
+
     \begin{enumerate}
         \item 0-1 Aspiraci\'o: 
         La pressi\'o del gas durant l'aspiraci\'o \'es inferior a la pressi\'o atmosf\`erica, per tant, el tancament de la v\'alvula d'admissi\'o es produeix despr\'es que el pist\'o arriba a l'extrem inferior de la seva carrera. Aix\`o prolonga el per\'iode d'admissi\'o i permet l'entrada de la m\`axima quantitat de mescla d'aire i combustible al cilindre.
@@ -172,7 +184,7 @@ Molts dels comportaments del motor es poden descriure mitjan\c{c}ant els concept
         La combusti\'o no \`es instant\`ania i el volum de la mescla varia mentre es propaga la inflamaci\'o. Per obtenir un m\`axim treball, \'es essencial triar el moment adequat per a l'encesa. La xispa ha de saltar abans que el pist\'o hagi finalitzat la carrera de compressi\'o, cosa que augmenta considerablement la pressi\'o assolida despr\'es de la combusti\'o i, per tant, el treball guanyat.
         
         \item 3-4 Expansi\'o: 
-        L'augment de temperatura dins del cilindre durant la combusti\'o fa que, durant l'expansi\'o, els gasos cedeixin calor al cilindre i es refredin, resultant en una pressi\'o menor.
+        L'augment de temperatura dins del cilindre durant la combusti\'o fa que, durant l'expansi\'o, els gasos cedeixin calor al cilindre i es refredin, resultant en una pressi\'o menor. Per tant, es tracta d'un procés no adiabàtic.
         
         \item 4-1 Escapament:
         En realitat, l'escapament no es produeix instant\`aniament. Els gasos encara tenen una pressi\'o superior a l'atmosf\`erica en aquest per\'iode. Per aix\`o, la v\'alvula d'escapament s'obre abans que el pist\'o arribi a l'extrem inferior del seu recorregut, permetent que la pressi\'o del gas disminueixi a mesura que el pist\'o acaba la seva carrera descendent. Quan el pist\'o realitza la seva carrera ascendent, troba davant seu gasos ja gaireb\'e totalment expandits. A m\'es, la v\'alvula d'admissi\'o s'obre abans que el pist\'o arribi a l'extrem superior del seu recorregut, generant una certa depressi\'o en el cilindre que afavoreix una aspiraci\'o m\'es en\`ergica.
