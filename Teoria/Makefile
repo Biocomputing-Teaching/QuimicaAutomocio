@@ -19,7 +19,7 @@ LATEXMK = latexmk -pdf #-quiet
 all: ExamenParcial Exercise Theory move clean generate_GEA_pdfs
 Taula: ${TABLE}.pdf
 ExamenParcial: ../build/ExamenParcial.pdf
-Theory: ${PROJECT}.pdf 
+Theory: ../build/${PROJECT}.pdf 
 
 # Generar PDFs per a cada fitxer GEA
 # GEA_pdfs:
@@ -40,10 +40,10 @@ files:
 		sed -i "s/marginnote/footnote/" $$file.mod; \
 		sed -i "s/marginfigure/figure/" $$file.mod; \
 		sed -i "s/margintable/table/" $$file.mod; \
+		sed -i "s/chapter/chapter\*/" $$file.mod; \
 		sed "s|\\input{GEA_FILE.tex}|\\input{$$file.mod}|" temp_header_footer.tex > temp_header_footer_modified.tex; \
-		latexmk -pdf -output-directory=../build temp_header_footer_modified.tex; \
-		rsync ../build/temp_header_footer_modified.pdf ${PDFDIR}/$$(basename $$file .tex).pdf; \
-		#rm -f temp_header_footer.tex temp_header_footer_modified.tex; \
+		$(LATEXMK) -output-directory=../build temp_header_footer_modified.tex; \
+		rsync --update ../build/temp_header_footer_modified.pdf ${PDFDIR}/$$(basename $$file .tex).pdf; \
 	done
 
 # Regles per generar el PDF d'ExamenParcial
@@ -51,9 +51,9 @@ files:
 	$(LATEXMK) -output-directory=../build ExamenParcial.tex
 
 # Regles per generar el PDF del projecte principal
-${PROJECT}.pdf: ${LATEX_FILES}
-	$(LATEXMK) ${PROJECT}.tex
-	rsync --update ${PROJECT}.pdf ${PDFDIR}
+../build/${PROJECT}.pdf: ${LATEX_FILES}
+	$(LATEXMK) -output-directory=../build ${PROJECT}.tex
+	rsync --update ../build/${PROJECT}.pdf ${PDFDIR}
 
 # Regles per generar el PDF del projecte principal
 ${TABLE}.pdf: ${TABLE}.tex

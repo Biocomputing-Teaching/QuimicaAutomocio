@@ -1,4 +1,4 @@
- \chapter*{Combustió}
+\chapter*{Combustió}
 
 \section{El motor de combustió interna}
 
