@@ -1,0 +1,23 @@
+\begin{exr}
+Usant R, prova d'executar aquest script que mostra com simular el moviment Brownià d'una partícula en un líquid (extret de \url{http://www.phytools.org/eqg/phytools/}):
+\begin{lstlisting}[language=R]
+t <- 0:100  # temps de simulacio
+sig2 <- 0.01
+## primer, calcula un conjunt de desviacions aleatòries puntuals
+x <- rnorm(n = length(t) - 1, sd = sqrt(sig2))
+## després, acumula'n els resultats
+x <- c(0, cumsum(x))
+plot(t, x, type = "l", ylim = c(-2, 2))
+\end{lstlisting}
+
+Després, executa el següent script, que produeix 10000 simulacions diferents:
+
+\begin{lstlisting}[language=R]
+nsim <- 1000
+## creo una matriu que hostatgi totes les simulacions
+X <- matrix(0, nsim, length(t))
+for (i in 1:nsim) X[i, ] <- c(0, cumsum(rnorm(n = length(t) - 1, sd = sqrt(sig2))))
+plot(t, X[1, ], xlab = "temps", ylab = "desviacions", ylim = c(-2, 2), type = "l")
+for (i in 1:nsim) lines(t, X[i, ])
+\end{lstlisting}
+\end{exr}
