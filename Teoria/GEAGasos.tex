@@ -93,7 +93,7 @@ Els gasos es comporten segons certes lleis empíriques que han estat establertes
     \centering
     \begin{tabular}{l S}
     \hline
-    \textbf{Gas} & \textbf{Volum molar (\si{\liter})} \\
+    \textbf{Gas} & \textbf{Volum molar (\si{\litre})} \\
     \hline
     \ch{He}  & 22.434 \\
     \ch{Ar}  & 22.397 \\
