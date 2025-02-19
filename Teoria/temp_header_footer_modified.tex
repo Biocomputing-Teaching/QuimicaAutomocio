@@ -1,5 +1,9 @@
 % Aquest és el fitxer base amb l'encapçalament i el peu de pàgina
 \documentclass{report}
+\makeatletter
+\def\input@path{{../common/}}
+\makeatother
+
 \usepackage[utf8]{inputenc}
 \usepackage[catalan]{babel}
 \usepackage{graphicx}
@@ -33,12 +37,12 @@
 \fancyfoot[C]{\today}
 \fancyfoot[R]{Pàgina \thepage}
 
-\addbibresource{QuimAutom.bib}
+\addbibresource{../common/QuimAutom.bib}
 
 \begin{document}
 
 % Aquí s'inclouen els fitxers GEA específics
-\input{GEAGasos.tex.mod}  % Nom del fitxer canviable per la comanda sed
+\input{GEATemperatura.tex.mod}  % Nom del fitxer canviable per la comanda sed
 
 
 \printbibliography

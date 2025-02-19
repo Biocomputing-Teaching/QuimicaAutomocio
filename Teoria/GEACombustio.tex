@@ -374,4 +374,4 @@ L'entalpia d'una reacció es pot calcular a partir de les entalpies de formació
 
 \newpage
 \section{Exercicis}
-\input{../Exercicis/ex_GEACombustio.tex}
+\input{../Exercicis/compendi_GEACombustio.tex}

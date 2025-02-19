@@ -614,7 +614,7 @@ La taula següent mostra els valors de \( \varepsilon \) i \( \sigma \) per a di
 
 \newpage
 \section{Exercicis}
-\input{../Exercicis/ex_GEAGasos.tex}
+\input{../Exercicis/compendi_GEAGasos.tex}
 \section{Codis}
 
 \input{matlab_MaxwellBoltzmann.tex}
