@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex Exercise"] 1739987268.59419 "Exercise.aux" "Exercise.bbl" "Exercise" 1739987272.87001 0
+["bibtex Exercise"] 1739987268.59419 "Exercise.aux" "Exercise.bbl" "Exercise" 1739987459.23747 0
   "../Teoria/QuimAutom.bib" 0 -1 0 ""
-  "./Exercise-blx.bib" 1739987272.51872 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad ""
+  "./Exercise-blx.bib" 1739987458.88249 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1678141846 65484 b7949c47a88ed6dca66ebc7a04577312 ""
-  "Exercise.aux" 1739987272.51672 1758 966f3409a8ec6b5808e896f04a8a3ff0 "pdflatex"
+  "Exercise.aux" 1739987458.88049 1758 966f3409a8ec6b5808e896f04a8a3ff0 "pdflatex"
   (generated)
   "Exercise.bbl"
   "Exercise.blg"
   (rewritten before read)
-["pdflatex"] 1739987268.66577 "Exercise.tex" "Exercise.pdf" "Exercise" 1739987272.87029 0
+["pdflatex"] 1739987455.45978 "Exercise.tex" "Exercise.pdf" "Exercise" 1739987459.23763 0
   "../Exercicis/EX1_TvanderWaals.tex" 1739898284.90799 1482 a996da2edbf5ecce3828742b0d93af7e ""
   "../Exercicis/EX1_fraccioMeta.tex" 1739898284.90699 1844 226d51a55ca43db0bbeb66fa2e9bebe4 ""
   "../Exercicis/compendi_GEACombustio.tex" 1739898284.92399 419 7d3d9645148f0a05b346aa98255af619 ""
@@ -69,6 +69,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1136768653 1520 eccf95517727cb11801f4f1aee3a21b4 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm" 1136768653 1524 554068197b70979a55370e6c6495f441 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1136768653 1300 b62933e007d01cfd073f79b963c01526 ""
@@ -81,6 +82,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
@@ -240,11 +242,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1725009813.69924 5349216 bf3a80e68d946c7acd95ff030fd9bb63 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1726152742 6852505 e04ce9148cb683c6cca801ac78b863b2 ""
-  "Exercise.aux" 1739987272.51672 1758 966f3409a8ec6b5808e896f04a8a3ff0 "pdflatex"
+  "Exercise.aux" 1739987458.88049 1758 966f3409a8ec6b5808e896f04a8a3ff0 "pdflatex"
   "Exercise.bbl" 1739987268.65969 512 242e9db92557ac81f6b30ce4f9334513 "bibtex Exercise"
-  "Exercise.run.xml" 1739987272.51972 2567 3dc58faa2fba36012218eaf79a77667b "pdflatex"
-  "Exercise.tex" 1739987257.21358 3279 38203070a3b1e76a14a6dd54d6177d40 ""
-  "Exercise.toc" 1739987272.51972 166 1323a1195c6e83e53303f31fbe96fdcf "pdflatex"
+  "Exercise.run.xml" 1739987458.88349 2567 3dc58faa2fba36012218eaf79a77667b "pdflatex"
+  "Exercise.tex" 1739987454.39045 3321 775521cd7e774b1057ef18e2a49656b2 ""
+  "Exercise.toc" 1739987458.88349 166 1323a1195c6e83e53303f31fbe96fdcf "pdflatex"
   (generated)
   "Exercise-blx.bib"
   "Exercise.aux"
