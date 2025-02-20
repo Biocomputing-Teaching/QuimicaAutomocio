@@ -37,11 +37,11 @@
 \usepackage{framed}
 \newcounter{myc}
 %environment for exercises in the class notes
-\newenvironment{exr}{ % 
+\newenvironment{exr}[1]{ % 
     \addtocounter{myc}{1}
 	\definecolor{shadecolor}{rgb}{0.9,1.0,0.8} %
 	\begin{shaded} %
-	\textcolor{OliveGreen}{\bf Exercici \arabic{myc}\\}%
+	\textcolor{OliveGreen}{\bf Exercici \arabic{myc}. {\bf #1}\\}%
 } % 
 { %	
 	\end{shaded}

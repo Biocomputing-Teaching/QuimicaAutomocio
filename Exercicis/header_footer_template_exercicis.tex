@@ -19,11 +19,11 @@
 \usepackage{fancyhdr,amsmath,tcolorbox}
 \tcbuselibrary{listings,breakable} 
 \input{common_details.tex}
-\renewenvironment{exr}{ % 
+\renewenvironment{exr}[1]{ % 
     \addtocounter{myc}{1}
 	\definecolor{shadecolor}{rgb}{1.0,1.0,1.0} %
 	\begin{shaded} %
-	{\bf Exercici Autoavaluable \Roman{myc}.}%
+	{\bf Exercici Autoavaluable \Roman{myc}. {\bf #1}\\}%
  } % 
  { %	
  	\end{shaded}

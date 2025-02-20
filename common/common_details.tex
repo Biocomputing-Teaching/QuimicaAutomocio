@@ -55,11 +55,11 @@
 } %
 
 %environment for exercises in the class notes
-\newenvironment{exr}{ % 
+\newenvironment{exr}[1]{ % 
     \addtocounter{myc}{1}
 	\definecolor{shadecolor}{rgb}{1.0,1.0,1.0} %
 	\begin{shaded} %
-	{\bf Exercici \arabic{myc}.}%
+	{\bf Exercici \arabic{myc} ({\bf #1}). }%
  } % 
  { %	
  	\end{shaded}
