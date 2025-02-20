@@ -3,5 +3,10 @@
     before-tag = R,
     tag-open = [ , tag-close = ]
 }
+\chemsetup{
+  formula = chemformula , % or mhchem
+  modules = thermodynamics
+}
+\setchemfig{scale=0.3}
 \renewcommand*\printatom[1]{\ensuremath{\mathsf{#1}}}
 \usepackage{chemformula}

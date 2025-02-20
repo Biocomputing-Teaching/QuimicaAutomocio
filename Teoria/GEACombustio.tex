@@ -246,12 +246,12 @@ En un motor de combustió interna, el combustible ha de cremar quan s'encén la 
 
 El número d'octà es determina en un laboratori, cremant el combustible en un motor amb ràtio de compressió variable fins que es detecta el picat. A partir d'això, es compara amb una barreja de \href{https://www.ebi.ac.uk/chebi/searchId.do?printerFriendlyView=true&chebiId=62805&structureView=applet}{isooctà} i heptà amb la mateixa resistència a la detonació. El número d'octà indica el percentatge d'isooctà en aquesta barreja equivalent. Per exemple, un combustible amb un número d'octà de 90 té la mateixa resistència a la preignició que una barreja del 90\% d'isooctà i 10\% d'heptà (veure Taula \ref{tab:octa}).
 
-És important saber que aquest número no indica la quantitat real d'octà en la benzina. Hi ha altres compostos amb més resistència a la detonació que poden donar valors superiors a 100. En resum, com més alta sigui la ràtio de compressió del motor, més alt ha de ser el número d'octà per evitar problemes de preignició.
-
+És important saber que aquest número no indica la quantitat real d'octà en la benzina. Hi ha altres compostos amb més resistència a la detonació que poden donar valors superiors a 100. En resum, com més alta sigui la ràtio de compressió del motor, més alt ha de ser el número d'octà per evitar problemes de preignició.  
+ 
 \begin{table}[h]
     \centering
     \renewcommand{\arraystretch}{1.5}
-    \begin{tabular}{|p{1cm}|c|c||p{1cm}|c|c|}
+    \begin{tabular}{p{1cm}cc|p{1cm}cc}
         \toprule
         \textbf{Nom} & \textbf{Fórmula } & \textbf{Índex} & \textbf{Nom} & \textbf{Fórmula } & \textbf{Índex} \\
         \midrule
@@ -279,9 +279,108 @@ Per substituir-los, es van desenvolupar altres potenciadors com el metil terc-bu
 
 \section{Termodinàmica de la combustió}
 
-La termodinàmica de la combustió estudia els canvis d'energia i matèria en les reaccions de combustió. Aquestes reaccions són exotèrmiques, ja que alliberen energia en forma de calor. La quantitat d'energia alliberada es pot mesurar amb un calorímetre, un aparell que mesura la calor generada per una reacció química. La calor generada per la combustió d'una quantitat de combustible s'anomena calor de combustió, i es mesura en \si{\joule\per\mole}. Aquesta quantitat varia segons el combustible i la seva composició.
+Les reaccions químiques poden ser, a nivell del calor que intercanvien amb l'entorn:
+\begin{description}
+\item[exotèrmiques] si desprenen calor i, per tant, l'energia dels productes és més baixa que la dels reactius; o bé
+\item[endotèrmiques] si l'absorbeixen i els productes acaben tenint més energia que els reactius.
+\end{description}
 
-Farem primer una breu introducció a les lleis de la termodinàmica, que ens permetran entendre millor els processos de combustió.
+En moltes ocasions mirem d'obtenir treball a partir de la calor produïda en una reacció, com succeix, per exemple, en un procés de combustió o en les reaccions electroquímiques que fan funcionar motors de combustió o elèctrics. La calor generada per la combustió d'una quantitat de combustible s'anomena calor de combustió, i es mesura en \si{\joule\per\mole}. Aquesta quantitat varia segons el combustible i la seva composició.
+
+La termodinàmica estudia les relacions entre energia, calor i treball.
+En aquest capítol treballarem al voltant de la termoquímica, la termodinàmica associada a les reaccions químiques, no només a la combustió
+
+\begin{mybox}{Sistemes, estats i funcions d'estat}
+
+    Anomenem "sistema" a aquella part de l'"univers" que volem tractar en algun càlcul o experiment. 
+Per exemple, un sistema pot ser un cilindre en un motor de combustió o bé una bateria elèctrica.
+\begin{center}
+\includegraphics[scale=1.0]{SistEntornUnivers.png}
+\end{center}
+La resta de l'univers, que no tractem directament, l'anomenarem "entorn".
+
+L'\textit{estat del sistema} es caracteritza  per unes determinades \textit{variables d'estat} ($P$, $V$, $T$, $E$, $H$,...), que són magnituds físiques macroscòpiques mesurables. La termodinàmica estudia els \textit{estats d'equilibri} dels sistemes, en els quals les variables d'estat són idèntiques en totes les seves parts i invariables en el temps.
+Tenen dues característiques principals:
+\begin{enumerate}
+\item En els \textit{canvis d'estat} d'un sistema, les variables d'estat només depenen de l'estat inicial i final, i no del camí utilitzat. Així, per exemple, el treball $w$ no és funció d'estat, mentre que l'energia $E$ sí que ho és.
+\item El fet de fixar els valors d'algunes d'elles, una equació d'estat determina automàticament el valor de les altres. Així, per exemple, en un gas ideal, si coneixem $P$, $V$ i $T$, podem determinar $E$, $H$, $S$, etc.
+\end{enumerate}
+
+Els canvis d'estat poden ser 
+\begin{description}
+\item[reversibles] quan les funcions d'estat varian de manera infinitessimal, mantenint el sistema constantment en l'equilibri (l'expansió d'un gas contra una pressió que difereix només $dP$ de la pressió interna, per exemple);
+\item[irreversibles] en qualsevol altre situació (un procés de combustió, l'expansió d'un gas contra el buit, etc).
+\end{description}
+\end{mybox}
+
+\subsection{Treball}
+
+El treball realitzat per una força en desplaçar un cos entre dues posicions es calcula segons:
+\[
+w=\int_{x_1}^{x_2} \vec{F} \cdot \vec{dx}
+\]
+Tenint en compte que $P=\frac{F}{A}$, és fàcil veure que, en el cas d'un pistó que exerceixi una pressió externa sobre un gas 
+\begin{center}
+\includegraphics[scale=0.8]{pisto_dw.png}
+\end{center}
+tenim
+\[
+dw=-F_{ext}dx = -P_{ext} A dx = -P_{ext} dV
+\]
+i, per tant,
+\[
+w=-\int_{V_1}^{V_2} P_{ext} dV
+\]
+\subsection{Exemple de càlcul de treball}
+
+Considerem un gas ideal que s'expandeix isobàricament (a pressió constant) des d'un volum inicial $V_1$ fins a un volum final $V_2$. El treball realitzat pel gas durant aquesta expansió es pot calcular com:
+
+\[
+w = -P_{\text{ext}} \Delta V = -P_{\text{ext}} (V_2 - V_1)
+\]
+
+On $P_{\text{ext}}$ és la pressió externa constant. Si la pressió està en \si{\pascal} i el volum en \si{\meter\cubed}, el treball es mesura en \si{\joule}.
+
+Per exemple, si un gas s'expandeix des de \qty{1}{\meter\cubed} fins a \qty{2}{\meter\cubed} a una pressió constant de \qty{100}{\kilo\pascal}, el treball realitzat pel gas és:
+
+\[
+w = -\qty{100}{\kilo\pascal} \times (\qty{2}{\meter\cubed} - \qty{1}{\meter\cubed}) = -\qty{100}{\kilo\pascal} \times \qty{1}{\meter\cubed} = -\qty{100}{\kilo\joule}
+\]
+
+El signe negatiu indica que el treball és realitzat pel sistema (el gas) sobre l'entorn.
+
+\subsection{Exemple de càlcul de calor}
+
+Considerem ara un gas ideal que s'escalfa isocòricament (a volum constant) des d'una temperatura inicial $T_1$ fins a una temperatura final $T_2$. La calor transferida al gas durant aquest procés es pot calcular com:
+
+\[
+q_v = n C_{v,m} \Delta T = n C_{v,m} (T_2 - T_1)
+\]
+
+On $n$ és el nombre de mols de gas, $C_{v,m}$ és la capacitat calorífica molar a volum constant, i $\Delta T$ és el canvi de temperatura. Si la capacitat calorífica està en \si{\joule\per\mole\per\kelvin} i la temperatura en \si{\kelvin}, la calor es mesura en \si{\joule}.
+
+\subsection{Calor}
+
+La calor $q$ és una magnitud macroscòpica que representa l'efecte d'infinitud de treballs microscòpics deguts als moviments de les partícules d'un sistema.
+Com el treball, no és una funció d'estat, ja que depèn del camí que utilitzem per transferir-lo.
+La calor es medeix en calories o Joules.\marginnote{Definim com caloria la quantitat de calor necessària per escalfar 1 gr d'aigua \qty{1}{\degreeCelsius}. Per tant, la capacitat calorífica de l'aigua és $C_p=\qty{1}{\cal\per\gram\per\degreeCelsius}$. En realitat, això només és cert per a una temperatura donada, ja que la capacitat calorífica depèn lleugerament de la temperatura de partida. En el cas de l'aigua, la caloria es defineix per al pas de 14.5\unit{\degreeCelsius} a 15.5\unit{\degreeCelsius}. La quantitat de treball necessària per produir aquesta calor es va determinar per Mayer y Joule el s. XIX com \qty{1}{\cal}=\qty{4.1860}{\joule}. En química usem més sovint les Capacitats calorífiques molars, $C_m$,  que indiquen la quantitat de calor necessària per escalfar un mol d'una substància 1\unit{\degreeCelsius}.}
+
+La quantitat de calor necessària per incrementar la temperatura un determinat valor d'1 \unit\mole de substància és
+\[
+q=nC_m\Delta T
+\]
+Si aquesta expressió la usem per explicar un procés infinitessimal obtenim
+\[
+C_m=\frac{1}{n}\frac{dq}{dT}
+\]
+I com que la capacitat calorífica es pot obtenir a $V=\text{cnt}$ o a $P=\text{cnt}$, podem calcular
+\[
+q_v=\int_{T_1}^{T_2} n C_{v,m} dT
+\]
+i
+\[
+q_p=\int_{T_1}^{T_2} n C_{p,m} dT
+\]
 
 \subsection{Primera llei de la termodinàmica}
 
@@ -369,8 +468,140 @@ L'entalpia d'una reacció es pot calcular a partir de les entalpies de formació
 \Delta H^\circ_{\text{reacció}} = \sum \Delta H^\circ_f (\text{productes}) - \sum \Delta H^\circ_f (\text{reactius})
 \end{equation}
 
-%\section{Convertidors catalítics}
-%\section{Convertidors catalítics}
+\subsection{Capacitat calorífica}   
+
+Com hem vist més amunt, la capacitat calorífica es pot expressar com:
+\begin{equation}
+    C = \frac{q}{\Delta T}
+\end{equation}
+
+La capacitat calorífica a pressió constant es denota com $C_p$ i a volum constant com $C_v$. La diferència entre ambdues és el treball de compressió, i es pot expressar, en el cas dels gasos, com:
+\begin{equation}
+    C_p - C_v = R
+\end{equation}
+
+En el cas de líquids i sòlids, les dues capacitats calorífiques són pràcticament iguals, ja que el treball de compressió és negligible. En el cas dels gasos, la capacitat calorífica a pressió constant és lleugerament més gran que a volum constant, ja que el treball de compressió és positiu. 
+
+\begin{mybox}[title=Relació entre la capacitat calorífica a pressió constant i a volum constant] 
+Per deduir aquesta relació, considerem la primera llei de la termodinàmica:
+\[
+    \Delta U = q - P \Delta V
+\]
+
+A volum constant, el treball de compressió és zero ($\Delta V = 0$), i per tant:
+\[
+    \Delta U = q_v = C_v \Delta T
+\]
+
+A pressió constant, la calor afegida al sistema es descompon en l'increment d'energia interna i el treball de compressió:
+\[
+    q_p = \Delta U + P \Delta V = C_p \Delta T
+\]
+
+Utilitzant l'equació d'estat dels gasos ideals, $P \Delta V = nR \Delta T$, podem escriure:
+\[
+    C_p \Delta T = C_v \Delta T + nR \Delta T
+\]
+
+Dividint per $\Delta T$ a ambdós costats de l'equació, obtenim:
+\[
+    C_p = C_v + nR
+\]
+
+Per unitat de mol, $n = 1$, i per tant:
+\[
+    C_p - C_v = R
+\]
+
+\end{mybox}
+
+La capacitat calorífica es pot expressar en forma diferencial com:
+
+\begin{equation}
+    C_v = \left( \frac{\partial U}{\partial T} \right)_V = \left( \frac{\partial q_v}{\partial T} \right)_V
+\end{equation}
+
+\begin{equation}
+    C_p = \left( \frac{\partial H}{\partial T} \right)_P = \left( \frac{\partial q_p}{\partial T} \right)_P
+\end{equation}
+
+\subsection{Dependència de l'entalpia amb la temperatura}
+
+L'entalpia d'una substància depèn de la temperatura. Imaginem que volem calcular l'entalpia d'una reacció a una temperatura $T_2$ a partir de l'entalpia a una temperatura $T_1$. Com que l'entalpia és una funció d'estat, podem calcular la variació d'entalpia entre $T_1$ i $T_2$ seguint aquest camí:
+
+\begin{center}
+    \schemestart
+      \ch{a A + b B}
+      \arrow{->[\state{H}^{}_1$(T_2)$]}[,1.5]
+      \ch{c C + d D}
+      \arrow{<-[\state{H}^{prod}$(T_2\to T_1)$]}[-90,2]
+      \ch{c C + d D}
+      \arrow{<-[\state{H}^{}_2$(T_1)$]}[180,1.5]
+      \ch{a A + b B}  
+      \arrow(@c4--@c1){->[\state{H}^{react}$(T_1\to T_2)$]}
+    \schemestop
+    \end{center}
+
+Podem obtenir la variació d'entalpia com (recordem que la variació d'entalpia és precisament la variació de calor a pressió constant):
+
+\begin{equation}
+    \Delta H_2 = \Delta H_1 + \int_{T_1}^{T_2} C_p(\text{productes})\, dT - \int_{T_1}^{T_2} C_p(\text{reactius})\, dT.
+\end{equation}
+
+Si definim la diferència de calor específica:
+\begin{equation}
+    \Delta C_p = C_p(\text{productes}) - C_p(\text{reactius}),
+\end{equation}
+
+les integrals es poden combinar en:
+\begin{equation}
+    \Delta H_2 = \Delta H_1 + \int_{T_1}^{T_2} \Delta C_p dT.
+\end{equation}
+
+En el cas que $\Delta C_p$ sigui constant, la integral es resol com:
+\begin{equation}
+    \Delta H_2 = \Delta H_1 + \Delta C_p (T_2 - T_1).
+    \label{eq:entalpia_temperatura}
+\end{equation}
+
+\begin{EXMP}[Càlcul de l'entalpia a una altra temperatura]
+    Per exemple, donada la reacció:
+    \begin{center}
+    \ch{CO + $\frac{1}{2}$ O2 -> CO2}
+    \end{center}
+amb $\Delta H_{298} = \qty{-67.640}{\cal}$, calculem $\Delta H^\circ$ a \qty{398}{\kelvin}. De la Taula \ref{tab:capacitats_calorifiques}, tenim:   
+\begin{align*}
+    C_p(\ch{CO}) &= \qty{6.97}{\cal\per\mole\per\kelvin},\\
+    C_p(\ch{O2}) &= \qty{7.05}{\cal\per\mole\per\kelvin},\\
+    C_p(\ch{CO2}) &= \qty{8.96}{\cal\per\mole\per\kelvin}
+\end{align*}
+Substituïm a la fórmula \ref{eq:entalpia_temperatura}:
+\begin{align*}
+    \Delta C_p &= 8.96 - 6.97 - \frac{7.05}{2} = \qty{-1.53}{\cal\per\mole\per\kelvin},\\
+    \Delta H_{398} &= \Delta H_{298} - \Delta C_p (\qty{398}{\kelvin} - \qty{298}{\kelvin})\\
+    &= \qty{-67.640}{\cal} - (\qty{-1.53}{\cal\per\mole\per\kelvin} \times \qty{100}{\kelvin})\\
+    &= \qty{-67.793}{\cal} = \qty{-283.6}{\kilo\joule\per\mole}.    
+\end{align*}
+
+\end{EXMP}
+
+\begin{table}[h]
+    \centering
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{ccc|ccc}
+        \toprule
+        Substància & Fórmula & $C_p$  & Substància & Fórmula & $C_p$  \\
+        \midrule
+        Monòxid de carboni & \ch{CO} & 6.97 & Metà & \ch{CH4} & 8.53 \\
+        Oxigen & \ch{O2} & 7.05 & Nitrogen & \ch{N2} & 6.97 \\
+        Diòxid de carboni & \ch{CO2} & 8.96 & Hidrogen & \ch{H2} & 6.88 \\
+        Aigua (vapor) & \ch{H2O(g)} & 8.02 & Etanol & \ch{C2H5OH} & 26.9 \\
+        Propà & \ch{C3H8} & 17.6 & Butà & \ch{C4H10} & 23.5 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Capacitats calorífiques (\si{\cal\per\mole\per\kelvin}) de diverses substàncies a 298 K i a pressió constant\cite{mahan_quimica_1997}.}
+    \label{tab:capacitats_calorifiques}
+\end{table}
 
 \newpage
 \section{Exercicis}

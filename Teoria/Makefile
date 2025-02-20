@@ -32,18 +32,20 @@ Theory: ../build/${PROJECT}.pdf
 # 		mv ../build/temp_header_footer_modified.pdf ${PDFDIR}/$$file.pdf; \
 # 		rm -f temp_header_footer.tex temp_header_footer_modified.tex; \
 # 	done
-
 files:
 	@for file in $(wildcard GEA*.tex); do \
-		cp $(HEADER_FOOTER_TEMPLATE) temp_header_footer.tex; \
-		cp $$file $$file.mod; \
-		sed -i "s/marginnote/footnote/" $$file.mod; \
-		sed -i "s/marginfigure/figure/" $$file.mod; \
-		sed -i "s/margintable/table/" $$file.mod; \
-		sed -i "s/chapter/chapter\*/" $$file.mod; \
-		sed "s|\\input{GEA_FILE.tex}|\\input{$$file.mod}|" temp_header_footer.tex > temp_header_footer_modified.tex; \
-		$(LATEXMK) -output-directory=../build temp_header_footer_modified.tex; \
-		rsync --update ../build/temp_header_footer_modified.pdf ${PDFDIR}/$$(basename $$file .tex).pdf; \
+		output_pdf=${PDFDIR}/$$(basename $$file .tex).pdf; \
+		if [ $$file -nt $$output_pdf ]; then \
+			cp $(HEADER_FOOTER_TEMPLATE) temp_header_footer.tex; \
+			cp $$file $$file.mod; \
+			sed -i "s/marginnote/footnote/" $$file.mod; \
+			sed -i "s/marginfigure/figure/" $$file.mod; \
+			sed -i "s/margintable/table/" $$file.mod; \
+			sed -i "s/chapter/chapter\*/" $$file.mod; \
+			sed "s|\\input{GEA_FILE.tex}|\\input{$$file.mod}|" temp_header_footer.tex > temp_header_footer_modified.tex; \
+			$(LATEXMK) -output-directory=../build temp_header_footer_modified.tex; \
+			rsync --update ../build/temp_header_footer_modified.pdf $$output_pdf; \
+		fi; \
 	done
 
 # Regles per generar el PDF d'ExamenParcial

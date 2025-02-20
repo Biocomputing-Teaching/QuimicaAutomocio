@@ -64,6 +64,14 @@
  { %	
  	\end{shaded}
 } %
+
+\newcounter{EXMP}
+\newenvironment{EXMP}[1][]{\definecolor{shadecolor}{rgb}{0.9,0.9,0.9}
+							\begin{shaded}\refstepcounter{EXMP}\par\medskip\noindent%
+							\textbf{EXEMPLE~\theEXMP. #1\\} \rmfamily}
+							{\end{shaded}\medskip}
+
+
 \usepackage{siunitx}
 
 % Definició d'unitats personalitzades per al sistema imperial
