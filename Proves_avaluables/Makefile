@@ -4,8 +4,10 @@ SHELL := /bin/bash
 doc   = 310518ExamenRecuperacio1
 #doc   = 050618ExamenRecuperacio2
 docpath = ../build/$(doc)
+HEADER_FOOTER_TEMPLATE = header_footer_template_EX.tex
 
-all: $(docpath)Preguntes.pdf $(docpath)Respostes.pdf $(docpath)FullRespostes.pdf clean #$(doc)Preguntas.pdf
+
+exams: $(docpath)Preguntes.pdf $(docpath)Respostes.pdf $(docpath)FullRespostes.pdf clean #$(doc)Preguntas.pdf
 
 $(docpath)Preguntes.pdf: $(doc).tex urmathtest_cat.sty
 	sed -e 's/TYPE/questions/' $(doc).tex > $(docpath)Preguntes.tex
@@ -24,13 +26,12 @@ $(docpath)Respostes.pdf: $(doc).tex urmathtest_cat.sty
 	cp $(doc)Respostes.pdf ../build
 
 EX:
-	@for name in E1 Combustio ForcesInt Piles Llum Materials Temperatura; do \
-		FILE=_GEA$$name; \
-		cp $(HEADER_FOOTER_TEMPLATE) ../build/temp_header_footer_$$name.tex; \
-		sed -i "s|AUTOAV_FILE|$$FILE|" ../build/temp_header_footer_$$name.tex; \
-		sed -i "s|NAME_FILE|$$name|" ../build/temp_header_footer_$$name.tex; \
-		$(LATEXMK) -output-directory=../build ../build/temp_header_footer_$$name.tex; \
-		rsync --update ../build/temp_header_footer_$$name.pdf ${PDFDIR}/$$FILE.pdf; \
+	@for name in E1 E2 E3 E4 E5 E6 E7 E8 E9 E10; do \
+		FILE=proves_$$name; \
+		cp $(HEADER_FOOTER_TEMPLATE) ../build/$$name.tex; \
+		sed -i "s|EX_FILE|$$FILE|" ../build/$$name.tex; \
+		sed -i "s|NAME_FILE|$$name|" ../build/$$name.tex; \
+		$(LATEXMK) -output-directory=../build ../build/$$name.tex; \
 	done
 
 clean:
