@@ -23,6 +23,16 @@ $(docpath)Respostes.pdf: $(doc).tex urmathtest_cat.sty
 	lualatex $(docpath)Respostes
 	cp $(doc)Respostes.pdf ../build
 
+EX:
+	@for name in E1 Combustio ForcesInt Piles Llum Materials Temperatura; do \
+		FILE=_GEA$$name; \
+		cp $(HEADER_FOOTER_TEMPLATE) ../build/temp_header_footer_$$name.tex; \
+		sed -i "s|AUTOAV_FILE|$$FILE|" ../build/temp_header_footer_$$name.tex; \
+		sed -i "s|NAME_FILE|$$name|" ../build/temp_header_footer_$$name.tex; \
+		$(LATEXMK) -output-directory=../build ../build/temp_header_footer_$$name.tex; \
+		rsync --update ../build/temp_header_footer_$$name.pdf ${PDFDIR}/$$FILE.pdf; \
+	done
+
 clean:
 	rm -f *.{bcf,run.xml,pro,aux,nav,out,log,idx,ind,ilg,toc,bbl,blg,tdo,lot,lof,glo,snm}
 	rm -f $(docpath)*.{bcf,run.xml,pro,aux,nav,out,log,idx,ind,ilg,toc,bbl,blg,tdo,lot,lof,glo,snm}
