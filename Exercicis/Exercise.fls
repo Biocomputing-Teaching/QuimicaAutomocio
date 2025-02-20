@@ -448,9 +448,6 @@ INPUT ../Exercicis/ex_entalpia.tex
 INPUT ../Exercicis/ex_entalpia2.tex
 INPUT ../Exercicis/ex_entalpia2.tex
 INPUT ../Exercicis/ex_entalpia2.tex
-INPUT ../Exercicis/ex_entalpia3.tex
-INPUT ../Exercicis/ex_entalpia3.tex
-INPUT ../Exercicis/ex_entalpia3.tex
 INPUT Exercise.aux
 INPUT Exercise.run.xml
 OUTPUT Exercise.run.xml
