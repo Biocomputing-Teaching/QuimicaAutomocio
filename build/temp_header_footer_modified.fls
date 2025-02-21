@@ -237,6 +237,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/physics/physics.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/physics/physics.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
@@ -532,11 +534,11 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
 INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
 INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
-INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/SistEntornUnivers.png
-INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/SistEntornUnivers.png
-INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/SistEntornUnivers.png
-INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/SistEntornUnivers.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/SistEntornUnivers.png
+INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/SistEntornUnivers.png
+INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/SistEntornUnivers.png
+INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/SistEntornUnivers.png
 INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
 INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
 INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
@@ -567,6 +569,9 @@ INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
 INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
 INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
 INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
+INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
+INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
+INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
 INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../Exercicis/compendi_GEACombustio.tex
 INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../Exercicis/compendi_GEACombustio.tex
 INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../Exercicis/compendi_GEACombustio.tex
@@ -600,12 +605,6 @@ INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
 INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../Exercicis/ex_entalpia2.tex
 INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../Exercicis/ex_entalpia2.tex
 INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../Exercicis/ex_entalpia2.tex
-INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
-INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
-INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
-INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
-INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
-INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
 INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
 INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png
 INPUT /home/jordivilla/GitHub/Classes/QuimicaAutomocio/build/../figures/FCTE.png

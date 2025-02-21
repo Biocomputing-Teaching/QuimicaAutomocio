@@ -236,11 +236,9 @@ Per simplificar, l'anàlisi de la combustió es centrarà en la gasolina i un de
 
 \subsection{L'índex d'octà}
 
-
     Què significa el número d'octà de la benzina o per què alguns cotxes necessiten gasolina premium? El número d'octà mesura la resistència del combustible a la ignició espontània quan es comprimeix.
 
     L'octà, o n-octà, és un hidrocarbur de la família dels alquans amb fórmula molecular \ch{C8H18}. És un líquid incolor, inodor i inflamable. És un component important de la gasolina, ja que té una estructura lineal que li permet tenir una alta resistència a la detonació. Això fa que sigui un combustible ideal per a motors d'alta compressió.
-
 
 En un motor de combustió interna, el combustible ha de cremar quan s'encén la bugia. Si la compressió fa que es detoni abans d'horaes poden danyar components com vàlvules i pistons. Això es coneix com a picat de biela o preignició.
 
@@ -248,8 +246,9 @@ El número d'octà es determina en un laboratori, cremant el combustible en un m
 
 És important saber que aquest número no indica la quantitat real d'octà en la benzina. Hi ha altres compostos amb més resistència a la detonació que poden donar valors superiors a 100. En resum, com més alta sigui la ràtio de compressió del motor, més alt ha de ser el número d'octà per evitar problemes de preignició.  
  
-\begin{table}[h]
+\begin{table}[h!]
     \centering
+    \caption{Taula de compostos amb les seves fórmules condensades i índex d'octà (Adaptada de \cite{noauthor_38_2015}). }
     \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{p{1cm}cc|p{1cm}cc}
         \toprule
@@ -269,7 +268,7 @@ El número d'octà es determina en un laboratori, cremant el combustible en un m
         toluè & \chemfig{[:-60]*6(-=-=(-CH3)-=)} & 118 \\
         \bottomrule
     \end{tabular}
-    \caption{Taula de compostos amb les seves fórmules condensades i índex d'octà (Adaptada de \cite{noauthor_38_2015}). }
+
     \label{tab:octa}
 \end{table}
 
@@ -290,20 +289,17 @@ En moltes ocasions mirem d'obtenir treball a partir de la calor produïda en una
 La termodinàmica estudia les relacions entre energia, calor i treball.
 En aquest capítol treballarem al voltant de la termoquímica, la termodinàmica associada a les reaccions químiques, no només a la combustió
 
-\begin{mybox}{Sistemes, estats i funcions d'estat}
-
-    Anomenem "sistema" a aquella part de l'"univers" que volem tractar en algun càlcul o experiment. 
+\begin{mybox}[title={Sistemes, estats i funcions d'estat}]
+    Anomenem \emph{sistema} a aquella part de l'\emph{univers} que volem tractar en algun càlcul o experiment. 
 Per exemple, un sistema pot ser un cilindre en un motor de combustió o bé una bateria elèctrica.
 \begin{center}
-\includegraphics[scale=1.0]{SistEntornUnivers.png}
+\includegraphics[scale=0.5]{SistEntornUnivers.png}
 \end{center}
-La resta de l'univers, que no tractem directament, l'anomenarem "entorn".
-
-L'\textit{estat del sistema} es caracteritza  per unes determinades \textit{variables d'estat} ($P$, $V$, $T$, $E$, $H$,...), que són magnituds físiques macroscòpiques mesurables. La termodinàmica estudia els \textit{estats d'equilibri} dels sistemes, en els quals les variables d'estat són idèntiques en totes les seves parts i invariables en el temps.
-Tenen dues característiques principals:
+ 
+L'\textit{estat del sistema} es caracteritza  per unes determinades \textit{variables d'estat} ($P$, $V$, $T$, $E$, $H$,...), magnituds físiques macroscòpiques mesurables. La termodinàmica estudia els \textit{estats d'equilibri} dels sistemes, en els quals les variables d'estat són idèntiques en totes les seves parts i invariables en el temps:
 \begin{enumerate}
 \item En els \textit{canvis d'estat} d'un sistema, les variables d'estat només depenen de l'estat inicial i final, i no del camí utilitzat. Així, per exemple, el treball $w$ no és funció d'estat, mentre que l'energia $E$ sí que ho és.
-\item El fet de fixar els valors d'algunes d'elles, una equació d'estat determina automàticament el valor de les altres. Així, per exemple, en un gas ideal, si coneixem $P$, $V$ i $T$, podem determinar $E$, $H$, $S$, etc.
+\item En fixar els valors d'algunes d'elles, una equació d'estat determina automàticament el valor de les altres. Així, per exemple, en un gas ideal, si coneixem $P$, $V$ i $T$, podem determinar $E$, $H$, $S$, etc.
 \end{enumerate}
 
 Els canvis d'estat poden ser 
@@ -317,11 +313,11 @@ Els canvis d'estat poden ser
 
 El treball realitzat per una força en desplaçar un cos entre dues posicions es calcula segons:
 \[
-w=\int_{x_1}^{x_2} \vec{F} \cdot \vec{dx}
+w=\int_{x_1}^{x_2} \mathbf{F} \cdot \mathbf{dx}
 \]
 Tenint en compte que $P=\frac{F}{A}$, és fàcil veure que, en el cas d'un pistó que exerceixi una pressió externa sobre un gas 
 \begin{center}
-\includegraphics[scale=0.8]{pisto_dw.png}
+\includegraphics[scale=0.6]{pisto_dw.png}
 \end{center}
 tenim
 \[
@@ -331,7 +327,7 @@ i, per tant,
 \[
 w=-\int_{V_1}^{V_2} P_{ext} dV
 \]
-\subsection{Exemple de càlcul de treball}
+\begin{EXMP}[Treball en una expansió isobàrica]
 
 Considerem un gas ideal que s'expandeix isobàricament (a pressió constant) des d'un volum inicial $V_1$ fins a un volum final $V_2$. El treball realitzat pel gas durant aquesta expansió es pot calcular com:
 
@@ -348,16 +344,9 @@ w = -\qty{100}{\kilo\pascal} \times (\qty{2}{\meter\cubed} - \qty{1}{\meter\cube
 \]
 
 El signe negatiu indica que el treball és realitzat pel sistema (el gas) sobre l'entorn.
+\end{EXMP}
 
-\subsection{Exemple de càlcul de calor}
 
-Considerem ara un gas ideal que s'escalfa isocòricament (a volum constant) des d'una temperatura inicial $T_1$ fins a una temperatura final $T_2$. La calor transferida al gas durant aquest procés es pot calcular com:
-
-\[
-q_v = n C_{v,m} \Delta T = n C_{v,m} (T_2 - T_1)
-\]
-
-On $n$ és el nombre de mols de gas, $C_{v,m}$ és la capacitat calorífica molar a volum constant, i $\Delta T$ és el canvi de temperatura. Si la capacitat calorífica està en \si{\joule\per\mole\per\kelvin} i la temperatura en \si{\kelvin}, la calor es mesura en \si{\joule}.
 
 \subsection{Calor}
 
@@ -365,7 +354,7 @@ La calor $q$ és una magnitud macroscòpica que representa l'efecte d'infinitud 
 Com el treball, no és una funció d'estat, ja que depèn del camí que utilitzem per transferir-lo.
 La calor es medeix en calories o Joules.\marginnote{Definim com caloria la quantitat de calor necessària per escalfar 1 gr d'aigua \qty{1}{\degreeCelsius}. Per tant, la capacitat calorífica de l'aigua és $C_p=\qty{1}{\cal\per\gram\per\degreeCelsius}$. En realitat, això només és cert per a una temperatura donada, ja que la capacitat calorífica depèn lleugerament de la temperatura de partida. En el cas de l'aigua, la caloria es defineix per al pas de 14.5\unit{\degreeCelsius} a 15.5\unit{\degreeCelsius}. La quantitat de treball necessària per produir aquesta calor es va determinar per Mayer y Joule el s. XIX com \qty{1}{\cal}=\qty{4.1860}{\joule}. En química usem més sovint les Capacitats calorífiques molars, $C_m$,  que indiquen la quantitat de calor necessària per escalfar un mol d'una substància 1\unit{\degreeCelsius}.}
 
-La quantitat de calor necessària per incrementar la temperatura un determinat valor d'1 \unit\mole de substància és
+La quantitat de calor necessària per incrementar la temperatura un determinat valor d'\qty{1}{\mole} de substància és
 \[
 q=nC_m\Delta T
 \]
@@ -381,6 +370,17 @@ i
 \[
 q_p=\int_{T_1}^{T_2} n C_{p,m} dT
 \]
+
+\begin{EXMP}[Calor en un procés isocòric]
+
+Considerem ara un gas ideal que s'escalfa isocòricament (a volum constant) des d'una temperatura inicial $T_1$ fins a una temperatura final $T_2$. La calor transferida al gas durant aquest procés es pot calcular com:
+
+\[
+q_v = n C_{v,m} \Delta T = n C_{v,m} (T_2 - T_1)
+\]
+
+On $n$ és el nombre de mols de gas, $C_{v,m}$ és la capacitat calorífica molar a volum constant, i $\Delta T$ és el canvi de temperatura. Si la capacitat calorífica està en \si{\joule\per\mole\per\kelvin} i la temperatura en \si{\kelvin}, la calor es mesura en \si{\joule}.
+\end{EXMP}
 
 \subsection{Primera llei de la termodinàmica}
 
@@ -405,9 +405,9 @@ Si la reacció estudiada fos a volum constant, és a dir, en un recipient tancat
     \Delta U = q_v
 \end{equation}
 
-Per tant, per mesurar la calor de combustió d'un combustible, es pot utilitzar un calorímetre a volum constant, on tota l'energia alliberada per la reacció es converteix en calor. Les reaccions que desprenen calor s'anomenen exotèrmiques, mentre que les que l'absorbeixen s'anomenen endotèrmiques. Si el sistema absorbeix calor, la variació d'energia interna serà positiva, i si la despren, serà negativa.
+Per tant, per mesurar la calor de combustió d'un combustible, es pot utilitzar un calorímetre a volum constant, on tota l'energia alliberada per la reacció es converteix en calor. Les reaccions que desprenen calor s'anomenen \textbf{exotèrmiques}, mentre que les que l'absorbeixen s'anomenen \textbf{endotèrmiques}. Si el sistema absorbeix calor, la variació d'energia interna serà positiva, i si la despren, serà negativa.
 
-Normalmenmt, però, les reaccions químiques succeeixen a pressió constant, i per tant, la calor de combustió es mesura a pressió constant. Això es pot fer amb un calorímetre a pressió constant, on la calor de combustió es converteix en treball de compressió. En aquest cas, ens convé més usar una altra funció d'estat, l'{\bf entalpia}, que es defineix com:
+Normalment, però, les reaccions químiques succeeixen a pressió constant, i per tant, la calor de combustió es mesura a pressió constant. Això es pot fer amb un calorímetre a pressió constant, on la calor de combustió es converteix en treball de compressió. En aquest cas, ens convé més usar una altra funció d'estat, l'{\bf entalpia}, que es defineix com:
 \begin{equation}
     H = U + PV
 \end{equation}
@@ -421,7 +421,7 @@ i la calor de combustió es pot expressar com:
 
 Novament, per a un procés exotèrmic a pressió constant, la variació d'entalpia serà negativa, ja que el sistema allibera calor. Això és el que succeeix en una reacció de combustió.
 
-Cal notar que $\Delta H$ i $\Delta U$ són funcions d'estat, però no són iguals, ja que $H$ inclou el treball de compressió. Això fa que la calor de combustió a pressió constant sigui més fàcil de mesurar que a volum constant. No obstant això, si es tracta de processos en solució, on el treball de compressió és negligible i $\Delta U \approx \Delta H$.
+Cal notar que $\Delta H$ i $\Delta U$ són funcions d'estat, però no són iguals, ja que $H$ inclou el treball de compressió. No obstant això, en processos en solució, el treball de compressió és negligible i $\Delta U \approx \Delta H$.
 
 \subsection{Increment d'entalpia estàndard}
 
@@ -431,7 +431,7 @@ L'increment d'entalpia estàndard d'una reacció, $\Delta H^\circ$, és la varia
 \ch{CH4(g) + 2 O2(g) -> CO2(g) + 2 H2O(l)} \quad \Delta H^\circ = -890.3 \, \si{\kilo\joule\per\mole}
 \end{equation}
 
-Aquesta equació indica que la combustió d'un mol de metà allibera 890.3 kJ d'energia en forma de calor. Els valors d'increment d'entalpia estàndard per a moltes reaccions es poden trobar en taules termodinàmiques.
+Aquesta equació indica que la combustió d'un mol de metà allibera 890.3 kJ d'energia en forma de calor. Els valors d'increment d'entalpia estàndard per a moltes reaccions es poden trobar en taules termodinàmiques\cite{lide_crc_2005} (algunes estàn recollides en la \href{https://biocomputing-teaching.github.io/WebQuimicaAutomocio/pdf/TaulaUnitats.pdf}{taula de paràmetres termodinàmics} del curs).
 
 \subsection{Llei de Hess}
 
@@ -460,9 +460,7 @@ Substituint els valors:
 
 Així, la llei de Hess ens permet determinar l'entalpia de reaccions complexes utilitzant dades d'entalpia de reaccions més simples.
 
-L'entalpia estàndard de formació, $\Delta H_f^\circ$ és la variació d'entalpia que es produeix quan un mol d'una substància es forma a partir dels seus elements en els seus estats estàndard. Aquesta magnitud és molt útil per calcular l'entalpia de reaccions químiques complexes, ja que permet descompondre-les en passos més senzills. Els valors d'entalpia de formació es poden trobar en taules termodinàmiques i són essencials per aplicar la llei de Hess en el càlcul de l'entalpia de reaccions.
-
-L'entalpia d'una reacció es pot calcular a partir de les entalpies de formació estàndard dels reactius i productes utilitzant la següent fórmula:
+L'entalpia estàndard de formació, $\Delta H_f^\circ$ és la variació d'entalpia que es produeix quan un mol d'una substància es forma a partir dels seus elements en els seus estats estàndard. L'entalpia d'una reacció es pot calcular a partir de les entalpies de formació estàndard dels reactius i productes utilitzant la següent fórmula:
 
 \begin{equation}
 \Delta H^\circ_{\text{reacció}} = \sum \Delta H^\circ_f (\text{productes}) - \sum \Delta H^\circ_f (\text{reactius})
@@ -498,17 +496,11 @@ A pressió constant, la calor afegida al sistema es descompon en l'increment d'e
     q_p = \Delta U + P \Delta V = C_p \Delta T
 \]
 
-Utilitzant l'equació d'estat dels gasos ideals, $P \Delta V = nR \Delta T$, podem escriure:
+Utilitzant l'equació d'estat dels gasos ideals, $P \Delta V = nR \Delta T$, i per a $n = 1$ podem escriure:
 \[
-    C_p \Delta T = C_v \Delta T + nR \Delta T
+    C_p \Delta T = C_v \Delta T + R \Delta T
 \]
-
-Dividint per $\Delta T$ a ambdós costats de l'equació, obtenim:
-\[
-    C_p = C_v + nR
-\]
-
-Per unitat de mol, $n = 1$, i per tant:
+ i, per tant:
 \[
     C_p - C_v = R
 \]
@@ -552,7 +544,6 @@ Si definim la diferència de calor específica:
 \begin{equation}
     \Delta C_p = C_p(\text{productes}) - C_p(\text{reactius}),
 \end{equation}
-
 les integrals es poden combinar en:
 \begin{equation}
     \Delta H_2 = \Delta H_1 + \int_{T_1}^{T_2} \Delta C_p dT.
@@ -582,10 +573,10 @@ Substituïm a la fórmula \ref{eq:entalpia_temperatura}:
     &= \qty{-67.640}{\cal} - (\qty{-1.53}{\cal\per\mole\per\kelvin} \times \qty{100}{\kelvin})\\
     &= \qty{-67.793}{\cal} = \qty{-283.6}{\kilo\joule\per\mole}.    
 \end{align*}
-
 \end{EXMP}
-
-\begin{table}[h]
+ 
+\begin{table}[h!]
+    \caption{Capacitats calorífiques (\si{\cal\per\mole\per\kelvin}) de diverses substàncies a 298 K i a pressió constant\cite{mahan_quimica_1997}.}
     \centering
     \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{ccc|ccc}
@@ -599,7 +590,7 @@ Substituïm a la fórmula \ref{eq:entalpia_temperatura}:
         Propà & \ch{C3H8} & 17.6 & Butà & \ch{C4H10} & 23.5 \\
         \bottomrule
     \end{tabular}
-    \caption{Capacitats calorífiques (\si{\cal\per\mole\per\kelvin}) de diverses substàncies a 298 K i a pressió constant\cite{mahan_quimica_1997}.}
+
     \label{tab:capacitats_calorifiques}
 \end{table}
 

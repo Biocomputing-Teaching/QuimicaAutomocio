@@ -17,10 +17,13 @@
 \usepackage{xcolor}
 \usepackage[backend=bibtex,style=numeric]{biblatex}  %backend=biber is 'better'  
 \usepackage{fancyhdr,amsmath,tcolorbox}
+\usepackage{physics}
 \tcbuselibrary{listings,breakable} 
 \input{common_details.tex}
 \input{common_chem.tex}
 \input{common_lst.tex}
+% comanda per assegurar que qty s'usa des de siunitx i no des de physics
+\AtBeginDocument{\RenewCommandCopy\qty\SI}
 
 \usepackage{url}
   \let\oldurl\url
