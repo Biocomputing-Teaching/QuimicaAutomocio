@@ -16,7 +16,7 @@
   \definecolor{mylilas}{RGB}{170,55,241}
   \definecolor{LightOcean}{RGB}{81, 147, 229 }
   \definecolor{DeepOcean}{RGB}{51, 131, 229}
-  \newtcolorbox{mybox}[1][]{%
+  \newtcolorbox{mybox}[1][]{% 
     %float, 
     %floatplacement=t,
     breakable,
@@ -46,7 +46,8 @@
 \newenvironment{lect}{ % 
 	\definecolor{shadecolor}{rgb}{1.0,0.8,0.8} %
 	\begin{shaded} %
-	\textcolor{BrickRed}{\bf Resposta\\}%
+	%\textcolor{BrickRed}
+  {\bf  Resposta\\}%
 
 } % 
 { %	

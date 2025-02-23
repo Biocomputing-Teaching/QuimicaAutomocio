@@ -10,7 +10,7 @@ HEADER_FOOTER_TEMPLATE = header_footer_template_exercicis.tex
 all: ../build/${PROJECT}.pdf
 
 # Regles per generar el PDF del projecte principal
-../build/${PROJECT}.pdf: ${LATEX_FILES}
+../build/${PROJECT}.pdf: ${LATEX_FILES} Exercise.tex
 	$(LATEXMK) ${PROJECT}.tex
 	mv ${PROJECT}.pdf ../build/
 	rsync --update ../build/${PROJECT}.pdf ${PDFDIR}

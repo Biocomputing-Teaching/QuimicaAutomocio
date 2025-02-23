@@ -1,12 +1,12 @@
-\documentclass[a4paper,notitlepage,nobib]{tufte-book}
+\documentclass[a4paper,notitlepage,nobib,most]{tufte-book}
 %\usepackage{booksprint}
-\usepackage{tuftefoot}
+\usepackage{tuftefoot} 
 
-\input{common.tex}
-\input{common_details.tex}
-\input{common_lst.tex}
-\input{common_chem.tex}
-
+\input{../common/common.tex}
+\input{../common/common_details.tex}
+\input{../common/common_lst.tex}
+\input{../common/common_chem.tex}
+\addbibresource{../common/QuimAutom.bib} 
 %\input{common_details.tex}
 
 
@@ -123,11 +123,13 @@ Bases de dades:
   %\printbibliography
 \end{appendix}
 
-% The bibliography style.
-\bibliographystyle{apalike}
+% % The bibliography style.
+% \bibliographystyle{apalike}
 
-% If you DO want the full list of references to be printed at the end.
-\bibliography{QuimAutom}
+% % If you DO want the full list of references to be printed at the end.
+% \bibliography{QuimAutom}
+\printbibliography[heading=bibintoc]
+
 
 % If you do NOT want the full list of references to be printed at the end.
 %\nobibliography{references}

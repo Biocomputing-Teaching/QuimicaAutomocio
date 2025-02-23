@@ -4,7 +4,8 @@ PROJECT = QuimAutomTheor
 TABLE = TaulaUnitats
 
 PDFDIR = ../../../Web/WebQuimicaAutomocio/docs/pdf/
-LATEX_FILES = ${PROJECT}.tex common.tex $(wildcard GEA*.tex)
+FILES = GEAGasos GEACombustio
+LATEX_FILES = ${PROJECT}.tex $(wildcard GEA*.tex)
 HEADER_FOOTER_TEMPLATE = header_footer_template.tex
 COMMON_FILES = $(wildcard ../common/*.tex)
 
@@ -17,10 +18,10 @@ Theory: ../build/${PROJECT}.pdf
 
 files:
 	@counter=-1; \
-	for file in GEAGasos GEACombustio; do \
+	needs_update=0; \
+	for file in $(FILES); do \
 		counter=$$((counter + 1)); \
 		output_pdf=${PDFDIR}/$$file.pdf; \
-		needs_update=0; \
 		if [ -f $$file.tex ] && [ $$file.tex -nt $$output_pdf ]; then needs_update=1; fi; \
 		if [ $(HEADER_FOOTER_TEMPLATE) -nt $$output_pdf ]; then needs_update=1; fi; \
 		for common in $(COMMON_FILES); do \
@@ -41,10 +42,29 @@ files:
 		fi; \
 	done
 
-
-../build/${PROJECT}.pdf: ${LATEX_FILES} ${COMMON_FILES}
-	$(LATEXMK) -output-directory=../build ${PROJECT}.tex
-	rsync --update ../build/${PROJECT}.pdf ${PDFDIR}
+../build/${PROJECT}.pdf: 
+	@cp $(PROJECT).tex ../build/; \
+	output_pdf=../build/$(PROJECT).pdf; \
+	needs_update=0; \
+	for file in $(FILES); do \
+		echo $$file; \
+		if [ -f $$file.tex ] && [ $$file.tex -nt $$output_pdf ]; then needs_update=1; fi; \
+		if [ -f $(PROJECT).tex ] && [ $(PROJECT).tex -nt $$output_pdf ]; then needs_update=1; fi; \
+		for common in $(COMMON_FILES); do \
+			if [ $$common -nt $$output_pdf ]; then needs_update=1; fi; \
+		done; \
+		echo "need update: $$needs_update"; \
+		if [ $$needs_update -eq 1 ]; then \
+			cp $$file.tex ../build/; \
+			sed -i "s/\\\\tableofcontents/\\%/" ../build/$$file.tex; \
+		fi; \
+	done; \
+	if [ $$needs_update -eq 1 ]; then \
+		$(LATEXMK) -output-directory=../build ../build/$(PROJECT).tex; \
+		rsync --update ../build/${PROJECT}.pdf ${PDFDIR}; \
+	else \
+		echo "nothing to update";\
+	fi
 
 ../build/ExamenParcial.pdf: ExamenParcial.tex ${COMMON_FILES}
 	$(LATEXMK) -output-directory=../build ExamenParcial.tex
@@ -59,3 +79,5 @@ clean:
 	rm -f temp*
 	latexmk -C
 
+cleanpdf:
+	rm -rf ../build/QuimAutomTheor.pdf

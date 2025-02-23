@@ -3,6 +3,7 @@
 % \usepackage[utf8]{inputenc}
 % \usepackage[catalan]{babel}
 \input{../common/common.tex}
+\input{../common/common_details.tex}
 \input{../common/common_chem.tex}
 % \usepackage{chemformula}
 % \usepackage{chemmacros}
@@ -28,18 +29,9 @@
 % \DeclareSIUnit\inchHg{inHg}
 % \DeclareSIUnit\dyn{dynes}
 
-\DeclareSIUnit{\degreeFahrenheit}{\unit{\degree}F}
-\newcommand{\degC}{\degreeCelsius}
-\newcommand{\degF}{\degreeFahrenheit}
-% mates
-\usepackage{cancel}
-\usepackage{graphicx}
-\graphicspath{{../figures/}}
 
-\usepackage{framed}
-\newcounter{myc}
 %environment for exercises in the class notes
-\newenvironment{exr}[1]{ % 
+\renewenvironment{exr}[1]{ % 
     \addtocounter{myc}{1}
 	\definecolor{shadecolor}{rgb}{0.9,1.0,0.8} %
 	\begin{shaded} %
@@ -48,43 +40,30 @@
 { %	
 	\end{shaded}
 } %
-\usepackage[dvipsnames,table]{xcolor}
-\newenvironment{qst}{ % 
-    \addtocounter{myc}{1}
-	\definecolor{shadecolor}{rgb}{0.9,1.0,0.8} %
-	\begin{shaded} %
-	\textcolor{OliveGreen}{\bf Exercici \arabic{myc}\\}%
-} % 
-{ %	
-	\end{shaded}
-} %
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% lecturer or student text
-% in principle the lecturer text includes some examples to be done in the c lass
-\usepackage{ifthen}
-\newboolean{LECT}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % lecturer or student text
+% % in principle the lecturer text includes some examples to be done in the c lass
+% \usepackage{ifthen}
+% \newboolean{LECT}
 \setboolean{LECT}{true}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newenvironment{lect}{ % 
-	% \definecolor{shadecolor}{rgb}{1.0,0.8,0.8} %
-	% \begin{shaded} %
-	% \textcolor{BrickRed}{\bf Resultat\\}%
+% \newenvironment{lect}{ % 
+% 	% \definecolor{shadecolor}{rgb}{1.0,0.8,0.8} %
+% 	% \begin{shaded} %
+% 	% \textcolor{BrickRed}{\bf Resultat\\}%
 
-} % 
-{ %	
-	% \end{shaded}
-} %
-
-\newcommand{\lct}[1]{\ifthenelse{\boolean{LECT}}{\begin{lect} #1 \end{lect}}{}}
+% } % 
+% { %	
+% 	% \end{shaded}
+% } %
 
 % header and footer
-\usepackage{fancyhdr}
 
-\pagestyle{fancy}       %
 \lhead{\bf Química GEA-17UV}                %
 \chead{}                %
 \rhead{\bf Grau d'Enginyeria de l'Automoció}                %
@@ -101,7 +80,7 @@
 \begin{document}
 \maketitle
 \tableofcontents
-\section{Els gasos i el seu comportament}
+\section{Els gasos i el seu comportament} 
 \input{../Exercicis/compendi_GEAGasos.tex}
 
 \section{Combustió}
