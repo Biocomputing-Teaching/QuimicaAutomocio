@@ -1,10 +1,12 @@
 \chapter{Combustió}
 
+\tableofcontents\newpage
+
 \section{El motor de combustió interna}
 
 Un motor de combustió interna (IC) és un conjunt d'elements mecànics que permeten obtenir energia mecànica a partir de l'estat tèrmic d'un fluid de treball generat en el seu propi interior mitjançant un procés de combustió.
-
-Els motors de combustió interna, ja siguin alternatius o de reacció, són les principals fonts d'energia en el transport terrestre, marítim i aeri gràcies a la seva elevada potència específica. Aquests motors només competeixen amb els motors elèctrics en algunes aplicacions del transport ferroviari i, de manera creixent, en vehicles elèctrics purs o en configuració híbrida\cite{de_antonio_motores_2015}.
+ 
+Els motors de combustió interna, ja siguin alternatius o de reacció, són les principals fonts d'energia en el transport terrestre, marítim i aeri gràcies a la seva elevada potència específica. Aquests motors només competeixen amb els motors elèctrics en algunes aplicacions del transport ferroviari i, de manera creixent, en vehicles elèctrics purs o en configuració híbrida\cite{de_antonio_motores_2015}. 
 
 En un motor de combusti\'o interna s'introdueix aire i combustible. En els motors d'encesa per espurna, la mescla d'aire i combustible es preparava antigament en el carburador i es condu\"ia al cilindre. Ara es realitza per mitj\`a d'injectors, cosa que permet un estalvi de combustible i un millor aprofitament d'aquest. En els motors d'encesa per compressi\'o (Diesel), la mescla es realitza directament dins del cilindre, on el combustible s'injecta despr\'es d'haver-hi introdu\"it i comprimit l'aire. Cada cilindre del motor t\'e una v\`alvula d'admissi\'o i una d'escapament, que s'obren i tanquen en el moment oport\'u per permetre l'entrada i sortida de gasos. Els motors típics tenen entre 3 i 12 cilindres, i la pot\`encia es pot augmentar afegint m\'es cilindres.
 
@@ -245,18 +247,19 @@ En un motor de combustió interna, el combustible ha de cremar quan s'encén la 
 El número d'octà es determina en un laboratori, cremant el combustible en un motor amb ràtio de compressió variable fins que es detecta el picat. A partir d'això, es compara amb una barreja de \href{https://www.ebi.ac.uk/chebi/searchId.do?printerFriendlyView=true&chebiId=62805&structureView=applet}{isooctà} i heptà amb la mateixa resistència a la detonació. El número d'octà indica el percentatge d'isooctà en aquesta barreja equivalent. Per exemple, un combustible amb un número d'octà de 90 té la mateixa resistència a la preignició que una barreja del 90\% d'isooctà i 10\% d'heptà (veure Taula \ref{tab:octa}).
 
 És important saber que aquest número no indica la quantitat real d'octà en la benzina. Hi ha altres compostos amb més resistència a la detonació que poden donar valors superiors a 100. En resum, com més alta sigui la ràtio de compressió del motor, més alt ha de ser el número d'octà per evitar problemes de preignició.  
- 
+\
 \begin{table}[h!]
     \centering
     \caption{Taula de compostos amb les seves fórmules condensades i índex d'octà (Adaptada de \cite{noauthor_38_2015}). }
     \renewcommand{\arraystretch}{1.5}
+    \scriptsize
     \begin{tabular}{p{1cm}cc|p{1cm}cc}
         \toprule
         \textbf{Nom} & \textbf{Fórmula } & \textbf{Índex} & \textbf{Nom} & \textbf{Fórmula } & \textbf{Índex} \\
         \midrule
         n-heptà & \ch{CH3-(CH2)5-CH3} & 0 &
         o-xilè & \chemfig{[:-30]**6(--(-CH3)-(-CH3)--(-[,,,,,draw=none])-)} & 107 \\
-        n-hexà & \ch{CH3-(CH2)4-CH3} & 25 &
+        n-hexà & \ch{CH3-(CH2)4-CH3} & 25 & 
         etanol & \ch{CH3CH2OH} & 108 \\
         n-pentà & \ch{CH3-(CH2)3-CH3} & 62 &
         t-butil alcohol & \ch{(CH3)3COH} & 113 \\
@@ -268,9 +271,10 @@ El número d'octà es determina en un laboratori, cremant el combustible en un m
         toluè & \chemfig{[:-60]*6(-=-=(-CH3)-=)} & 118 \\
         \bottomrule
     \end{tabular}
-
+    \normalsize
     \label{tab:octa}
 \end{table}
+
 
 Molts compostos actuals tenen un índex d'octà superior a 100, cosa que els fa millors combustibles que l'isooctà pur. A més, s'han desenvolupat agents anticolp, també anomenats potenciadors d'octà. Durant molts anys, un dels més utilitzats va ser el tetraetilplom \ch{(C2H5)4Pb}, que a una concentració d'aproximadament \qty{11.36}{\gram\per\litre} augmentava l'índex d'octà en 10-15 punts. No obstant això, des de 1975, els compostos de plom han estat progressivament eliminats com a additius de la gasolina a causa de la seva elevada toxicitat.
 
@@ -480,6 +484,25 @@ La capacitat calorífica a pressió constant es denota com $C_p$ i a volum const
 
 En el cas de líquids i sòlids, les dues capacitats calorífiques són pràcticament iguals, ja que el treball de compressió és negligible. En el cas dels gasos, la capacitat calorífica a pressió constant és lleugerament més gran que a volum constant, ja que el treball de compressió és positiu. 
 
+\begin{table}[h!]
+    \caption{Capacitats calorífiques (\si{\cal\per\mole\per\kelvin}) de diverses substàncies a 298 K i a pressió constant\cite{mahan_quimica_1997}.}
+    \centering
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{ccc|ccc}
+        \toprule
+        Substància & Fórmula & $C_p$  & Substància & Fórmula & $C_p$  \\
+        \midrule
+        Monòxid de carboni & \ch{CO} & 6.97 & Metà & \ch{CH4} & 8.53 \\
+        Oxigen & \ch{O2} & 7.05 & Nitrogen & \ch{N2} & 6.97 \\
+        Diòxid de carboni & \ch{CO2} & 8.96 & Hidrogen & \ch{H2} & 6.88 \\
+        Aigua (vapor) & \ch{H2O(g)} & 8.02 & Etanol & \ch{C2H5OH} & 26.9 \\
+        Propà & \ch{C3H8} & 17.6 & Butà & \ch{C4H10} & 23.5 \\
+        \bottomrule
+    \end{tabular}
+
+    \label{tab:capacitats_calorifiques}
+\end{table} 
+
 \begin{mybox}[title=Relació entre la capacitat calorífica a pressió constant i a volum constant] 
 Per deduir aquesta relació, considerem la primera llei de la termodinàmica:
 \[
@@ -575,25 +598,3 @@ Substituïm a la fórmula \ref{eq:entalpia_temperatura}:
 \end{align*}
 \end{EXMP}
  
-\begin{table}[h!]
-    \caption{Capacitats calorífiques (\si{\cal\per\mole\per\kelvin}) de diverses substàncies a 298 K i a pressió constant\cite{mahan_quimica_1997}.}
-    \centering
-    \renewcommand{\arraystretch}{1.5}
-    \begin{tabular}{ccc|ccc}
-        \toprule
-        Substància & Fórmula & $C_p$  & Substància & Fórmula & $C_p$  \\
-        \midrule
-        Monòxid de carboni & \ch{CO} & 6.97 & Metà & \ch{CH4} & 8.53 \\
-        Oxigen & \ch{O2} & 7.05 & Nitrogen & \ch{N2} & 6.97 \\
-        Diòxid de carboni & \ch{CO2} & 8.96 & Hidrogen & \ch{H2} & 6.88 \\
-        Aigua (vapor) & \ch{H2O(g)} & 8.02 & Etanol & \ch{C2H5OH} & 26.9 \\
-        Propà & \ch{C3H8} & 17.6 & Butà & \ch{C4H10} & 23.5 \\
-        \bottomrule
-    \end{tabular}
-
-    \label{tab:capacitats_calorifiques}
-\end{table}
-
-\newpage
-\section{Exercicis}
-\input{../Exercicis/compendi_GEACombustio.tex}

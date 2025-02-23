@@ -6,23 +6,30 @@ doc   = 310518ExamenRecuperacio1
 docpath = ../build/$(doc)
 HEADER_FOOTER_TEMPLATE = header_footer_template_EX.tex
 
+# Dependències dels fitxers en el directori ../common/
+COMMON_FILES = $(wildcard ../common/*.tex)
+# Comandes per a la compilació
+LATEXMK = latexmk -pdf #-quiet
+
+# Directori de destinació per als PDFs generats
+PDFDIR = ../../../Web/WebQuimicaAutomocio/docs/pdf/
 
 exams: $(docpath)Preguntes.pdf $(docpath)Respostes.pdf $(docpath)FullRespostes.pdf clean #$(doc)Preguntas.pdf
 
 $(docpath)Preguntes.pdf: $(doc).tex urmathtest_cat.sty
 	sed -e 's/TYPE/questions/' $(doc).tex > $(docpath)Preguntes.tex
-	lualatex $(docpath)Preguntes
+	$(LATEXMK) $(docpath)Preguntes
 	cp $(doc)Preguntes.pdf ../build
 
 $(docpath)FullRespostes.pdf: $(doc).tex urmathtest_cat.sty
 	sed -e 's/TYPE/answersheet/' $(doc).tex > $(docpath)FullRespostes.tex
-	lualatex $(docpath)FullRespostes
-	lualatex $(docpath)FullRespostes
+	$(LATEXMK) $(docpath)FullRespostes
+	$(LATEXMK) $(docpath)FullRespostes
 	cp $(doc)FullRespostes.pdf ../build
 
 $(docpath)Respostes.pdf: $(doc).tex urmathtest_cat.sty
 	sed -e 's/TYPE/answers/' $(doc).tex > $(docpath)Respostes.tex
-	lualatex $(docpath)Respostes
+	$(LATEXMK) $(docpath)Respostes
 	cp $(doc)Respostes.pdf ../build
 
 EX:
@@ -33,6 +40,17 @@ EX:
 		sed -i "s|NAME_FILE|$$name|" ../build/$$name.tex; \
 		$(LATEXMK) -output-directory=../build ../build/$$name.tex; \
 	done
+
+formulari: Formulari.tex ../Teoria/formulari.tex $(COMMON_FILES)
+	cp ../Teoria/formulari.tex ../build/temp.tex
+	sed -i "s|toprule|hline|" ../build/temp.tex
+	sed -i "s|midrule|hline|" ../build/temp.tex
+	sed -i "s|bottomrule|hline|" ../build/temp.tex
+	sed -i "s|longtable|tabular|" ../build/temp.tex
+	sed -i "s|\\\\caption|\%|" ../build/temp.tex
+	sed -i "s|section|section\*|" ../build/temp.tex
+	$(LATEXMK) -output-directory=../build Formulari.tex
+	cp ../build/Formulari.pdf $(PDFDIR)
 
 clean:
 	rm -f *.{bcf,run.xml,pro,aux,nav,out,log,idx,ind,ilg,toc,bbl,blg,tdo,lot,lof,glo,snm}

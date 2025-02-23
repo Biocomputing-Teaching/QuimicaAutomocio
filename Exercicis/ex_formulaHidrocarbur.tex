@@ -13,15 +13,10 @@ Cada mol de \ch{CO2} conté 1 mol de carboni, per tant, utilitzem un factor de c
 
 \[
 38,196 \cancel{\text{ g } \ch{CO2} }
-\times \frac{1}{\cancel{44,01} \text{ g } \ch{CO2}}
-\times \frac{1 \text{ mol } C}{1 \text{ mol } \ch{CO2}}
-\times \frac{12,01 \text{ g } C}{1 \cancel{\text{ mol } C}}
+\times \frac{1 \cancel{\text{ mol } \ch{CO2}}}{44,01\cancel{ \text{ g } \ch{CO2}}}
+\times \frac{1 \cancel{\text{ mol } C}}{1 \cancel{\text{ mol } \ch{CO2}}}
+\times \frac{12,01 \text{ g } C}{1 \cancel{\text{ mol } C}}=10,426 \text{ g de } C
 \]
-
-\[
-\frac{38,196 \times 12,01}{44,01} = 10,426 \text{ g de } C
-\]
-
 
 Cada mol de \ch{H2O} conté 2 mols d'hidrogen:
 
@@ -32,22 +27,19 @@ Cada mol de \ch{H2O} conté 2 mols d'hidrogen:
 
 \[
 18,752 \cancel{\text{ g } \ch{H2O}} 
-\times \frac{1}{\cancel{18,016} \text{ g } \ch{H2O}}
-\times \frac{2 \text{ mols } H}{1 \text{ mol } \ch{H2O}}
+\times \frac{1\cancel{\text{ mol } \ch{H2O}}}{18,016\cancel{ \text{ g } \ch{H2O}}}
+\times \frac{2 \cancel{\text{ mols } H}}{1 \cancel{\text{ mol } \ch{H2O}}}
 \times \frac{1,008 \text{ g } H}{1 \cancel{\text{ mol } H}}
-\]
-
-\[
-\frac{18,752 \times 2 \times 1,008}{18,016} = 2,100 \text{ g de } H
+=2,100 \text{ g de } H
 \]
 
 
 \[
 \text{Massa total calculada} = 10,426 \text{ g C} + 2,100 \text{ g H} = 12,526 \text{ g}
 \]
-Com que el valor inicial és de 12,501 g, la diferència es deu a errors d'arrodoniment.
+Podem comprovar que el pes de \ch{C} i \ch{H} en els productes iguala el pes dels mateixos elements en els reactius. Com que el valor inicial és de 12,501 g, la diferència es deu a errors d'arrodoniment.
 
-Càlcul de la relació molar:
+Ara ens interessa veure en quina proporció estan els mols de \ch{C} i \ch{H} en el compost inicial:
 \[
 \frac{10,426 \text{ g C}}{12,01 \text{ g/mol}} = 0,868 \text{ mols C}
 \]
@@ -55,7 +47,7 @@ Càlcul de la relació molar:
 \frac{2,100 \text{ g H}}{1,008 \text{ g/mol}} = 2,083 \text{ mols H}
 \]
 
-Determinació de la fórmula empírica: 
+a partir d'aquests valors podem calcular la fórmula empírica, dividint per qualsevol dels dos i aleshores fent que els valors obtinguts siguin nombres enters: 
 
 \[
 \frac{0,868}{0,868} = 1
@@ -64,6 +56,19 @@ Determinació de la fórmula empírica:
 \frac{2,083}{0,868} = 2,4
 \]
 
-Per obtenir nombres enters, multipliquem per 5, i obtenim la fórmula empírica del compost: \ch{C5H12} (pentà).
+Per obtenir nombres enters, multipliquem per 5, i obtenim la fórmula empírica del compost: \ch{C5H12} (pentà). No sabem 
 
+\scriptsize
+\begin{longtable}{ccc}
+    \toprule
+    \emph{n}-pentà& \emph{iso}-pentà& \emph{neo}-pentà\\
+    \midrule
+\definesubmol\xx{C(-[::+90]H)(-[::-90]H)}
+\chemfig{H-!\xx-!\xx-!\xx-!\xx-!\xx-H}&
+\chemfig{[7]H_3C-CH(-[6]CH_3)-[1]CH_2-CH_3}&
+\chemfig{CH_3-C(-[2]CH_3)(-[6]CH_3)-CH_3} 
+\\
+\bottomrule
+\end{longtable}
+\normalsize
 }

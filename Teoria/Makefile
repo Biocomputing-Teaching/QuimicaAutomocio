@@ -3,66 +3,56 @@ SHELL := /bin/bash
 PROJECT = QuimAutomTheor
 TABLE = TaulaUnitats
 
-# Directori de destinació per als PDFs generats
 PDFDIR = ../../../Web/WebQuimicaAutomocio/docs/pdf/
-
-# Fitxers de dependències
 LATEX_FILES = ${PROJECT}.tex common.tex $(wildcard GEA*.tex)
-
-# Fitxers base per a cada GEA (els fitxers amb encapçalament i peu de pàgina)
 HEADER_FOOTER_TEMPLATE = header_footer_template.tex
+COMMON_FILES = $(wildcard ../common/*.tex)
 
-# Comandes per a la compilació
 LATEXMK = latexmk -pdf #-quiet
 
-# Objectius 
 all: ExamenParcial Exercise Theory move clean generate_GEA_pdfs
 Taula: ${TABLE}.pdf
 ExamenParcial: ../build/ExamenParcial.pdf
 Theory: ../build/${PROJECT}.pdf 
 
-# Generar PDFs per a cada fitxer GEA
-# GEA_pdfs:
-# 	@for file in $(wildcard GEA*.tex); do \
-# 		cp $(HEADER_FOOTER_TEMPLATE) temp_header_footer.tex; \
-# 		sed "s|\\input{GEA_FILE.tex}|\\input{$$file}|" temp_header_footer.tex > temp_header_footer_modified.tex; \
-# 		sed "s|\\marginnote|\\footnote|" temp_header_footer_modified.tex >kk.tex; \
-# 		exit(1);\
-# 		latexmk -pdf -output-directory=../build temp_header_footer_modified.tex; \
-# 		mv ../build/temp_header_footer_modified.pdf ${PDFDIR}/$$file.pdf; \
-# 		rm -f temp_header_footer.tex temp_header_footer_modified.tex; \
-# 	done
 files:
-	@for file in $(wildcard GEA*.tex); do \
-		output_pdf=${PDFDIR}/$$(basename $$file .tex).pdf; \
-		if [ $$file -nt $$output_pdf ]; then \
-			cp $(HEADER_FOOTER_TEMPLATE) temp_header_footer.tex; \
-			cp $$file $$file.mod; \
-			sed -i "s/marginnote/footnote/" $$file.mod; \
-			sed -i "s/marginfigure/figure/" $$file.mod; \
-			sed -i "s/margintable/table/" $$file.mod; \
-			sed -i "s/chapter/chapter\*/" $$file.mod; \
-			sed "s|\\input{GEA_FILE.tex}|\\input{$$file.mod}|" temp_header_footer.tex > temp_header_footer_modified.tex; \
-			$(LATEXMK) -output-directory=../build temp_header_footer_modified.tex; \
-			rsync --update ../build/temp_header_footer_modified.pdf $$output_pdf; \
+	@counter=-1; \
+	for file in GEAGasos GEACombustio; do \
+		counter=$$((counter + 1)); \
+		output_pdf=${PDFDIR}/$$file.pdf; \
+		needs_update=0; \
+		if [ -f $$file.tex ] && [ $$file.tex -nt $$output_pdf ]; then needs_update=1; fi; \
+		if [ $(HEADER_FOOTER_TEMPLATE) -nt $$output_pdf ]; then needs_update=1; fi; \
+		for common in $(COMMON_FILES); do \
+			if [ $$common -nt $$output_pdf ]; then needs_update=1; fi; \
+		done; \
+		if [ $$needs_update -eq 1 ]; then \
+			cp $(HEADER_FOOTER_TEMPLATE) ../build/temp.tex; \
+			cp $$file.tex ../build/$$file.mod; \
+			sed -i "s/marginnote/footnote/" ../build/$$file.mod; \
+			sed -i "s/marginfigure/figure/" ../build/$$file.mod; \
+			sed -i "s/margintable/table/" ../build/$$file.mod; \
+			sed -i "s/\\chapter/\\%\\chapter\*/" ../build/$$file.mod; \
+			sed -i "s|GEA_EXERCISES|$$file|" ../build/temp.tex; \
+			sed -i "s|NUM_CAPITOL|$$counter|" ../build/temp.tex; \
+			sed -i "s|GEA_FILE|$$file.mod|" ../build/temp.tex; \
+			$(LATEXMK) -output-directory=../build ../build/temp.tex; \
+			rsync --update ../build/temp.pdf $$output_pdf; \
 		fi; \
 	done
 
-# Regles per generar el PDF d'ExamenParcial
-../build/ExamenParcial.pdf: ExamenParcial.tex
-	$(LATEXMK) -output-directory=../build ExamenParcial.tex
 
-# Regles per generar el PDF del projecte principal
-../build/${PROJECT}.pdf: ${LATEX_FILES}
+../build/${PROJECT}.pdf: ${LATEX_FILES} ${COMMON_FILES}
 	$(LATEXMK) -output-directory=../build ${PROJECT}.tex
 	rsync --update ../build/${PROJECT}.pdf ${PDFDIR}
 
-# Regles per generar el PDF del projecte principal
-${TABLE}.pdf: ${TABLE}.tex
+../build/ExamenParcial.pdf: ExamenParcial.tex ${COMMON_FILES}
+	$(LATEXMK) -output-directory=../build ExamenParcial.tex
+
+${TABLE}.pdf: ${TABLE}.tex ${COMMON_FILES} formulari.tex
 	$(LATEXMK) ${TABLE}.tex
 	rsync --update ${TABLE}.pdf ${PDFDIR}
 
-# Netejar fitxers temporals generats durant la compilació
 clean:
 	rm -f *.{bcf,run.xml,pro,aux,nav,out,log,idx,ind,ilg,toc,bbl,blg,tdo,lot,lof,glo,snm}
 	rm -f ../build/*.{bcf,run.xml,pro,aux,nav,out,log,idx,ind,ilg,toc,bbl,blg,tdo,lot,lof,glo,snm}

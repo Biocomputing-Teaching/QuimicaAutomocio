@@ -1,17 +1,18 @@
 % SILENCE THE WARNINGS!
 %\usepackage{silence}
 
-
 % tufte-book ja inclou el paquet geometry, i per tant només
 % cal canviar alguns paràmetres amb \geometry
-\geometry{a4paper, top=25mm, bottom=30mm, inner=20mm, outer=70mm}
-\setlength{\marginparwidth}{50mm}  % Adjust margin for sidenotes
-%\geometry{margin=3cm,headsep=0.25in}
+% \geometry{a4paper, top=25mm, bottom=30mm, inner=20mm, outer=70mm}
+% \setlength{\marginparwidth}{50mm}  % Adjust margin for sidenotes
+% %\geometry{margin=3cm,headsep=0.25in}
 %\geometry{showframe}% for debugging purposes -- displays the margins
 % The units package provides nice, non-stacked fractions and better spacing
 % for units.
 %\usepackage{units}
 %\usepackage{todonotes}
+
+\usepackage[backend=bibtex,style=numeric]{biblatex}  %backend=biber is 'better'
 
 \usepackage{framed}
 \usepackage{ifthen}
@@ -33,7 +34,6 @@
 %\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
 \graphicspath{{../figures/}}
 \usepackage{enumitem}
-\usepackage{fancyhdr}
 \usepackage{mathrsfs}
 \usepackage{wrapfig}
 \usepackage{setspace}
@@ -42,8 +42,6 @@
 \usepackage{gensymb}
 
 
-
-\usepackage[most]{tcolorbox}
 
 
 \usepackage{cancel}
@@ -64,12 +62,6 @@
 
 
 
-
-\usepackage{url}
-  \let\oldurl\url
-\usepackage{hyperref}
-  \let\linkurl\url
-  \let\url\oldurl
   
 %\chemsetup[chemformula]{format=\sffamily}
 

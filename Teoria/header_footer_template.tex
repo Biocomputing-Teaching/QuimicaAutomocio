@@ -1,24 +1,26 @@
 % Aquest és el fitxer base amb l'encapçalament i el peu de pàgina
-\documentclass{report}
+\documentclass[most]{report}
 \makeatletter
-\def\input@path{{../common/}}
+\def\input@path{{../common/}} 
 \makeatother
 
-\usepackage[utf8]{inputenc}
-\usepackage[catalan]{babel}
-\usepackage{graphicx}
-\usepackage{framed}
-\usepackage{booktabs}
-\usepackage{longtable}
-\graphicspath{{../figures/}}
-\usepackage[dvipsnames,table]{xcolor}
-\usepackage{tikz}
-\usepackage{lipsum}
-\usepackage{xcolor}
-\usepackage[backend=bibtex,style=numeric]{biblatex}  %backend=biber is 'better'  
-\usepackage{fancyhdr,amsmath,tcolorbox}
-\usepackage{physics}
-\tcbuselibrary{listings,breakable} 
+
+% \usepackage[utf8]{inputenc}
+% \usepackage[catalan]{babel}
+% \usepackage{graphicx}
+% \usepackage{framed}
+% \usepackage{booktabs}
+% \usepackage{longtable}
+% \graphicspath{{../figures/}}
+% \usepackage[dvipsnames,table]{xcolor}
+% \usepackage{tikz}
+% \usepackage{lipsum}
+% \usepackage{xcolor}
+%  
+% \usepackage{fancyhdr,amsmath,tcolorbox}
+% \usepackage{physics}
+% \tcbuselibrary{listings,breakable} 
+\input{common.tex}
 \input{common_details.tex}
 \input{common_chem.tex}
 \input{common_lst.tex}
@@ -31,7 +33,6 @@
   \let\linkurl\url
   \let\url\oldurl
 
-
 % Definir el format de l'encapçalament i peu de pàgina
 \pagestyle{fancy}
 \fancyhead[L]{}
@@ -39,15 +40,16 @@
 \lfoot{\raisebox{-0.5cm}[0pt][0pt]{\includegraphics[width=3cm]{FCTE}}} 
 \fancyfoot[C]{\today}
 \fancyfoot[R]{Pàgina \thepage}
-
+\setcounter{chapter}{NUM_CAPITOL} % counter canviable per la comanda sed
 \addbibresource{../common/QuimAutom.bib}
 
 \begin{document}
 
-% Aquí s'inclouen els fitxers GEA específics
-\input{GEA_FILE.tex}  % Nom del fitxer canviable per la comanda sed
+\input{GEA_FILE}  % Nom del fitxer canviable per la comanda sed
+\newpage
+\section{Exercicis}
+\input{../Exercicis/compendi_GEA_EXERCISES} % Nom del fitxer canviable per la comanda sed
 
-
-\printbibliography
+\printbibliography[heading=bibintoc]
 
 \end{document}

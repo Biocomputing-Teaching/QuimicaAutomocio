@@ -1,9 +1,22 @@
+\usepackage{url}
+  \let\oldurl\url
+\usepackage{hyperref}
+  \let\linkurl\url
+  \let\url\oldurl
 
-\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
-\definecolor{mylilas}{RGB}{170,55,241}
-\definecolor{LightOcean}{RGB}{81, 147, 229 }
-\definecolor{DeepOcean}{RGB}{51, 131, 229}
-\newtcolorbox{mybox}[1][]{%
+\usepackage{fancyhdr}
+  \pagestyle{fancy}   
+  
+\usepackage{graphicx}
+  \graphicspath{{../figures/}}%
+
+% caixes de text
+\usepackage{tcolorbox}
+  \definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+  \definecolor{mylilas}{RGB}{170,55,241}
+  \definecolor{LightOcean}{RGB}{81, 147, 229 }
+  \definecolor{DeepOcean}{RGB}{51, 131, 229}
+  \newtcolorbox{mybox}[1][]{%
     %float, 
     %floatplacement=t,
     breakable,
@@ -20,7 +33,7 @@
     toggle enlargement=evenpage,
     #1
 }
-\newcounter{myc}
+  \newcounter{myc}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % lecturer or student text
@@ -70,32 +83,6 @@
 							\begin{shaded}\refstepcounter{EXMP}\par\medskip\noindent%
 							\textbf{EXEMPLE~\theEXMP. #1\\} \rmfamily}
 							{\end{shaded}\medskip}
-
-
-\usepackage{siunitx}
-
-% Definició d'unitats personalitzades per al sistema imperial
-\DeclareSIUnit\inch{in}
-\DeclareSIUnit\foot{ft}
-\DeclareSIUnit\atm{atm}
-\DeclareSIUnit\oz{oz}
-\DeclareSIUnit\ounce{oz}
-\DeclareSIUnit\pound{lb}
-\DeclareSIUnit\ton{t}
-
-\DeclareSIUnit\cubicinch{\inch\cubed}
-\DeclareSIUnit\cubicfoot{\foot\cubed}
-\DeclareSIUnit\gallon{gal}
-\DeclareSIUnit\psi{psi}
-\DeclareSIUnit\inchHg{inHg}
-\DeclareSIUnit\dyn{dynes}
-\DeclareSIUnit\torr{Torr}
-\DeclareSIUnit\Torr{Torr}
-
-\DeclareSIUnit{\degreeFahrenheit}{\unit{\degree}F}
-\newcommand{\degC}{\degreeCelsius}
-\newcommand{\degF}{\degreeFahrenheit}
-
 
 \usepackage{tikz}
 \usetikzlibrary{patterns,decorations.pathmorphing}

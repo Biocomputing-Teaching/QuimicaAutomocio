@@ -1,111 +1,33 @@
-\documentclass{report} 
+\documentclass{article} 
 \usepackage[utf8]{inputenc}
 \usepackage[catalan]{babel}
 \usepackage{siunitx}
 \usepackage{chemformula}
 \usepackage{biblatex}
-\addbibresource{QuimAutom.bib}
+\input{../common/common_details.tex}
+\input{../common/common_chem.tex}
+\addbibresource{../common/QuimAutom.bib}
 % Definició d'unitats personalitzades per al sistema imperial
-\DeclareSIUnit\inch{in}
-\DeclareSIUnit\foot{ft}
-\DeclareSIUnit\atm{atm}
-\DeclareSIUnit\oz{oz}
-\DeclareSIUnit\ounce{oz}
-\DeclareSIUnit\pound{lb}
-\DeclareSIUnit\ton{t}
-\DeclareSIUnit\fah{F}
-\DeclareSIUnit\cubicinch{\inch\cubed}
-\DeclareSIUnit\cubicfoot{\foot\cubed}
-\DeclareSIUnit\gallon{gal}
-\DeclareSIUnit\psi{psi}
-\DeclareSIUnit\inchHg{inHg}
-\DeclareSIUnit\dyn{dynes}
+
 \usepackage{booktabs}
 \usepackage{longtable}
+\fancyhead[L]{GEA 2024-2025}
+\fancyhead[R]{Formulari i Taules de Química General}
+\fancyfoot[L]{\includegraphics[width=0.2\textwidth]{FCTE}}
+\fancyfoot[C]{\today}
+\fancyfoot[R]{\thepage}
 
+\title{Formulari i Taules de Química General}
+\author{Jordi Villà i Freixa}
+\date{\today}
 \begin{document}
-
-\section*{Unitats de mesura}
-
-
-\begin{longtable}{llllll}
-\toprule
-\bfseries Magnitud & \bfseries Unitat a SI &
-\bfseries Símbol SI & \bfseries Unitat a CGS & \bfseries Símbol CGS &\bfseries Dimensió\\\midrule\endhead
-Longitud & metre & \si{\meter} & centímetre& \si{\centi\meter}& \\
-Volum & litre & \si\litre &&&\\
-Massa & kilogram & \si{\kilo\gram}& gram& \si\gram&\\
-Temperatura & kelvin & \si{\kelvin} &&& \\
-mol & mol &\si{\mole}&&&\\
-temps & segon & \si\second & segon & \si\second &\\
-Freqüència & hertz & \si{\hertz} &&& \si{\per\second}\\
-Inductància  & henry & \si\henry&&& \\
-Energia & joule & \si\joule &&& \\
-Força & newton &  \si\newton & dines&\si\dyn&\\
-Pressió & pascal & \si\pascal &&&\\
-Potencial elèctric & volt & \si\volt &&&\\
-Potència & watt & \si\watt &&&\\
-\bottomrule
-\caption{Algunes unitats del SI rellevants per a aquest curs}
-\label{tab:unitatsSI}
-\end{longtable}
-
-\begin{longtable}{ccc}
-    \toprule
-    \textbf{Magnitud} & \textbf{Unitat (EUA)} & \textbf{Equivalència en SI} \\
-    \midrule\endhead
-    Volum & \SI{1}{\cubic\inch} & \SI{16.387}{\cubic\centi\meter} \\
-    Volum & \SI{1}{\cubic\foot} & \SI{28.317}{\liter} \\
-    Volum & \SI{1}{\gallon} (US) & \SI{3.785}{\liter} \\
-    \hline
-    Pressió & \SI{1}{\psi} & \SI{6.895}{\kilo\pascal} \\
-    Pressió & \SI{1}{\atm} & \SI{101.325}{\kilo\pascal} \\
-    Pressió & \SI{1}{\inchHg} & \SI{3.386}{\kilo\pascal} \\
-    \hline
-    Temperatura & \SI{1}{\fah} & $T_C=(T_{F} - 32) \times \frac{5}{9} $ \\
-    \hline
-    Massa & \SI{1}{\ounce} & \SI{28.35}{\gram} \\
-    Massa & \SI{1}{\pound} & \SI{0.4536}{\kilo\gram} \\
-    Massa & \SI{1}{\ton} (US) & \SI{907.184}{\kilo\gram} \\
-    \bottomrule
-    \caption{Conversió d'unitats del sistema americà al SI}
-    \label{tab:conversio}
-\end{longtable}
+\maketitle
+\tableofcontents
+\input{formulari}
 \newpage
-    \begin{longtable}{cc}
-    \hline
-    \textbf{Unitat de Pressió} & \textbf{Pressió (en relació a 1 atm)} \\ \midrule\endhead
-    Atmosfera (atm) & 1 atm \\ 
-    Pascal (Pa) & \( 101325 \, \text{Pa} \) \\ 
-    Bar & \( 1.01325 \, \text{bar} \) \\ 
-    Mil·límetre de mercuri (mmHg) & \( 760 \, \text{mmHg} \) \\ 
-    Torra (Torr) & \( 760 \, \text{Torr} \) \\ 
-    Pounds per square inch (psi) & \( 14.696 \, \text{psi} \) \\ 
-    Kilopascal (kPa) & \( 101.325 \, \text{kPa} \) \\    \bottomrule
-    \caption{Comparació de les unitats de pressió amb 1 atmosfera}
-    \end{longtable}
-
-    
-
-
-    \begin{longtable}{cc}
-        \hline
-        \textbf{Valor de la constant dels gasos R} & \textbf{Unitats} \\
-        \midrule\endhead
-        \num{0.082} & \si{\atm\litre\per\mole\per\kelvin} \\
-        \num{8.3145} & \si{m^3.Pa.K^{-1}.mol^{-1}} \\
-        \num{8.3145} & \si{\joule\per\kelvin\per\mole} \\
-        \num{62.363} & \si{L.Torr.K^{-1}.mol^{-1}} \\
-        \num{1.9872e-3} & \si{kcal.K^{-1}.mol^{-1}} \\
-        \num{8.205e-5} & \si{m^3.atm.K^{-1}.mol^{-1}} \\
-        \bottomrule
-        \caption{Conversió de la constant dels gasos en diferents unitats}
-        \label{tab:gas_constant}
-    \end{longtable}
-
-\newpage
-\section*{Dades termodinàmiques}
+\section{Dades termodinàmiques}
 \begin{longtable}{lcccc}
+    \caption{Calor de Fusió i Vaporització d'algunes substàncies pures (específic $\Delta H$ en J/g i Molar $\Delta H$ en kJ/mol)}\\
     \toprule
     \textbf{Substància} & \multicolumn{2}{c}{\textbf{Calor de Fusió}} & \multicolumn{2}{c}{\textbf{Calor de Vaporització}} \\
     & $\Delta H_\text{fus}$ (J/g) & $\Delta H_\text{fus}$ (kJ/mol) & $\Delta H_\text{vap}$ (J/g) & $\Delta H_\text{vap}$ (kJ/mol) \\
@@ -123,15 +45,15 @@ Potència & watt & \si\watt &&&\\
     Sodi & 113 & 2.60 & 4237 & 97.42 \\
     Aigua & 334 & 6.02 & 2260 & 40.7 \\
     \bottomrule
-    \caption{Calor de Fusió i Vaporització d'algunes substàncies pures (específic $\Delta H$ en J/g i Molar $\Delta H$ en kJ/mol)}
 \end{longtable}
 
-\subsection*{Valors Clau de Termodinàmica}
-La taula següent mostra els valors clau de termodinàmica per a diverses substàncies, extrets de la taula "CODATA KEY VALUES FOR THERMODYNAMICS" a \cite{lide_crc_2005}.
-La taula inclou l'entalpia estàndard de formació a \qty{298.15}{\kelvin}, l'entropia a \qty{298.15}{\kelvin} i la quantitat \(H^\circ\) (\qty{298.15}{\kelvin})-\(H^\circ\) (\qty{0}{\kelvin}). Un valor de 0 a la columna \(\Delta_f H^\circ\) per a un element indica l'estat de referència per a aquest element. La pressió de l'estat estàndard és \qty{100000}{\pascal} (1 bar).
+La taula següent mostra els valors clau de termodinàmica per a diverses substàncies, extrets de la taula \emph{CODATA KEY VALUES FOR THERMODYNAMICS} a \cite{cox_codata_1989,lide_crc_2005}.
+La taula inclou l'entalpia estàndard de formació a \qty{298.15}{\kelvin}, l'entropia a \qty{298.15}{\kelvin} i la quantitat \(H^\circ\) (\qty{298.15}{\kelvin})-\(H^\circ\) (\qty{0}{\kelvin}). Un valor de 0 a la columna \(\Delta_f H^\circ\) per a un element indica l'estat de referència per a aquest element. La pressió de l'estat estàndard és \qty{e5}{\pascal} (1 bar).
 
 
 \begin{longtable}{lccc}
+    \caption{Valors termodinàmics per a diverses substàncies \cite{cox_codata_1989}}
+    \label{tab:thermo_values}\\ 
     \toprule
     \textbf{Substància} & \(\Delta_f H^\circ\) (298.15 K) & \(S^\circ\) (298.15 K) & \(H^\circ\) (298.15 K)–\(H^\circ\) (0) \\
     & \text{(kJ/mol)} & \text{(J/K/mol)} & \text{(kJ/mol)} \\
@@ -173,12 +95,11 @@ La taula inclou l'entalpia estàndard de formació a \qty{298.15}{\kelvin}, l'en
     \ch{SO2} (g) & -296.81 $\pm$ 0.20 & 248.223 $\pm$ 0.050 & 10.549 $\pm$ 0.010 \\
     \ch{SO4^{2-}} (aq) & -909.34 $\pm$ 0.40 & 18.50 $\pm$ 0.40 & \\
     \bottomrule
-    \caption{Valors clau de termodinàmica per a diverses substàncies \cite{wagman_codata_1989}}
 \end{longtable}
 
-\subsection*{Calor de Combustió}
+\subsection{Calor de Combustió}
 
-El calor de combustió d'una substància a 25°C es pot calcular a partir de les dades d'entalpia de formació (\(\Delta_f H^\circ\)). Podem escriure la reacció general de combustió com:
+La calor de combustió d'una substància a 25°C es pot calcular a partir de les dades d'entalpia de formació (\(\Delta_f H^\circ\)). Podem escriure la reacció general de combustió com:
 \[ \ch{X + O2 -> CO2 (g) + H2O (l) + Y} \]
 
 Per a un compost que conté només carboni, hidrogen i oxigen, la reacció és simplement:
@@ -192,9 +113,9 @@ i la calor estàndard de combustió \(\Delta_c H^\circ\), que es defineix com el
 
 Aquesta equació s'aplica si els reactius comencen en els seus estats estàndard (25°C i una atmosfera de pressió) i els productes tornen a les mateixes condicions. La mateixa equació s'aplica a un compost que conté un altre element si aquest element acaba en el seu estat de referència estàndard (per exemple, nitrogen, si el producte és \ch{N2}); en general, però, els productes exactes que contenen els altres elements han de ser coneguts per calcular el calor de combustió.
 
-La taula següent dóna la calor estàndard de combustió calculat d'aquesta manera per a algunes substàncies representatives (adaptat de la taula "Heat of Combustion" a \cite{lide_crc_2005}).
-
 \begin{longtable}{lcc}
+    \caption{Calor estàndard de combustió de diverses substàncies. Adaptat de la taula \emph{Heat of Combustion} a \cite{lide_crc_2005}}
+    \label{tab:combustion}\\
     \toprule
     \textbf{Fórmula Molecular} & \textbf{Nom} & \(\Delta_c H^\circ\) (kJ/mol) \\
     \midrule\endhead
@@ -262,8 +183,13 @@ La taula següent dóna la calor estàndard de combustió calculat d'aquesta man
     \ch{C5H5N} & Piridina (l) & 2782.3 \\
     \ch{C6H7N} & Anilina (l) & 3392.8 \\
     \bottomrule
-    \caption{Calor estàndard de combustió de diverses substàncies. Adaptat de la taula "Heat of Combustion" a \cite{lide_crc_2005}}
 \end{longtable}
 
+\section{Enllaços d'interès}
+
+A part de les referències incloses en aquest document, es pot trobar més informació rellevant en les següents fonts:
+\begin{itemize}
+    \item Sobre els errors en les mesures i la seva propagació: \cite{lindberg_uncertainties_2000}. 
+\end{itemize}
 \printbibliography
 \end{document}

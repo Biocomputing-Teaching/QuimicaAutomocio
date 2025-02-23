@@ -16,8 +16,12 @@
 *.pro
 *.mod
 *.fls
+*.ind
+*.ilg
 *.fdb_latexmk
 temp_*
+temp.pdf
+temp.tex
 
 
 
