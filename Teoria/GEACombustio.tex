@@ -430,17 +430,15 @@ Cal notar que $\Delta H$ i $\Delta U$ són funcions d'estat, però no són igual
 \subsection{Increment d'entalpia estàndard}
 
 L'increment d'entalpia estàndard d'una reacció, $\Delta H^\circ$, és la variació d'entalpia que es produeix quan els reactius en els seus estats estàndard es converteixen en productes en els seus estats estàndard. Els estats estàndard es defineixen a una pressió d'1 bar i una temperatura específica, generalment 298.15 K (25°C). Aquesta magnitud és molt útil per calcular la calor alliberada o absorbida en una reacció química, ja que permet comparar diferents reaccions en condicions similars. Per exemple, l'increment d'entalpia estàndard de la combustió del metà és:
-
 \begin{equation}
 \ch{CH4(g) + 2 O2(g) -> CO2(g) + 2 H2O(l)} \quad \Delta H^\circ = -890.3 \, \si{\kilo\joule\per\mole}
-\end{equation}
+\end{equation} 
 
 Aquesta equació indica que la combustió d'un mol de metà allibera 890.3 kJ d'energia en forma de calor. Els valors d'increment d'entalpia estàndard per a moltes reaccions es poden trobar en taules termodinàmiques\cite{lide_crc_2005} (algunes estàn recollides en la \href{https://biocomputing-teaching.github.io/WebQuimicaAutomocio/pdf/TaulaUnitats.pdf}{taula de paràmetres termodinàmics} del curs).
 
 \subsection{Llei de Hess}
 
 La llei de Hess estableix que el canvi d'entalpia d'una reacció química és independent del camí seguit per arribar als productes finals, depenent només dels estats inicial i final. Això permet calcular l'entalpia de reaccions complexes a partir de reaccions més senzilles. Per exemple, considerem la combustió del propà (\ch{C3H8}):
-
 \begin{equation}
 \ch{C3H8(g) + 5 O2(g) -> 3 CO2(g) + 4 H2O(l)}
 \end{equation}
@@ -452,23 +450,36 @@ Podem descompondre aquesta reacció en passos més simples basats en les entalpi
 \ch{H2(g) + 1/2 O2(g) -> H2O(l)} & \quad \Delta H_3^\circ = -285.8 \, \si{\kilo\joule\per\mole}
 \end{align}
 
-L'entalpia total de la reacció de combustió es pot calcular sumant les entalpies dels passos individuals:
+L'entalpia total de la reacció de combustió es pot calcular, aleshores, sumant les entalpies dels passos individuals:
 \begin{equation}
 \Delta H^\circ = \Delta H_1^\circ + 3 \Delta H_2^\circ + 4 \Delta H_3^\circ
 \end{equation}
 
 Substituint els valors:
-\begin{equation}
+\begin{equation*}
 \Delta H^\circ = 104.7 + 3(-393.5) + 4(-285.8) = 104.7 - 1180.5 - 1143.2 = -2219 \, \si{\kilo\joule\per\mole}
-\end{equation}
+\end{equation*}
 
 Així, la llei de Hess ens permet determinar l'entalpia de reaccions complexes utilitzant dades d'entalpia de reaccions més simples.
 
-L'entalpia estàndard de formació, $\Delta H_f^\circ$ és la variació d'entalpia que es produeix quan un mol d'una substància es forma a partir dels seus elements en els seus estats estàndard. L'entalpia d'una reacció es pot calcular a partir de les entalpies de formació estàndard dels reactius i productes utilitzant la següent fórmula:
+L'{\bf entalpia estàndard de formació}, $\Delta H_f^\circ$ és la variació d'entalpia que es produeix quan un mol d'una substància es forma a partir dels seus elements en els seus estats estàndard. L'entalpia d'una reacció es pot calcular a partir de les entalpies de formació estàndard dels reactius i productes utilitzant la següent fórmula:
 
 \begin{equation}
 \Delta H^\circ_{\text{reacció}} = \sum \Delta H^\circ_f (\text{productes}) - \sum \Delta H^\circ_f (\text{reactius})
 \end{equation}
+
+La Figura \ref{Fig:combustioGlucosa}, per exemple, mostra el cicle termodinàmic que ens permet calcular l'entalpia de combustió de la glucosa a partir d'entalpies de formació tabulades.
+
+\begin{figure}[htbp]
+    \centering
+        \includegraphics[width=0.9\textwidth]{Hess1.png}
+    \caption{Cicle termodinàmic de la combustió de la glucosa.
+    La fletxa verda etiquetada \(\Delta H^\circ_{\text{comb}}\) representa la reacció de combustió. Alternativament, podríem primer convertir els reactius en els elements mitjançant la inversió de les equacions que defineixen les seves entalpies estàndard de formació (fletxa ascendent, etiquetada com \(\Delta H^\circ_1\) i \(\Delta H^\circ_2\)).      
+    A continuació, podríem convertir els elements en els productes mitjançant les equacions que defineixen les seves entalpies estàndard de formació (fletxes descendents, etiquetades com \(\Delta H^\circ_3\) i \(\Delta H^\circ_4\)).  
+        Com que l'entalpia és una funció d'estat, es compleix que:  
+    $\Delta H^\circ_{\text{comb}} = \Delta H^\circ_1 + \Delta H^\circ_2 + \Delta H^\circ_3 + \Delta H^\circ_4$. Adaptat de \cite{noauthor_78_2015}}
+    \label{Fig:combustioGlucosa}
+\end{figure} 
 
 \subsection{Capacitat calorífica}   
 

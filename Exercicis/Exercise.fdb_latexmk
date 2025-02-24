@@ -1,32 +1,34 @@
 # Fdb version 4
-["bibtex Exercise"] 1740334828.08514 "Exercise.aux" "Exercise.bbl" "Exercise" 1740334832.77803 0
+["bibtex Exercise"] 1740374117.23328 "Exercise.aux" "Exercise.bbl" "Exercise" 1740375889.45231 0
   "../Teoria/QuimAutom.bib" 0 -1 0 ""
-  "./Exercise-blx.bib" 1740334832.35849 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad ""
+  "./Exercise-blx.bib" 1740375889.07063 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1678141846 65484 b7949c47a88ed6dca66ebc7a04577312 ""
-  "Exercise.aux" 1740334832.35549 2585 e1bd69d22877b144d9471f049e9317ea "pdflatex"
+  "Exercise.aux" 1740375889.06763 2585 a116c5afa4fe916a09038d382b0bbaf9 "pdflatex"
   (generated)
   "Exercise.bbl"
   "Exercise.blg"
   (rewritten before read)
-["makeindex Exercise.idx"] 1740334823.45342 "Exercise.idx" "Exercise.ind" "Exercise" 1740334832.77783 0
-  "Exercise.idx" 1740334828.90247 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex Exercise.idx"] 1740334823.45342 "Exercise.idx" "Exercise.ind" "Exercise" 1740375889.45218 0
+  "Exercise.idx" 1740375885.04561 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "Exercise.ilg"
   "Exercise.ind"
   (rewritten before read)
-["pdflatex"] 1740334828.15012 "Exercise.tex" "Exercise.pdf" "Exercise" 1740334832.77821 0
+["pdflatex"] 1740375884.28333 "Exercise.tex" "Exercise.pdf" "Exercise" 1740375889.45241 0
   "../Exercicis/EX1_TvanderWaals.tex" 1740039620.28712 1484 a9ec744f278564b3b0adee51c39359fc ""
   "../Exercicis/EX1_fraccioMeta.tex" 1740040528.61323 1874 5e64135734de6f409ee73b6c906792e2 ""
-  "../Exercicis/compendi_GEACombustio.tex" 1740086264.54843 383 d73d0be093e260103ab78bef2d2bb51b ""
+  "../Exercicis/compendi_GEACombustio.tex" 1740374808.33525 472 822c0a7d0f6ea4801e9957438ff1b870 ""
   "../Exercicis/compendi_GEAGasos.tex" 1739898284.92399 778 79f81aeba14a8ac7f620b34468b3e978 ""
   "../Exercicis/ex5.tex" 1740040482.00695 1106 3fe6203a82637801aa24c90873f83155 ""
   "../Exercicis/ex_CvCp1.tex" 1740040725.57337 1755 3bcc0354ef7bf0399085ff0d8ef5fe88 ""
   "../Exercicis/ex_HeH2.tex" 1740040425.60562 2187 f3c5c3547dbe9288b465c38b5ed3d478 ""
+  "../Exercicis/ex_HvaporitzacioAigua.tex" 1740375882.28159 814 14a2338fea61430576eca2883b2d66cc ""
   "../Exercicis/ex_PressioParcial.tex" 1740070684.60219 2191 0f76e56fd768a3a2e3e1b2037a5b102b ""
   "../Exercicis/ex_TeoriaCineticaGasos1.tex" 1740039491.71001 229 75600448618ab18917562b87668807be ""
   "../Exercicis/ex_TeoriaCineticaGasos2.tex" 1740039496.43005 1642 b5e8ce4551ae3cc68b853907bcb76dec ""
   "../Exercicis/ex_UHfondreGel.tex" 1740116169.16673 1536 2aae4cc56fc27dfd2096452454756992 ""
-  "../Exercicis/ex_UcombustioGrafit.tex" 1740086083.41241 1960 cf6f402f303b465a3606f9f1cca0c2d8 ""
+  "../Exercicis/ex_UcombustioGrafit.tex" 1740373932.6746 1982 0725aadc5027c5c9f8ae265ba520415d ""
+  "../Exercicis/ex_UcombustioPropa.tex" 1740374049.15803 744 8112fc444cb0ba2e75253915b17852e4 ""
   "../Exercicis/ex_airbag.tex" 1740040681.07411 5510 a2e895447729ad58a7da680a6ad9612a ""
   "../Exercicis/ex_balancCombustio.tex" 1740085834.70501 2194 60b50e987aaf467e0ea1ede3e4cc0f04 ""
   "../Exercicis/ex_calornormal.tex" 1740086108.77855 149 c465e27695ca3dae2c0a8d4b7f73f801 ""
@@ -389,13 +391,13 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1725009813.69924 5349216 bf3a80e68d946c7acd95ff030fd9bb63 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1726152742 6852505 e04ce9148cb683c6cca801ac78b863b2 ""
-  "Exercise.aux" 1740334832.35549 2585 e1bd69d22877b144d9471f049e9317ea "pdflatex"
-  "Exercise.bbl" 1740334828.14346 512 242e9db92557ac81f6b30ce4f9334513 "bibtex Exercise"
+  "Exercise.aux" 1740375889.06763 2585 a116c5afa4fe916a09038d382b0bbaf9 "pdflatex"
+  "Exercise.bbl" 1740374117.30128 512 242e9db92557ac81f6b30ce4f9334513 "bibtex Exercise"
   "Exercise.ind" 1740334823.50344 0 d41d8cd98f00b204e9800998ecf8427e "makeindex Exercise.idx"
-  "Exercise.out" 1740334832.35749 304 5bbdf6a722e7ccc48c6e3eee3ebecbab "pdflatex"
-  "Exercise.run.xml" 1740334832.35949 2567 3dc58faa2fba36012218eaf79a77667b "pdflatex"
+  "Exercise.out" 1740375889.06963 304 5bbdf6a722e7ccc48c6e3eee3ebecbab "pdflatex"
+  "Exercise.run.xml" 1740375889.07163 2567 3dc58faa2fba36012218eaf79a77667b "pdflatex"
   "Exercise.tex" 1740334818.41441 2912 96dbfbbbcead64e612d5e22ac97baf23 ""
-  "Exercise.toc" 1740334832.35949 184 c5080ec9ae960edc034e080d53586b44 "pdflatex"
+  "Exercise.toc" 1740375889.07163 184 c5080ec9ae960edc034e080d53586b44 "pdflatex"
   (generated)
   "Exercise-blx.bib"
   "Exercise.aux"

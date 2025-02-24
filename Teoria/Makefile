@@ -18,22 +18,23 @@ Theory: ../build/${PROJECT}.pdf
 
 files:
 	@counter=-1; \
-	needs_update=0; \
 	for file in $(FILES); do \
+		needs_update=0; \
 		counter=$$((counter + 1)); \
 		output_pdf=${PDFDIR}/$$file.pdf; \
 		if [ -f $$file.tex ] && [ $$file.tex -nt $$output_pdf ]; then needs_update=1; fi; \
 		if [ $(HEADER_FOOTER_TEMPLATE) -nt $$output_pdf ]; then needs_update=1; fi; \
+		if [ ../Exercicis/compendi_$$file.tex -nt $$output_pdf ]; then needs_update=1; fi; \
 		for common in $(COMMON_FILES); do \
 			if [ $$common -nt $$output_pdf ]; then needs_update=1; fi; \
 		done; \
 		if [ $$needs_update -eq 1 ]; then \
-			cp $(HEADER_FOOTER_TEMPLATE) ../build/temp.tex; \
 			cp $$file.tex ../build/$$file.mod; \
 			sed -i "s/marginnote/footnote/" ../build/$$file.mod; \
 			sed -i "s/marginfigure/figure/" ../build/$$file.mod; \
 			sed -i "s/margintable/table/" ../build/$$file.mod; \
 			sed -i "s/\\chapter/\\%\\chapter\*/" ../build/$$file.mod; \
+			cp $(HEADER_FOOTER_TEMPLATE) ../build/temp.tex; \
 			sed -i "s|GEA_EXERCISES|$$file|" ../build/temp.tex; \
 			sed -i "s|NUM_CAPITOL|$$counter|" ../build/temp.tex; \
 			sed -i "s|GEA_FILE|$$file.mod|" ../build/temp.tex; \
