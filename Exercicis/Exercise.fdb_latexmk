@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex Exercise"] 1740374117.23328 "Exercise.aux" "Exercise.bbl" "Exercise" 1740375889.45231 0
+["bibtex Exercise"] 1740374117.23328 "Exercise.aux" "Exercise.bbl" "Exercise" 1740376416.90829 0
   "../Teoria/QuimAutom.bib" 0 -1 0 ""
-  "./Exercise-blx.bib" 1740375889.07063 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad ""
+  "./Exercise-blx.bib" 1740376416.5389 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1678141846 65484 b7949c47a88ed6dca66ebc7a04577312 ""
-  "Exercise.aux" 1740375889.06763 2585 a116c5afa4fe916a09038d382b0bbaf9 "pdflatex"
+  "Exercise.aux" 1740376416.5359 2585 a116c5afa4fe916a09038d382b0bbaf9 "pdflatex"
   (generated)
   "Exercise.bbl"
   "Exercise.blg"
   (rewritten before read)
-["makeindex Exercise.idx"] 1740334823.45342 "Exercise.idx" "Exercise.ind" "Exercise" 1740375889.45218 0
-  "Exercise.idx" 1740375885.04561 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex Exercise.idx"] 1740334823.45342 "Exercise.idx" "Exercise.ind" "Exercise" 1740376416.90812 0
+  "Exercise.idx" 1740376413.18686 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "Exercise.ilg"
   "Exercise.ind"
   (rewritten before read)
-["pdflatex"] 1740375884.28333 "Exercise.tex" "Exercise.pdf" "Exercise" 1740375889.45241 0
+["pdflatex"] 1740376412.45325 "Exercise.tex" "Exercise.pdf" "Exercise" 1740376416.90845 0
   "../Exercicis/EX1_TvanderWaals.tex" 1740039620.28712 1484 a9ec744f278564b3b0adee51c39359fc ""
   "../Exercicis/EX1_fraccioMeta.tex" 1740040528.61323 1874 5e64135734de6f409ee73b6c906792e2 ""
   "../Exercicis/compendi_GEACombustio.tex" 1740374808.33525 472 822c0a7d0f6ea4801e9957438ff1b870 ""
@@ -37,7 +37,7 @@
   "../Exercicis/ex_desviacioIdeal.tex" 1740040759.25556 1123 49f6b69f8c82339423f0af796e271183 ""
   "../Exercicis/ex_entalpia.tex" 1740114184.02878 382 68f5fb920bf02e61bda5a6279cde37b0 ""
   "../Exercicis/ex_entalpia2.tex" 1740114898.3054 924 3488117412e0da2adb36814b528a1578 ""
-  "../Exercicis/ex_formulaHidrocarbur.tex" 1740306193.79939 2589 24bbb5a5c26fbdf1082b7a5459a69a36 ""
+  "../Exercicis/ex_formulaHidrocarbur.tex" 1740376410.29883 2671 6b5e82ca67d0874fab06fe02163cae3c ""
   "../Exercicis/ex_formulaHidrocarbur2.tex" 1740086029.2071 1564 f06abad0b65090f5a7c5e71d269245a5 ""
   "../Exercicis/ex_hidrogenacioEtile.tex" 1739898284.92499 0 d41d8cd98f00b204e9800998ecf8427e ""
   "../Exercicis/ex_ideal1.tex" 1740039199.26698 1145 1e1f0e9e6dcb2cdc9b742dba68e65712 ""
@@ -391,13 +391,13 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1725009813.69924 5349216 bf3a80e68d946c7acd95ff030fd9bb63 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1726152742 6852505 e04ce9148cb683c6cca801ac78b863b2 ""
-  "Exercise.aux" 1740375889.06763 2585 a116c5afa4fe916a09038d382b0bbaf9 "pdflatex"
+  "Exercise.aux" 1740376416.5359 2585 a116c5afa4fe916a09038d382b0bbaf9 "pdflatex"
   "Exercise.bbl" 1740374117.30128 512 242e9db92557ac81f6b30ce4f9334513 "bibtex Exercise"
   "Exercise.ind" 1740334823.50344 0 d41d8cd98f00b204e9800998ecf8427e "makeindex Exercise.idx"
-  "Exercise.out" 1740375889.06963 304 5bbdf6a722e7ccc48c6e3eee3ebecbab "pdflatex"
-  "Exercise.run.xml" 1740375889.07163 2567 3dc58faa2fba36012218eaf79a77667b "pdflatex"
+  "Exercise.out" 1740376416.5379 304 5bbdf6a722e7ccc48c6e3eee3ebecbab "pdflatex"
+  "Exercise.run.xml" 1740376416.5399 2567 3dc58faa2fba36012218eaf79a77667b "pdflatex"
   "Exercise.tex" 1740334818.41441 2912 96dbfbbbcead64e612d5e22ac97baf23 ""
-  "Exercise.toc" 1740375889.07163 184 c5080ec9ae960edc034e080d53586b44 "pdflatex"
+  "Exercise.toc" 1740376416.5399 184 c5080ec9ae960edc034e080d53586b44 "pdflatex"
   (generated)
   "Exercise-blx.bib"
   "Exercise.aux"
