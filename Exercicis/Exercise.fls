@@ -722,6 +722,13 @@ INPUT ../Exercicis/ex_entalpia.tex
 INPUT ../Exercicis/ex_entalpia2.tex
 INPUT ../Exercicis/ex_entalpia2.tex
 INPUT ../Exercicis/ex_entalpia2.tex
+INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmcsc10.tfm
+INPUT /usr/share/texmf/tex/latex/lm/ot1lmtt.fd
+INPUT /usr/share/texmf/tex/latex/lm/ot1lmtt.fd
+INPUT /usr/share/texmf/tex/latex/lm/ot1lmtt.fd
+INPUT /usr/share/texmf/fonts/tfm/public/lm/rm-lmtt12.tfm
+INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-rmsc.enc
+INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc
 INPUT Exercise.aux
 INPUT ./Exercise.out
 INPUT ./Exercise.out
@@ -730,6 +737,7 @@ OUTPUT Exercise.run.xml
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmex10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb
@@ -744,3 +752,4 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmri8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmss8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb

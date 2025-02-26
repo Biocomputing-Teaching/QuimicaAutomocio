@@ -2,3 +2,33 @@
 Calcula la calor normal de la reacció 
 \ch{Fe2O3_{(s)}  + 3 H2_{(g)} <-> 2 Fe_{(s)} + 3 H2O_{(aq)}}
 \end{exr}
+\lct{
+La reacció donada és:
+\begin{align*}
+  \ch{Fe2O3_{(s)} + 3 H2_{(g)} <-> 2 Fe_{(s)} + 3 H2O_{(aq)}}
+\end{align*}
+
+Per calcular la calor normal de reacció, fem servir les entalpies de formació estàndard \(\Delta H_f^\circ\) de les substàncies implicades. Els valors típics són:
+
+\begin{center}
+\begin{tabular}{cc}
+Compost & \(\Delta H_f^\circ\) (\si{\kJ\per\mol}) \\
+\hline
+\ch{Fe2O3_{(s)}} & \qty{-824.2}{\kJ\per\mol} \\
+\ch{H2_{(g)}} & \qty{0}{\kJ\per\mol} \\
+\ch{Fe_{(s)}} & \qty{0}{\kJ\per\mol} \\
+\ch{H2O_{(aq)}} & \qty{-285.8}{\kJ\per\mol} \\
+\hline
+\end{tabular}
+\end{center}
+
+L'entalpia de reacció es calcula com:
+\begin{align*}
+    \Delta H^\circ &= \sum \Delta H_f^\circ \text{(productes)} - \sum \Delta H_f^\circ \text{(reactius)} \\
+    &= \left[ 2 \times \qty{0}{\kJ\per\mol} + 3 \times \qty{-285.8}{\kJ\per\mol} \right] - \left[ \qty{-824.2}{\kJ\per\mol} + 3 \times \qty{0}{\kJ\per\mol} \right] \\
+    &= \left[ \qty{-857.4}{\kJ\per\mol} \right] - \left[ \qty{-824.2}{\kJ\per\mol} \right] \\
+    &= \qty{-33.2}{\kJ\per\mol}
+\end{align*}
+
+Per tant, la calor normal de la reacció és \qty{-33.2}{\kJ\per\mol}.
+}

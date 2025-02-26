@@ -1,25 +1,39 @@
 \begin{exr}{Entalpia de reacció}
-Fent servir les dades de la Taula \ref{tab:bonde}, estima l'energia alliberada a pressió constant en la reacció:
+Fent servir les dades de la taula d'energies d'enllaç, estima la calor alliberada a pressió constant en la reacció:
 \begin{align*}
   \ch{H2 \gas{} + Cl2 \gas{} + C(grafit) -> CH3Cl \gas{}}
 \end{align*}
 si la calor de vaporització del grafit a àtoms de carboni és de 170.9 kcal mol$^{-1}$.
 \end{exr}
-\begin{table}[h!]
-    \begin{center}
-      \caption{Energies d'enllaç en kcal mol$^{-1}$\cite{mahan_quimica_1997}}
-      \label{tab:bonde}
-      \begin{tabular}{cccc}
-        \hline
-        Enllaç & $\bar{D}$ & Enllaç & $\bar{D}$\\
-        \hline
-        \ch{C-H} & 98.7 & \ch{C-C} & 82.6 \\
-        \ch{C-F} & $\approx$ 110 & \ch{C=C} & 145.8 \\
-        \ch{C-Cl} & 80 & \ch{C+C} & 199.6 \\
-        \ch{C-Br} & 69 & \ch{C-O} & 85 \\
-        \ch{C-I} & 55 & \ch{C=O} & 178 \\
-        \ch{C-N} & 80 & \ch{O-H} & 110.6 \\
-        \hline
-      \end{tabular}
-    \end{center}
-  \end{table}
+  \lct{
+    La reacció donada és:
+    \begin{align*}
+      \ch{H2 \gas{} + Cl2 \gas{} + C(grafit) -> CH3Cl \gas{}}
+    \end{align*}
+    
+    Per calcular l'entalpia de reacció, utilitzem les energies d'enllaç de la taula d'energies d'enllaç i la calor de vaporització del grafit.
+    
+    \textbf{Trencament d'enllaços (requereix energia):}
+    \begin{itemize}
+        \item \ch{H-H}: \qty{104.2}{\kcal\per\mol}
+        \item \ch{Cl-Cl}: \qty{57.8}{\kcal\per\mol}
+        \item \ch{C (grafit -> àtoms)}: \qty{170.9}{\kcal\per\mol}
+    \end{itemize}
+    \textbf{Formació d'enllaços (allibera energia):}
+    \begin{itemize}
+        \item 3 enllaços \ch{C-H}: \(3 \times \qty{98.7}{\kcal\per\mol} = \qty{296.1}{\kcal\per\mol} \)
+        \item 1 enllaç \ch{C-Cl}: \qty{80}{\kcal\per\mol}
+    \end{itemize}
+    
+    El càlcul de l'entalpia de reacció és:
+    \begin{align*}
+        \Delta H &= \text{energia trencament} - \text{energia formació} \\
+        &= (\qty{104.2}{\kcal\per\mol} + \qty{57.8}{\kcal\per\mol} + \qty{170.9}{\kcal\per\mol}) \\
+        &\quad - (\qty{296.1}{\kcal\per\mol} + \qty{80}{\kcal\per\mol}) \\
+        &= \qty{332.9}{\kcal\per\mol} - \qty{376.1}{\kcal\per\mol} \\
+        &= \qty{-43.2}{\kcal\per\mol}
+    \end{align*}
+    
+    Per tant, l'energia alliberada en la reacció és \qty{43.2}{\kcal\per\mol}.
+    }
+    
