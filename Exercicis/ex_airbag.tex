@@ -9,7 +9,6 @@
 
 Un coixí de seguretat de conductor té un volum aproximat de \qty{65}{\liter} i la pressió final dins del coixí és de \qty{1.35}{\atm}. La temperatura dins del coixí just després de la reacció és \qty{300}{\celsius} (\qty{573}{\kelvin}). Suposem que s'utilitzen \qty{65}{\gram} de \ch{NaN3}.  
 
- 
 \begin{enumerate}
     \item Quina quantitat de nitrogen gas (\ch{N2}) es genera en mols només en la primera reacció?
     \item Quin volum ocuparà aquest gas dins del coixí de seguretat segons la llei dels gasos ideals? És suficient aquest volum per inflar completament el coixí de seguretat?
@@ -21,35 +20,27 @@ Un coixí de seguretat de conductor té un volum aproximat de \qty{65}{\liter} i
 
 \lct{
      \begin{enumerate}
-    \item Quantitat de nitrogen gas (\ch{N2}) generada a R\ref{reac:nan3}:
-    
-    La reacció de descomposició de \ch{NaN3} és:  
-    
+    \item La quantitat de nitrogen gas (\ch{N2}) generada a R\ref{reac:nan3} ve donada per la descomposició de \ch{NaN3}:  
     \begin{equation*}
         \ch{2 NaN3 -> 2 Na + 3 N2 (g)}
     \end{equation*}
-    
+
     Primer, calculem el nombre de mols de \ch{NaN3} disponibles:  
-    
     \begin{equation}
-        n_{\ch{NaN3}} = \frac{\qty{65}{\gram}}{\qty{65.019}{\gram\per\mol}} = \qty{1.00}{\mol}
+        n_{\ch{NaN3}} = \frac{\qty{65}{\gram} \, \ch{NaN3}}{\qty{65.019}{\gram\per\mol} \,\ch{NaN3}} = \qty{1.00}{\mol} \,\ch{NaN3}
     \end{equation}
     
     De l'estequiometria de la reacció, per cada \qty{2}{\mol} de \ch{NaN3}, es formen \qty{3}{\mol} de \ch{N2}:  
     
     \begin{equation}
-        n_{\ch{N2}} = \qty{1.00}{\mol} \times \frac{3}{2} = \qty{1.50}{\mol}
+        n_{\ch{N2}} = \qty{1.00}{\mol} \, \ch{NaN3} \times \frac{3}{2} = \qty{1.50}{\mol} \, \ch{N2}
     \end{equation}
     
-    \item Volum ocupat pel gas segons la llei dels gasos ideals:
-    
-    Utilitzem l'equació dels gasos ideals:  
-    
+    \item Per a calcular el volum ocupat pel gas,  segons la llei dels gasos ideals:
     \begin{equation}
         V = \frac{nRT}{P}
     \end{equation}
-    
-    On:
+    on:
     \begin{itemize}
         \item $n = \qty{1.50}{\mol}$
         \item $R = \qty{0.0821}{\liter\atm\per\mol\per\kelvin}$
@@ -63,33 +54,23 @@ Un coixí de seguretat de conductor té un volum aproximat de \qty{65}{\liter} i
       
     El volum necessari per inflar el coixí de seguretat és d'uns \qty{65}{\liter}. Atès que només la primera reacció genera \qty{52.3}{\liter}, sembla que no és suficient. No obstant això, la segona reacció també genera gas \ch{N2}, augmentant el volum total.  
     
-    \item Contribució de la segona reacció al volum total de gas:
-    
-    La reacció R\ref{reac:na} genera gas addicional:  
-    
+    \item Calculem ara la contribució de la reacció R\ref{reac:na}.
+    Cada \qty{10}{\mol} de Na reacciona per produir \qty{1}{\mol} de \ch{N2}. És fàcil veure que 1 mol de \ch{NaN3} a la primera reacció va generar \qty{1.00}{\mol} de Na. Per tant, la segona reacció produeix:  
     \begin{equation}
-        \ch{10 Na + 2 KNO3 -> K2O + 5 Na2O + N2 (g)}
-    \end{equation}
-    
-    Cada \qty{10}{\mol} de Na reacciona per produir \qty{1}{\mol} de \ch{N2}. Sabem que la primera reacció va generar \qty{1.00}{\mol} de Na. Per tant, la segona reacció produeix:  
-    
-    \begin{equation}
-        n_{\ch{N2,2}} = \qty{1.00}{\mol} \times \frac{1}{10} = \qty{0.10}{\mol}
+        n_{\ch{N2,2}} = \qty{1.00}{\mol} \, \ch{Na} \times \frac{1}{10} = \qty{0.10}{\mol}\, \ch{N2}
     \end{equation}
     
     Afegint aquest nitrogen al total:  
-    
     \begin{equation}
         n_{\ch{N2,\text{total}}} = \qty{1.50}{\mol} + \qty{0.10}{\mol} = \qty{1.60}{\mol}
     \end{equation}
     
     El nou volum total serà:  
-    
     \begin{equation}
         V_{\text{total}} = \frac{\qty{1.60}{\mol} \times \qty{0.0821}{\liter\atm\per\mol\per\kelvin} \times \qty{573}{\kelvin}}{\qty{1.35}{\atm}} = \qty{55.7}{\liter}
     \end{equation}
     
-    Aquest volum segueix estant lleugerament per sota del mínim requerit (\qty{65}{\liter}), però cal recordar que les reaccions són fortament exotèrmiques, la qual cosa elevarà la temperatura i, en conseqüència, augmentarà el volum de gas.
+    Aquest volum segueix estant per sota del mínim requerit (\qty{65}{\liter}), però cal recordar que les reaccions són fortament exotèrmiques, la qual cosa elevarà la temperatura i, en conseqüència, augmentarà el volum de gas.
     
     \item Refredament del gas en expandir-se fora del coixí:
     
