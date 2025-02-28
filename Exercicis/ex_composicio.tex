@@ -1,54 +1,41 @@
 \begin{exr}{Fòrmula molecular d'un compost gasós}
-    Un compost gasós que se sap que conté només carboni, hidrogen i nitrogen es barreja amb el volum d'oxigen exactament necessari per a la seva combustió completa a \ch{CO2}, \ch{H20} i \ch{N2}. La combustió de 9 volums de la mescla gasosa produeix 4 volums de \ch{CO2}, 6 volums de vapor d'aigua i 2 volums de \ch{N2}, tots a la mateixa temperatura i pressió.
+    Un compost gasós que se sap que conté només carboni, hidrogen i nitrogen es barreja amb el volum d'oxigen exactament necessari per a la seva combustió completa a \ch{CO2}, \ch{H2O} i \ch{N2}. La combustió de 9 volums de la mescla gasosa produeix 4 volums de \ch{CO2}, 6 volums de vapor d'aigua i 2 volums de \ch{N2}, tots a la mateixa temperatura i pressió.
 
     Quants volums d'oxigen es necessiten per a la combustió? Quina és la fórmula molecular del compost?
 \end{exr}
 
 \lct{
+    Sigui la fórmula molecular del compost gasós, \ch{CxHyNz}.
+    La seva combustió completa segueix l'equació general:
+\[\ch{CxHyNz + $\frac{2x+y/2}{2}$ O_2 -> $x$ CO2 + $\frac{y}{2}$ H2O + $\frac{z}{2}$ N2}\]
+    
+    Sabem que la combustió de 9 volums de la mescla gasosa produeix:
+    \begin{itemize}
+        \item 4 volums de \ch{CO2} \(\Rightarrow x=4\).
+        \item 6 volums de \ch{H2O} \(\Rightarrow y=12\) (perquè cada mol d'aigua conté 2 àtoms d'hidrogen).
+        \item 2 volums de \ch{N2} \(\Rightarrow z=4\) (perquè cada mol de \ch{N2} prové de 2 àtoms de nitrogen).
+    \end{itemize}
+    
+    Dividint tots els valors pel més petit, obtenim la fórmula empírica del compost: 
+    $[\ch{C1H3N1}]_n$. Realment no sabem si és \ch{C1H3N1}, \ch{C2H6N2}, \ch{C4H12N4}, etc. Per tal de determinar-ho, mirem quina de les fòrmules moleculars compleix les restriccions del nombre de volums inicials i finals.  
+    \begin{itemize}
+        \item Suposem que la molècula sigui \ch{C4H12N4}. En aquest cas, la reacció de combustió és:
+        \[
+        \ch{C4H12N4 + 7 O2 -> 4 CO2 + 6 H2O + 2 N2}
+        \]
+        que, si agafem els coeficients directament com a nombre de volums ens diu que de 8 volums a reactius es generen 12 volums a productes. Per tant, aquesta opció no compleix les restriccions.
+        \item Suposem que sigui \ch{C2H6N2}. En aquest cas, la reacció seria:
+        \[ 
+            \ch{C2H6N2 + $\frac{7}{2}$ O2 -> 2 CO2 + 3 H2O +  N2}
+        \]
+        En aquest cas, el nombre de mols a esquerra i dreta és, respectivament, 4.5 i 6 que sí compleixen la proporció de volums donada en l'enunciat. 
+    \end{itemize}
+    Per tant, la fórmula molecular del compost és \ch{C2H6N2}.
+    
+    Per tal que el nombre de volums de productes sigui 12, com ens demana l'enunciat, hem de multiplicar per 2 tota l'expressió i així trobem els volums que hem de tenir d'oxigen:
+    \[
+        \ch{2 C2H6N2 + 7 O2 -> 4 CO2 + 6 H2O + 2 N2}
+        \]
 
-El compost gasós conté carboni (C), hidrogen (H) i nitrogen (N). Es barreja amb oxigen suficient per a la combustió completa, donant com a productes diòxid de carboni (\(\ch{CO2}\)), aigua (\(\ch{H2O}\)) i nitrogen molecular (\(\text{N}_2\)).
-
-Es donen les següents dades:
-\begin{itemize}
-    \item Volum de la mescla gasosa: 9 volums
-    \item Volum de \(\ch{CO2}\) produït: 4 volums
-    \item Volum de \(\ch{H2O}\) produït: 6 volums
-    \item Volum de \(\text{N}_2\) produït: 2 volums
-\end{itemize}
-
-Sigui la fórmula del compost:
-\[
-C_xH_yN_z
-\]
-
-L'equació de combustió és:
-\[
-C_xH_yN_z + \ch{O2} \rightarrow a C\ch{O2} + b \ch{H2O} + c N_2
-\]
-
-Per la conservació dels àtoms:
-
-- Carboni: \( x = a = 4 \Rightarrow x = 4 \)
-- Hidrogen: \( y = 2b = 6 \Rightarrow y = 6 \)
-- Nitrogen: \( z = 2c = 2 \Rightarrow z = 2 \)
-
-Així, la fórmula del compost és:
-\[
-C_4H_6N_2
-\]
-
-Per trobar el volum d'oxigen utilitzat, considerem la combustió completa:
-
-\[
-C_4H_6N_2 + \ch{O2} \rightarrow 4 C\ch{O2} + 3 \ch{H2O} + N_2
-\]
-
-L'oxigen es consumeix en la formació de \(\ch{CO2}\) i \(\ch{H2O}\):
-
-\[
-\ch{O2} \text{ necessari} = \frac{(4 \times 2) + (3 \times 1)}{2} = \frac{8 + 3}{2} = 5.5 \text{ volums}
-\]
-
-Per tant, el volum d'oxigen necessari és **5.5 volums**.
-
+    És a dir, que per obtenir 12 volums de productes a partir de 9 de reactius, la proporció compost:oxigen ha de ser 2:7. Necessitem, doncs, 7 volums d'oxigen i 2 de compost per fer la reacció amb les dades donades.
 }

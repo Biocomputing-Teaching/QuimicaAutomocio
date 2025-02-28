@@ -650,7 +650,7 @@ L'energia generada en un cicle serà:
     \Delta_cH^0 = \qty{-5470}{\kilo\joule\per\mole} \times \frac{1}{\frac{25}{2}} \times \qty{0.017}{\mole} = \qty{-7.4}{\kilo\joule\per\cycle}
 \end{equation}
 
-Ara considerem el Subaru Outback 2.5 XT del 2005, amb el mateix motor equipat amb un turbocompressor que genera \qty{13.5}{\psi} de sobrealimentació. Això augmenta la pressió d'admissió de \qty{1}{\atm} (\qty{14.7}{\psi}) a \qty{1.92}{\atm} (\qty{28.2}{\psi}). Assumint les mateixes condicions i simplificacions, calculem l'energia generada:
+ASi considerem el Subaru Outback 2.5 XT del 2005, amb el mateix motor equipat amb un turbocompressor que genera \(\qty{13.5}{\psi}\) de sobrealimentació, això augmenta la pressió d'admissió de \(\qty{1}{\atm}\) (\(\qty{14.7}{\psi}\)) a \(\qty{1.92}{\atm}\) (\(\qty{28.2}{\psi}\)). Assumint les mateixes condicions i simplificacions, calculem l'energia generada:
 
 \begin{equation}
     n_{\ch{O2}} = \frac{0.21 \times \qty{2.5}{\liter} \times 0.80 \times 1.92}{0.0821 \times \qty{290}{\kelvin}} = \qty{0.034}{\mole}
@@ -660,17 +660,18 @@ Ara considerem el Subaru Outback 2.5 XT del 2005, amb el mateix motor equipat am
     \Delta_cH^0 = \qty{-5470}{\kilo\joule\per\mole} \times \frac{1}{\frac{25}{2}} \times \qty{0.034}{\mole} = \qty{-14}{\kilo\joule\per\cycle}
 \end{equation}
 
-Això representa un augment d'aproximadament el \qty{92}{\percent} en l'energia per cicle, coherent amb l'increment de pressió. No obstant, l'augment real de potència no es duplica. Segons Subaru, el motor atmosfèric produeix \qty{168}{\hp} a \qty{5500}{\rpm}, mentre que el turboalimentat genera \qty{250}{\hp} a \qty{6000}{\rpm}. Convertim aquestes potències en energia per cicle:
+Això representa un augment d'aproximadament el \(\qty{92}{\percent}\) en l'energia per cicle, coherent amb l'increment de pressió. No obstant això, l'augment real de potència no es duplica. Segons Subaru, el motor atmosfèric produeix \(\qty{168}{\hp}\) a \(\qty{5500}{\rpm}\), mentre que el turboalimentat genera \(\qty{250}{\hp}\) a \(\qty{6000}{\rpm}\). Convertim aquestes potències en energia per cicle:
 
 \begin{equation}
-    168 \times 0.00134 \times \frac{1}{5500} \times 60 \times 2 = \qty{2.7}{\kilo\joule\per\cycle}
+    \qty{168}{\hp} \times \qty{0.00134}{\kilo\joule\per\hp\per\second} \times \frac{1}{\qty{5500}{\rpm}} \times \qty{60}{\second\per\minute} \times 2 = \qty{2.7}{\kilo\joule\per\cycle}
 \end{equation}
 
 \begin{equation}
-    250 \times 0.00134 \times \frac{1}{6000} \times 60 \times 2 = \qty{3.7}{\kilo\joule\per\cycle}
+    \qty{250}{\hp} \times \qty{0.00134}{\kilo\joule\per\hp\per\second} \times \frac{1}{\qty{6000}{\rpm}} \times \qty{60}{\second\per\minute} \times 2 = \qty{3.7}{\kilo\joule\per\cycle}
 \end{equation}
 
-Aquestes xifres són menors que les prediccions ideals, ja que el model assumeix una conversió del \qty{100}{\percent} de calor en treball. L'eficiència real d'un motor de combustió típic és inferior. També cal considerar l'augment de temperatura de l'aire d'admissió causat pel turbocompressor, reduint la densitat de l'aire i el nombre de mols d'\ch{O2} disponibles.
+Aquestes xifres són menors que les prediccions ideals, ja que el model assumeix una conversió del \(\qty{100}{\percent}\) de calor en treball. L'eficiència real d'un motor de combustió típic és inferior. També cal considerar l'augment de temperatura de l'aire d'admissió causat pel turbocompressor, que redueix la densitat de l'aire i el nombre de mols d'\(\ch{O2}\) disponibles.
+
 
 Per mitigar aquest problema, s'usa un intercanviador de calor, com un intercooler aire-aire, que refreda l'aire d'admissió amb l'aire extern, millorant la densitat del gas i l'eficiència del motor. El Subaru de \qty{250}{\hp} inclou un intercooler amb una presa d'aire funcional, cosa que implica que el guany real degut al turbocompressor és inferior al \qty{37}{\percent} anunciat per Subaru.
 

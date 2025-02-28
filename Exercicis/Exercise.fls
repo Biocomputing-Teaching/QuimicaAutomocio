@@ -610,11 +610,11 @@ INPUT /usr/share/texmf/fonts/tfm/public/lm/ts1-lmr6.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc
-INPUT ../Exercicis/ex_ideal2.tex
-INPUT ../Exercicis/ex_ideal2.tex
-INPUT ../Exercicis/ex_ideal2.tex
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc
+INPUT ../Exercicis/ex_ideal2.tex
+INPUT ../Exercicis/ex_ideal2.tex
+INPUT ../Exercicis/ex_ideal2.tex
 INPUT ../Exercicis/ex_ideal3.tex
 INPUT ../Exercicis/ex_ideal3.tex
 INPUT ../Exercicis/ex_ideal3.tex
