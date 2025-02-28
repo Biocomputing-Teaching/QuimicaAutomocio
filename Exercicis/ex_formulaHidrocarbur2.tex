@@ -5,6 +5,14 @@
 \end{exr}
 \lct{
 
+Escrivim primer les equacions químiques:
+
+\ch{CxHyNz + $\left(\frac{2x+y/2}{2}\right)$ O2 -> $x$ CO2 + $\frac{y}{2}$ H2O + $\frac{z}{2}$ N2}
+
+\ch{N2 + 3 H2 -> 2 NH3}
+
+L'important és veure que tot el carboni (en forma de \ch{CO2}) que apareix a la primera equació prové del contingut al compost problema, com també passa amb tot l'hidrogen (en forma de \ch{H2O}) i tot el nitrogen en forma de \ch{NH3}. Per tant, només ens cal trobar els mols generats de cadascun dels tres elements i la seva proporció en els productes serà la que existia als reactius.
+
 Càlcul del nombre de mols de carboni
 \[
 12,923 \text{ g } \ch{CO2} 
@@ -16,7 +24,7 @@ Càlcul del nombre de mols de carboni
 = \frac{12,923}{44,011} = 0,29363 \text{ mols de } C
 \]
 
-Càlcul del nombre de mols d'hidrogen
+Càlcul del nombre de mols d'hidrogen (notar que la segona reacció és a part de la primera; en la segona reacció usem un excés d'hidrogen {\em addicional} per transformar el nitrogen en un altre compost: amoníac):
 \[
 6,608 \text{ g } \ch{H2O} 
 \times \frac{1 \text{ mol } \ch{H2O}}{18,02 \text{ g } \ch{H2O}}
@@ -53,6 +61,19 @@ Dividim tots els valors entre el menor nombre de mols (0,1468):
 \frac{0,1468}{0,1468} = 1 \quad \text{(mol N)}
 \]
 
-La fórmula empírica del compost és \ch{C2H5N}.
+La fórmula empírica del compost és \ch{C2H5N}, que pot correspondre a diversos isòmers:
+\renewcommand{\arraystretch}{2}
+\scriptsize
+\begin{longtable}{ccc}
+    \toprule
+    aziridina& vinilamina& etanimina\\
+    \midrule
+    \chemfig{--[:240]\mcfbelow{N}{H}(-[:120])}&
+    \chemfig{H_2N-[:330,,2]=[:30]}&
+    \chemfig{-[:330]=[:30,,,1]NH} 
+\\
+\end{longtable}
+\normalsize
+\renewcommand{\arraystretch}{1}
 
 }

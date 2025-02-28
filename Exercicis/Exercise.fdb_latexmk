@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex Exercise"] 1740405468.44711 "Exercise.aux" "Exercise.bbl" "Exercise" 1740405475.87129 0
+["bibtex Exercise"] 1740679731.90288 "Exercise.aux" "Exercise.bbl" "Exercise" 1740679750.64109 0
   "../common/QuimAutom.bib" 1740376057.63368 14488 20ec34c0951949ef8b78b6a03520318c ""
-  "./Exercise-blx.bib" 1740405475.3618 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad ""
+  "./Exercise-blx.bib" 1740679750.19919 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1678141846 65484 b7949c47a88ed6dca66ebc7a04577312 ""
-  "Exercise.aux" 1740405475.3568 2450 5f06ac4eb33b377f9d77be93d7d7dc48 "pdflatex"
+  "Exercise.aux" 1740679750.19519 2691 0e3d05f3749355a91170e19fbb949b46 "pdflatex"
   (generated)
   "Exercise.bbl"
   "Exercise.blg"
   (rewritten before read)
-["makeindex Exercise.idx"] 1740334823.45342 "Exercise.idx" "Exercise.ind" "Exercise" 1740405475.87107 0
-  "Exercise.idx" 1740405469.64353 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex Exercise.idx"] 1740334823.45342 "Exercise.idx" "Exercise.ind" "Exercise" 1740679750.64094 0
+  "Exercise.idx" 1740679745.70616 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "Exercise.ilg"
   "Exercise.ind"
   (rewritten before read)
-["pdflatex"] 1740405468.53738 "Exercise.tex" "Exercise.pdf" "Exercise" 1740405475.87153 0
+["pdflatex"] 1740679744.88274 "Exercise.tex" "Exercise.pdf" "Exercise" 1740679750.64124 0
   "../Exercicis/EX1_TvanderWaals.tex" 1740039620.28712 1484 a9ec744f278564b3b0adee51c39359fc ""
   "../Exercicis/EX1_fraccioMeta.tex" 1740040528.61323 1874 5e64135734de6f409ee73b6c906792e2 ""
   "../Exercicis/compendi_GEACombustio.tex" 1740374808.33525 472 822c0a7d0f6ea4801e9957438ff1b870 ""
@@ -35,10 +35,10 @@
   "../Exercicis/ex_combustioBenze.tex" 1740303993.02155 853 087c54109967677e652ea0a100c89d26 ""
   "../Exercicis/ex_composicio.tex" 1740040570.72347 1821 ae3a07c334ac1698e7c54e9e83e3ed2e ""
   "../Exercicis/ex_desviacioIdeal.tex" 1740040759.25556 1123 49f6b69f8c82339423f0af796e271183 ""
-  "../Exercicis/ex_entalpia.tex" 1740405346.41008 1490 1dddaf1775a8f7f41ab38ed20a3abd64 ""
+  "../Exercicis/ex_entalpia.tex" 1740547190.48021 1582 130d3e29ac812ef59ba9411aa6ea8209 ""
   "../Exercicis/ex_entalpia2.tex" 1740397571.93457 1695 eb6d588b7ce0be6011a6f9b9345c0a8c ""
   "../Exercicis/ex_formulaHidrocarbur.tex" 1740376410.29883 2671 6b5e82ca67d0874fab06fe02163cae3c ""
-  "../Exercicis/ex_formulaHidrocarbur2.tex" 1740086029.2071 1564 f06abad0b65090f5a7c5e71d269245a5 ""
+  "../Exercicis/ex_formulaHidrocarbur2.tex" 1740679743.93115 2663 1f7d909e8e452bd9b0e554ebf81a878f ""
   "../Exercicis/ex_hidrogenacioEtile.tex" 1739898284.92499 0 d41d8cd98f00b204e9800998ecf8427e ""
   "../Exercicis/ex_ideal1.tex" 1740039199.26698 1145 1e1f0e9e6dcb2cdc9b742dba68e65712 ""
   "../Exercicis/ex_ideal2.tex" 1740039395.0131 1321 b1319ff1ed71c32e0c88a01493722d7d ""
@@ -49,8 +49,9 @@
   "../Exercicis/ex_ideal7.tex" 1740039409.08523 119 784add6cf5196b2beb591872ebddec21 ""
   "../Exercicis/ex_limitIdeal.tex" 1740039423.45437 340 ec95b00f2596489fd111dacea64f1232 ""
   "../common/common.tex" 1740307006.32883 11688 c50d9d5f37a1cb8fbc9444d8db7f3d46 ""
-  "../common/common_chem.tex" 1740397157.73705 1150 bf723ee9f973d38c8420bc696e8edca5 ""
+  "../common/common_chem.tex" 1740679391.88312 1184 48e7bee78294b4e0d456efe79c317287 ""
   "../common/common_details.tex" 1740334736.2709 3878 df1b7e78aabb8b603a6583a3dea7679b ""
+  "../common/mol2chemfig.sty" 1740679308.64963 7375 6bffa1ce888848bfba0fef4eaff2d543 ""
   "../figures/FactorCompressT.png" 1738244688.93372 88864 025a13c56236670d269373197c02d376 ""
   "/etc/texmf/web2c/texmf.cnf" 1693479407.22171 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -194,6 +195,8 @@
   "/usr/share/texlive/texmf-dist/tex/generic/soul/soul-ori.sty" 1686773644 25449 100b0515cc1d8ea1e0366560a3b7ad0c ""
   "/usr/share/texlive/texmf-dist/tex/generic/soul/soul.sty" 1686773644 16881 d8b4a12a106b66e472bfd2de30eb0314 ""
   "/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty" 1576624663 7008 f92eaa0a3872ed622bbf538217cd2ab7 ""
+  "/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty" 1544223003 123 a302f2c651a95033260db60e51527ae8 ""
+  "/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex" 1692744296 49397 a8071cbd06dd0bb15ae8acf876c73f20 ""
   "/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty" 1591045760 12594 0d51ac3a545aaaa555021326ff22a6cc ""
   "/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty" 1359763108 5949 3f3fd50a8cc94c3d4cbf4fc66cd3df1c ""
   "/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty" 1359763108 13829 94730e64147574077f8ecfea9bb69af4 ""
@@ -262,6 +265,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def" 1705871765 14249 e67cb186717b7ab18d14a4875e7e98b5 ""
   "/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def" 1705871765 117112 05831178ece2cad4d9629dcf65099b11 ""
   "/usr/share/texlive/texmf-dist/tex/latex/ieeetran/IEEEtrantools.sty" 1440712899 130521 4ccf2a4cea0566f0fadc2812421ad1bb ""
+  "/usr/share/texlive/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty" 1525197427 318 019510c713feab56160631df4423d2aa ""
   "/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty" 1137110241 300 12fa6f636b617656f2810ee82cb05015 ""
   "/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd" 1137110241 548 cc4e3557704bfed27c7002773fad6c90 ""
   "/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty" 1655478651 22555 6d8e155cfef6d82c3d5c742fea7c992e ""
@@ -284,6 +288,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/mdframed/mdframed.sty" 1372805434 53487 3e997243f47cb3ba8b4c7b8df9c82989 ""
   "/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty" 1615845910 6149 2398eec4faa1ee24ff761581e580ecf1 ""
   "/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty" 1364856750 852 0e34dbb72efc69fa07602405ad95585e ""
+  "/usr/share/texlive/texmf-dist/tex/latex/oberdiek/twoopt.sty" 1575152444 2948 0639d044d1b7f31861149e262da3e93f ""
   "/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty" 1601326656 1090 bae35ef70b3168089ef166db3e66f5b2 ""
   "/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty" 1673816307 373 00b204b1d7d095b892ad31a7494b0373 ""
   "/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty" 1601326656 21013 f4ff83d25bb56552493b030f27c075ae ""
@@ -398,13 +403,13 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1725009813.69924 5349216 bf3a80e68d946c7acd95ff030fd9bb63 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1726152742 6852505 e04ce9148cb683c6cca801ac78b863b2 ""
-  "Exercise.aux" 1740405475.3568 2450 5f06ac4eb33b377f9d77be93d7d7dc48 "pdflatex"
-  "Exercise.bbl" 1740405468.52648 2400 fbca5c270f531837da936cf7204c5a1b "bibtex Exercise"
+  "Exercise.aux" 1740679750.19519 2691 0e3d05f3749355a91170e19fbb949b46 "pdflatex"
+  "Exercise.bbl" 1740679731.96708 2400 fbca5c270f531837da936cf7204c5a1b "bibtex Exercise"
   "Exercise.ind" 1740334823.50344 0 d41d8cd98f00b204e9800998ecf8427e "makeindex Exercise.idx"
-  "Exercise.out" 1740405475.3598 304 5bbdf6a722e7ccc48c6e3eee3ebecbab "pdflatex"
-  "Exercise.run.xml" 1740405475.3618 2567 706e4b25b6c9a270a32f9558f30663e5 "pdflatex"
+  "Exercise.out" 1740679750.19719 304 5bbdf6a722e7ccc48c6e3eee3ebecbab "pdflatex"
+  "Exercise.run.xml" 1740679750.20019 2567 706e4b25b6c9a270a32f9558f30663e5 "pdflatex"
   "Exercise.tex" 1740397206.11114 2041 592329c670538c9bc818139e7c9da1b6 ""
-  "Exercise.toc" 1740405475.3618 184 c5080ec9ae960edc034e080d53586b44 "pdflatex"
+  "Exercise.toc" 1740679750.20019 184 c5080ec9ae960edc034e080d53586b44 "pdflatex"
   (generated)
   "Exercise-blx.bib"
   "Exercise.aux"

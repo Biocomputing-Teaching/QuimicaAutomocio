@@ -22,6 +22,7 @@ files:
 		needs_update=0; \
 		counter=$$((counter + 1)); \
 		output_pdf=${PDFDIR}/$$file.pdf; \
+		echo "evaluating work to be done for $$file.tex:"; \
 		if [ -f $$file.tex ] && [ $$file.tex -nt $$output_pdf ]; then needs_update=1; fi; \
 		if [ $(HEADER_FOOTER_TEMPLATE) -nt $$output_pdf ]; then needs_update=1; fi; \
 		if [ ../Exercicis/compendi_$$file.tex -nt $$output_pdf ]; then needs_update=1; fi; \
