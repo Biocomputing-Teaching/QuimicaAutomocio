@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex Exercise"] 1740761297.29492 "Exercise.aux" "Exercise.bbl" "Exercise" 1740761304.45813 0
+["bibtex Exercise"] 1740761297.29492 "Exercise.aux" "Exercise.bbl" "Exercise" 1740761400.07413 0
   "../common/QuimAutom.bib" 1740721177.26981 19830 79f7dda963c3304354795743156c873e ""
-  "./Exercise-blx.bib" 1740761303.96024 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad ""
+  "./Exercise-blx.bib" 1740761399.51194 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1678141846 65484 b7949c47a88ed6dca66ebc7a04577312 ""
-  "Exercise.aux" 1740761303.95724 2691 ab70f8fdc0dc464caa55ff1e02bd3375 "pdflatex"
+  "Exercise.aux" 1740761399.50794 2691 ab70f8fdc0dc464caa55ff1e02bd3375 "pdflatex"
   (generated)
   "Exercise.bbl"
   "Exercise.blg"
   (rewritten before read)
-["makeindex Exercise.idx"] 1740759663.17878 "Exercise.idx" "Exercise.ind" "Exercise" 1740761304.4579 0
-  "Exercise.idx" 1740761298.4292 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex Exercise.idx"] 1740759663.17878 "Exercise.idx" "Exercise.ind" "Exercise" 1740761400.07395 0
+  "Exercise.idx" 1740761394.61091 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "Exercise.ilg"
   "Exercise.ind"
   (rewritten before read)
-["pdflatex"] 1740761297.40185 "Exercise.tex" "Exercise.pdf" "Exercise" 1740761304.45832 0
+["pdflatex"] 1740761393.75637 "Exercise.tex" "Exercise.pdf" "Exercise" 1740761400.07431 0
   "../Exercicis/EX1_TvanderWaals.tex" 1740039620.28712 1484 a9ec744f278564b3b0adee51c39359fc ""
   "../Exercicis/EX1_fraccioMeta.tex" 1740754496.60747 1824 dbcb859fbb49c434751f9254099b57ac ""
   "../Exercicis/compendi_GEACombustio.tex" 1740374808.33525 472 822c0a7d0f6ea4801e9957438ff1b870 ""
@@ -30,7 +30,7 @@
   "../Exercicis/ex_UcombustioGrafit.tex" 1740752179.29513 1981 13cead7985802228d81b3cc30ad7d23e ""
   "../Exercicis/ex_UcombustioPropa.tex" 1740752307.489 748 596c26d2f4d2a28d9eddb48895c4c999 ""
   "../Exercicis/ex_airbag.tex" 1740761275.30902 5368 54645346dd15f64bbb52970151cc3df4 ""
-  "../Exercicis/ex_balancCombustio.tex" 1740751324.36711 2213 ed4c203ba65939a098028e9934b688c5 ""
+  "../Exercicis/ex_balancCombustio.tex" 1740761390.36688 2192 c12cc5b1c025d198ba801c654dd87cd0 ""
   "../Exercicis/ex_calornormal.tex" 1740405459.46804 1287 34e609e556431407dca62581438e3b11 ""
   "../Exercicis/ex_combustioBenze.tex" 1740751540.36669 837 c6a61f2dbd1275f388ff05dd92a57bcd ""
   "../Exercicis/ex_composicio.tex" 1740759847.81471 2762 da9838873908238fc13260e1ecbda6bc ""
@@ -403,13 +403,13 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1725009813.69924 5349216 bf3a80e68d946c7acd95ff030fd9bb63 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1726152742 6852505 e04ce9148cb683c6cca801ac78b863b2 ""
-  "Exercise.aux" 1740761303.95724 2691 ab70f8fdc0dc464caa55ff1e02bd3375 "pdflatex"
+  "Exercise.aux" 1740761399.50794 2691 ab70f8fdc0dc464caa55ff1e02bd3375 "pdflatex"
   "Exercise.bbl" 1740761297.37719 2400 fbca5c270f531837da936cf7204c5a1b "bibtex Exercise"
   "Exercise.ind" 1740759663.25433 0 d41d8cd98f00b204e9800998ecf8427e "makeindex Exercise.idx"
-  "Exercise.out" 1740761303.96024 304 5bbdf6a722e7ccc48c6e3eee3ebecbab "pdflatex"
-  "Exercise.run.xml" 1740761303.96124 2567 706e4b25b6c9a270a32f9558f30663e5 "pdflatex"
+  "Exercise.out" 1740761399.50994 304 5bbdf6a722e7ccc48c6e3eee3ebecbab "pdflatex"
+  "Exercise.run.xml" 1740761399.51294 2567 706e4b25b6c9a270a32f9558f30663e5 "pdflatex"
   "Exercise.tex" 1740397206.11114 2041 592329c670538c9bc818139e7c9da1b6 ""
-  "Exercise.toc" 1740761303.96124 184 c32a6f7deb9221c3a7887e20ece6cc63 "pdflatex"
+  "Exercise.toc" 1740761399.51294 184 c32a6f7deb9221c3a7887e20ece6cc63 "pdflatex"
   (generated)
   "Exercise-blx.bib"
   "Exercise.aux"
