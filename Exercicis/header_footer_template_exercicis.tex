@@ -15,9 +15,13 @@
 \usepackage{tikz}
 \usepackage{lipsum}
 \usepackage{xcolor}
+\usepackage{xr}
+%\externaldocument[NAME_FILE-]{temp_header_footer_NAME_FILE}
+\externaldocument[NAME_FILE-]{temp_GEANAME_FILE}
 \usepackage[backend=bibtex,style=numeric]{biblatex}  %backend=biber is 'better'  
 \usepackage{fancyhdr,amsmath,tcolorbox}
 \tcbuselibrary{listings,breakable} 
+\input{common}
 \input{common_details.tex}
 \renewenvironment{exr}[1]{ % 
     \addtocounter{myc}{1}
@@ -50,11 +54,15 @@
 
 Resol els exercicis autoavaluables del tema i respon la consulta a moodle especificant quants d'ells has fet bé i quants malament. Respondre aquesta consulta és obligatori per poder accedir a propers lliuraments dins l'assignatura.
 
-Les respostes als exercicis es poden trobar a \url{https://biocomputing-teaching.github.io/WebQuimicaAutomocio/pdf/Exercise.pdf}
+Les respostes als exercicis es poden trobar al final del document i també compilades a \url{https://biocomputing-teaching.github.io/WebQuimicaAutomocio/pdf/Exercise.pdf}
 
 % Aquí s'inclouen els fitxers GEA específics
 \input{AUTOAV_FILE}  % Nom del fitxer canviable per la comanda sed
-
+\newpage
+\textbf{Solucions\\}
+\setboolean{LECT}{true}
+\setcounter{myc}{0}
+\input{AUTOAV_FILE} 
 
 \printbibliography
 

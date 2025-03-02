@@ -9,37 +9,51 @@ L'energia cinètica translacional d'un mol de gas és
 on $M=N_0m$ és la massa molecular del gas en \si{\kilogram\per\mole}. 
 
 Per tant, la velocitat quadràtica mitjana és:
+
 \begin{equation}
     c_{\text{rms}} = \sqrt{\frac{3RT}{M}}
 \end{equation}
-Com que la taxa de col·lisions amb la paret és proporcional a $n v_{\text{rms}}$, imposem la condició d’igualtat:
+Com que la taxa de col·lisions amb la paret és proporcional a $n v_{\text{rms}}$, imposem la condició d'igualtat:
 \begin{equation}
-    n_{\ch{H}} \cdot \sqrt{\frac{3RT}{M_{\ch{H}}}} = n_{\ch{He}} \cdot \sqrt{\frac{3RT}{M_{\ch{He}}}}
+    n_{\ch{H2}} \cdot \sqrt{\frac{3RT}{M_{\ch{H2}}}} = n_{\ch{He}} \cdot \sqrt{\frac{3RT}{M_{\ch{He}}}}
+    \label{Eq:igualtat}
 \end{equation}
-Substituint masses moleculars $M_{\ch{H}} = 2$ g/mol i $M_{\ch{He}} = 4$ g/mol:
+
+A l'Eq. \ref{Eq:igualtat} hem usat que el nombre de col·lisions és proporcional al producte del nombre de molècules per la velocitat promig a la que es mouen. Per a entendre-ho, imaginem un cas simple de tres pilotes que es mouen a 10 m/s en línia recta i fan rebots entre dues parets d'una habitació. Si l'habitació fa 10 metres de llarg, en 10 segons cada pilota haurà tocat les parets 10 cops. Per tant, el nombre de xocs haurà estat 30.
+Si enlloc de 3 pilotes en tinguéssim 10 que es mouen a 3 metres per segon, haurien tocat les parets també 30 cops (cada pilota, en 10 segons, hauria recorregut 30 metres, i per tant hauria xocat 3 cops contra les parets; com que tenim 10 pilotes, el nombre total de xocs és 30).
+
+Substituint masses moleculars $M_{\ch{H2}} = 2$ g/mol i $M_{\ch{He}} = 4$ g/mol a l'Eq. \ref{Eq:igualtat}:
 \begin{equation}
-    n_{\ch{H}} \cdot \sqrt{\frac{1}{2}} = n_{\ch{He}} \cdot \sqrt{\frac{1}{4}}
+    n_{\ch{H2}} \cdot \sqrt{\frac{1}{2}} = n_{\ch{He}} \cdot \sqrt{\frac{1}{4}}
 \end{equation}
 \begin{equation}
-    n_{\ch{H}} \cdot \frac{1}{\sqrt{2}} = n_{\ch{He}} \cdot \frac{1}{2}
+    n_{\ch{H2}} \cdot \frac{1}{\sqrt{2}} = n_{\ch{He}} \cdot \frac{1}{2}
 \end{equation}
-Resolent per $n_{\ch{H}}$:
+Resolent per $n_{\ch{H2}}$:
 \begin{equation}
-    n_{\ch{H}} = \frac{n_{\ch{He}}}{\sqrt{2}}
+    n_{\ch{H2}} = \frac{n_{\ch{He}}}{\sqrt{2}}
 \end{equation}
-Per tant, la concentració de $\ch{H2}$ ha de ser més alta que la de $\ch{He}$.
-\\[10pt]
+Per tant, la concentració de $\ch{H2}$ ha de ser més baixa que la de $\ch{He}$.
+És a dir, si volem igualar les vegades que xoquen contra les parets d'un volum les molècules d'He i d'H2, hem de plantejar l'expressió d'igualtat de l'Eq. \ref{Eq:igualtat} on la partícula amb més massa, pel fet d'anar més lenta, necessitarà més partícules en moviment, és a dir, més concentració.
+
+%\\[10pt]
 \textbf{Consideració com a gasos no ideals}
 
 Si considerem gasos reals, hem de corregir la velocitat mitjana tenint en compte el factor de compressibilitat $Z$:
 \begin{equation}
     v_{\text{rms}} = \sqrt{\frac{3ZRT}{M}}
 \end{equation}
-A pressions altes, $Z_{\ch{H2}} > Z_{\ch{He}}$ per les interaccions intermoleculars més fortes d’hidrogen, la qual cosa redueix la seva velocitat i altera la relació de concentracions calculada abans. 
+Ara, l'Eq. \ref{Eq:igualtat} es transforma en:
+\[
+    n_{\ch{H2}} \cdot \sqrt{\frac{3Z_{\ch{H2}}RT}{M_{\ch{H2}}}} = n_{\ch{He}} \cdot \sqrt{\frac{3Z_{\ch{He}}RT}{M_{\ch{He}}}}
+\]
+d'on
+\[
+    \frac{n_{\ch{H2}}}{n_{\ch{He}}}=\sqrt{\frac{\frac{3Z_{\ch{He}}RT}{M_{\ch{He}}}}{\frac{3Z_{\ch{H2}}RT}{M_{\ch{H2}}}}}
+    =\sqrt{\frac{Z_{\ch{He}}M_{\ch{H2}}}{Z_{\ch{H2}}M_{\ch{He}}}}
+\]
+A pressions altes, $Z_{\ch{H2}} > Z_{\ch{He}}$ per les interaccions intermoleculars més fortes d'hidrogen (veure la Fig. Gasos-\ref{Gasos-fig:FactorCompress}), la qual cosa encara reforça més la diferència entre les dues molècules. 
 
-Amb l’equació de van der Waals:
-\begin{equation}
-    \left( P + \frac{a}{V^2} \right) (V - b) = RT
-\end{equation}
-On $a_{\ch{H}} > a_{\ch{He}}$, la densitat efectiva de $\ch{H2}$ serà menor que en el cas ideal, cosa que, novament, fa necessari afegir més partícules de \ch{H2} que d'\ch{He} per a assolir la mateixa taxa de col·lisions.
+.
 }
+

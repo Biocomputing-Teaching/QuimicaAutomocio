@@ -22,7 +22,7 @@ files:
 		needs_update=0; \
 		counter=$$((counter + 1)); \
 		output_pdf=${PDFDIR}/$$file.pdf; \
-		echo "evaluating work to be done for $$file.tex:"; \
+		echo "########\n# evaluating work to be done for $$file.tex:\n#######"; \
 		if [ -f $$file.tex ] && [ $$file.tex -nt $$output_pdf ]; then needs_update=1; fi; \
 		if [ $(HEADER_FOOTER_TEMPLATE) -nt $$output_pdf ]; then needs_update=1; fi; \
 		if [ ../Exercicis/compendi_$$file.tex -nt $$output_pdf ]; then needs_update=1; fi; \
@@ -35,11 +35,11 @@ files:
 			sed -i "s/marginfigure/figure/" ../build/$$file.mod; \
 			sed -i "s/margintable/table/" ../build/$$file.mod; \
 			sed -i "s/\\chapter/\\%\\chapter\*/" ../build/$$file.mod; \
-			cp $(HEADER_FOOTER_TEMPLATE) ../build/temp.tex; \
-			sed -i "s|GEA_EXERCISES|$$file|" ../build/temp.tex; \
-			sed -i "s|NUM_CAPITOL|$$counter|" ../build/temp.tex; \
-			sed -i "s|GEA_FILE|$$file.mod|" ../build/temp.tex; \
-			$(LATEXMK) -output-directory=../build ../build/temp.tex; \
+			cp $(HEADER_FOOTER_TEMPLATE) ../build/temp_$$file.tex; \
+			sed -i "s|GEA_EXERCISES|$$file|" ../build/temp_$$file.tex; \
+			sed -i "s|NUM_CAPITOL|$$counter|" ../build/temp_$$file.tex; \
+			sed -i "s|GEA_FILE|$$file.mod|" ../build/temp_$$file.tex; \
+			$(LATEXMK) -output-directory=../build ../build/temp_$$file.tex; \
 			rsync --update ../build/temp.pdf $$output_pdf; \
 		fi; \
 	done

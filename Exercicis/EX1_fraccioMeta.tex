@@ -2,18 +2,19 @@
 Una barreja de metà \ch{CH4} i d'acetilè \ch{C2H2} ocupava un cert volum a una pressió total de 63 mmHg. La mostra es va cremar a \ch{CO2} i \ch{H2O}. Se'n va recollir el \ch{CO2} en el mateix volum inicial i la mateixa temperatura inicial, i es va veure que la seva pressió era de 96 mmHg. Quina era la fracció de metà a la mescla de gasos inicials?
 \end{exr}
 \lct{
+
+    \textbf{OPCIÓ 1:\\}
 Definim $x$ com la fracció molar de metà (\ch{CH4}) i $y$ com la fracció molar d’acetilè (\ch{C2H2}):  
         \[
         x + y = 1
         \]
    
     Les reaccions de combustió són:
-    \begin{align}
-        \ch{CH4 + 2 O2 -> CO2 + 2 H2O}  & \quad \text{(1 mol de \ch{CH4} produeix 1 mol de \ch{CO2})} \\
-        \ch{C2H2 + 5/2 O2 -> 2 CO2 + H2O}  & \quad \text{(1 mol de \ch{C2H2} produeix 2 mols de \ch{CO2})}
-    \end{align}
-    
-Si tenim un nombre total de mols $n$, llavors:
+    \begin{eqnarray}
+        \ch{CH4 + 2 O2 -> CO2 + 2 H2O}  \label{Eq:meta} \\
+        \ch{C2H2 + 5/2 O2 -> 2 CO2 + H2O}  \label{Eq:acetile}
+    \end{eqnarray}
+on veiem que 1 mol de \ch{CH4} produeix 1 mol de \ch{CO2} i que 1 mol de \ch{C2H2} produeix 2 mols de \ch{CO2}. Si tenim un nombre total de mols $n$, llavors:
     \begin{itemize}
         \item Mols de metà: $xn$
         \item Mols d'acetilè: $yn$
@@ -53,4 +54,17 @@ Si tenim un nombre total de mols $n$, llavors:
         \[
     \frac{10}{21} \approx 0.476 \quad \text{o} \quad 47.6\%
     \]
+
+    \textbf{OPCIÓ 2:\\}
+Definim les pressions parcials inicials com $P_{\ch{CH4}}^i=x$ i $P_{\ch{C2H2}}^i=y$. Segons les Equacions \ref{Eq:meta} i \ref{Eq:acetile}, les pressions finals seran $P_{\ch{CH4}}^f=x$ i $P_{\ch{C2H2}}^f=2y$. Sabent que la pressió total inicial és \qty{63}{\mmHg} i que la final és \qty{96}{\mmHg}, obtenim el sistema:
+
+\[
+\systeme{x+y=63,x+2y=96}
+\]
+Solucionant-lo, obtenim que $x=\qty{30}{\mmHg}$ i $y=\qty{33}{\mmHg}$ 
+que impliquen fraccions molars inicial de $\chi_{\ch{CH4}}^i=30/63=0.476$ i $\chi_{\ch{C2H2}}^i=33/63=0.523$.
+
+Notar que usar la llei dels gasos ideals i, per tant, observar que podem treballar indistintament amb nombre de mols o pressions parcials sempre que la reacció involcri gasos, simplifica la resolució de l'exercici.
+
+
 }

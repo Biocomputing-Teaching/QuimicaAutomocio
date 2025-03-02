@@ -15,12 +15,14 @@ all: ../build/${PROJECT}.pdf
 	mv ${PROJECT}.pdf ../build/
 	rsync --update ../build/${PROJECT}.pdf ${PDFDIR}
 
+# 	@for name in Gasos Combustio ForcesInt Piles Llum Materials Temperatura; do \
+
 files:
-	@for name in Gasos Combustio ForcesInt Piles Llum Materials Temperatura; do \
+	@for name in Gasos Combustio; do \
 		FILE=autoavaluacio_GEA$$name; \
 		cp $(HEADER_FOOTER_TEMPLATE) ../build/temp_header_footer_$$name.tex; \
 		sed -i "s|AUTOAV_FILE|$$FILE|" ../build/temp_header_footer_$$name.tex; \
-		sed -i "s|NAME_FILE|$$name|" ../build/temp_header_footer_$$name.tex; \
+		sed -i "s|NAME_FILE|$$name|g" ../build/temp_header_footer_$$name.tex; \
 		$(LATEXMK) -output-directory=../build ../build/temp_header_footer_$$name.tex; \
 		rsync --update ../build/temp_header_footer_$$name.pdf ${PDFDIR}/$$FILE.pdf; \
 	done

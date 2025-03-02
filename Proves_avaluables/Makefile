@@ -5,6 +5,7 @@ doc   = 310518ExamenRecuperacio1
 #doc   = 050618ExamenRecuperacio2
 docpath = ../build/$(doc)
 HEADER_FOOTER_TEMPLATE = header_footer_template_EX.tex
+TMPFORM = ../build/temp_formulari.tex
 
 # Dependències dels fitxers en el directori ../common/
 COMMON_FILES = $(wildcard ../common/*.tex)
@@ -41,14 +42,14 @@ EX:
 		$(LATEXMK) -output-directory=../build ../build/$$name.tex; \
 	done
 
-formulari: Formulari.tex ../Teoria/formulari.tex $(COMMON_FILES)
-	cp ../Teoria/formulari.tex ../build/temp.tex
-	sed -i "s|toprule|hline|" ../build/temp.tex
-	sed -i "s|midrule|hline|" ../build/temp.tex
-	sed -i "s|bottomrule|hline|" ../build/temp.tex
-	sed -i "s|longtable|tabular|" ../build/temp.tex
-	sed -i "s|\\\\caption|\%|" ../build/temp.tex
-	sed -i "s|section|section\*|" ../build/temp.tex
+formulari: Formulari.tex ../Teoria/formules.tex $(COMMON_FILES)
+	cp ../Teoria/formules.tex $(TMPFORM)
+	sed -i "s|toprule|hline|" $(TMPFORM)
+	sed -i "s|midrule|hline|" $(TMPFORM)
+	sed -i "s|bottomrule|hline|" $(TMPFORM)
+	sed -i "s|longtable|tabular|" $(TMPFORM)
+	sed -i "s|\\\\caption|\%|" $(TMPFORM)
+	sed -i "s|section|section\*|" $(TMPFORM)
 	$(LATEXMK) -output-directory=../build Formulari.tex
 	cp ../build/Formulari.pdf $(PDFDIR)
 
